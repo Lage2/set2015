@@ -1,1 +1,71 @@
 @import "bootstrap.less";
+
+/*****************************************************************
+ * 01 - LESS Variable definition & customization 
+ * SEE: http://getbootstrap.com/customize/#less-variables-section
+ *****************************************************************/
+/* SET Color Scheme */
+@set-primary-blue:		#009de1;
+@set-dark-blue:			#006F9E;
+@set-light-blue:		#33B1E7; //#19A7E4;
+@set-primary-orange:	#FFB700;
+@set-dark-orange:		#FF8700;
+@set-xdark-orange:		#C66900;
+
+@brand-primary: #009de1; //SET default blue
+
+/* Scaffolding - Setting for some of the most global styles */
+@link-color:	white;
+
+
+/* Navbar */
+@navbar-default-link-color: 		white;
+@navbar-default-link-hover-color:	@gray;
+@navbar-default-link-hover-bg:		@set-dark-blue;
+
+/* Navs - shared navs styles*/
+@nav-link-hover-bg:			@set-dark-blue;
+
+
+
+/*****************************************************************
+ * 02 - Element Customization 
+ *****************************************************************/
+
+.navbar{
+	border: none;
+	border-radius: 0;
+	background-color: @brand-primary;
+
+	&-toggle {
+		background-color: whitesmoke;
+	}
+}
+
+/*****************************************************************
+ * 03 - Elements Definition
+ *****************************************************************/
+#set-logo{
+	padding: 0;
+	z-index: 5;
+	/*@media screen and (max-width: @grid-float-breakpoint-max){
+	 	display: none;
+ 	}*/
+}
+
+#ist-logo{
+	&:hover{
+		background-color: @set-primary-blue;
+	}
+}
+
+
+#nav-collapse{
+	
+	z-index: -1;
+
+	 @media screen and (max-width: @grid-float-breakpoint-max){
+	 	background-color: @set-light-blue;
+	 }
+	
+}
