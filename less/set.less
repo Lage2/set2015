@@ -17,6 +17,9 @@
 /* Scaffolding - Setting for some of the most global styles */
 @link-color:	white;
 
+/* Typography - Font, line-height, and color for body text, headings, and more. */
+@font-size-base: 16px;
+
 
 /* Navbar */
 @navbar-height:						55px;
@@ -36,6 +39,7 @@
 .navbar{
 	border: none;
 	border-radius: 0;
+
 	background-color: @brand-primary;
 
 	margin-bottom: 0px;
@@ -43,34 +47,61 @@
 	&-toggle {
 		background-color: whitesmoke;
 	}
+
+	
 }
 
-.carousel {
+#jumbo-carousel{
+	//.carousel {
 
-  	height: 600px;
+	  	height: 600px;
 
-	.item{
-		height: 600px;
-		background-color: #777;
-	}
-
-	&-caption {
-		z-index: 10;
-		margin-bottom: 12.5%;
-
-		p {
-			font-size: 21px;
-    		line-height: 1.4;  
+		.item{
+			height: 600px;
+			background-color: #777;
 		}
+
+		.carousel-caption {
+
+			z-index: 10;
+			margin-bottom: 12.5%;
+			text-align: left;
+
+			h1 {
+				font-weith: bolder;
+				font-size: 3em;
+				text-align: center;
+			}
+		}
+
+		.carousel-inner > .item > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			height: 600px;
+		}
+	//}
+}	
+
+#history-carousel {
+	padding: auto;
+	width: 800px;
+	height: 500px;
+	
+	.jumbotron {
+		height: 500px;
+		background-color: @set-light-blue;
+
+		h1{
+			margin-left: 15%;
+		}
+
 	}
 
-	&-inner > .item > img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		min-width: 100%;
-		height: 600px;
-	}
+	.history-sprites { background: url(../img/history/history_sprites.png) no-repeat; }
+	#set2013 { width: 800px; height: 500px; background-position: 0 0; }
+	#set2014 { width: 800px; height: 500px; background-position: 0 -500px; }
 }
 
 .btn {
@@ -129,12 +160,21 @@ footer{
 	text-align: center;
 	padding: 50px;
 
-	//background-color: #00E85E; //NOT YET
+	//background-color: @set-light-blue;
 }
 
 #sponsorship-container {
 	background-color: #00E85E; 	//TODO: remover, apenas para fins de testes
 }
+
+#team-container {
+	background-color: @set-dark-blue;
+}
+
+#history-container {
+	margin: 30px 0;
+}
+
 
 .center-text {
 	margin-top: 10%;
@@ -146,5 +186,5 @@ footer{
 }
 
 .footer-divider{
-	width: 80%;
+	width: 90%;
 }
