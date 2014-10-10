@@ -46,11 +46,11 @@
 }
 
 .carousel {
-  	height: 500px;
-  	margin-bottom: 60px;
+
+  	height: 600px;
 
 	.item{
-		height: 500px;
+		height: 600px;
 		background-color: #777;
 	}
 
@@ -69,13 +69,31 @@
 		top: 0;
 		left: 0;
 		min-width: 100%;
-		height: 500px;
+		height: 600px;
 	}
 }
 
+.btn {
+	opacity: 0.7;
+	margin: 15px 0px;
+}
 
 footer{
-	background-color: @gray-lighter;
+	
+	p {
+
+		text-align: right;
+
+		a {
+			color: @set-primary-orange;
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: none;
+				color: @set-xdark-orange;	
+			}
+		}
+	}
 }
 
 /*****************************************************************
@@ -104,4 +122,29 @@ footer{
 	 	background-color: @set-light-blue;
 	 }
 	
+}
+
+#speakers-container{
+	
+	text-align: center;
+	padding: 50px;
+
+	//background-color: #00E85E; //NOT YET
+}
+
+#sponsorship-container {
+	background-color: #00E85E; 	//TODO: remover, apenas para fins de testes
+}
+
+.center-text {
+	margin-top: 10%;
+}
+
+.fixed-height-container {
+	min-height: 450px;
+
+}
+
+.footer-divider{
+	width: 80%;
 }
