@@ -1,5 +1,11 @@
 @import "bootstrap.less";
 
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
 /*****************************************************************
  * 01 - LESS Variable definition & customization 
  * SEE: http://getbootstrap.com/customize/#less-variables-section
@@ -25,7 +31,7 @@
 @navbar-height:						55px;
 @navbar-default-link-color: 		white;
 @navbar-default-link-hover-color:	@gray;
-@navbar-default-link-hover-bg:		@set-dark-blue;
+@navbar-default-link-hover-bg:		@set-light-blue;
 
 /* Navs - shared navs styles*/
 @nav-link-hover-bg:			@set-dark-blue;
@@ -89,15 +95,42 @@
 	width: 800px;
 	height: 500px;
 	
-	.jumbotron {
-		height: 500px;
-		background-color: @set-light-blue;
-
-		h1{
-			margin-left: 15%;
-		}
-
+			
+	a { 
+		text-decoration: none; 
+		&:hover {text-decoration: none; color:white; }
 	}
+
+	.history-edition{
+		height: 10%;
+		margin: 0;
+
+		h2 {
+			opacity: 0.8;
+			margin-top:0px;
+			text-align: center;
+			vertical-align: middle;
+			background-color: @set-primary-orange;
+			&:hover { background-color: @set-dark-orange;}
+		}
+	}
+
+	.jumbotron {
+		height: 90%;
+		background-color: @set-light-blue;
+		margin: 0;
+	}
+
+	.carousel-control {
+		color: @set-dark-orange;
+		&:hover {color: @set-dark-orange;}
+	}
+
+	.carousel-indicators {
+
+		.active {background-color: @set-primary-orange;}
+		li { border-color: @set-dark-orange; }	
+	}	
 
 	.history-sprites { background: url(../img/history/history_sprites.png) no-repeat; }
 	#set2013 { width: 800px; height: 500px; background-position: 0 0; }
@@ -107,12 +140,14 @@
 .btn {
 	opacity: 0.7;
 	margin: 15px 0px;
+	font-size: 1.5em;
 }
 
 footer{
 	
 	p {
-
+		color: @gray;
+		font-size: 12px;
 		text-align: right;
 
 		a {
@@ -139,9 +174,7 @@ footer{
 }
 
 #ist-logo{
-	&:hover{
-		background-color: @set-primary-blue;
-	}
+	margin-left: 20px;
 }
 
 
@@ -164,17 +197,62 @@ footer{
 }
 
 #sponsorship-container {
-	background-color: #00E85E; 	//TODO: remover, apenas para fins de testes
+	background-color: @set-primary-orange; 	//TODO: remover, apenas para fins de testes
 }
 
 #team-container {
 	background-color: @set-dark-blue;
+	
+	#wrapper {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+
+		td {
+			vertical-align: middle;
+			text-align: center;
+
+			img {
+				width: 80%;
+				height: auto;
+				max-height: 130px;
+
+			}
+		}
+	}
 }
 
 #history-container {
 	margin: 30px 0;
+	height: 520px; //TODO: corrigir para web-responsive
+
 }
 
+#contacts-container {
+
+	a { 
+		color: @set-primary-blue; 
+		
+		&:hover{ 
+			text-decoration:none;
+			color: @set-light-blue;
+		}
+	}
+	
+	.transportation-option {	}
+
+	.transportation-img{
+		margin: 0 5px;
+	}
+
+	.sub-option{
+		margin-left: 15px;
+	}
+
+	.contacts-info { padding-left: 15px; }
+}
 
 .center-text {
 	margin-top: 10%;
@@ -188,3 +266,9 @@ footer{
 .footer-divider{
 	width: 90%;
 }
+
+
+
+
+
+/******************************************************************************************/
