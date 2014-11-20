@@ -166,16 +166,32 @@ footer{
  *****************************************************************/
 #set-logo{
 	padding: 0;
+	padding-left: 15px;
 	z-index: 5;
+
 	/*@media screen and (max-width: @grid-float-breakpoint-max){
 	 	display: none;
  	}*/
+
 }
 
 #ist-logo{
 	margin-left: 20px;
+	width: 90px;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
 }
 
+#ist-logo-footer {
+	width: 120px;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
 
 #nav-collapse{
 	
@@ -229,6 +245,18 @@ footer{
 
 }
 
+#contacts{
+	
+	position: absolute;
+	left:0; 
+	bottom: 0;
+	z-index: 4;
+	padding: 25px;
+	background: rgba(242, 240, 224, 0.6);
+	color: black;
+	font-size: 1.1em;
+}
+
 #contacts-container {
 
 	a { 
@@ -267,7 +295,10 @@ footer{
 }
 
 
-
+.blue {
+	color: @set-primary-blue;
+}
 
 
 /******************************************************************************************/
+

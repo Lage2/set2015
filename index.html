@@ -15,10 +15,14 @@
          <!-- Bootstrap -->
     	<link href="css/set.css" rel="stylesheet">
 
+    	<!-- Leaflet Maps -->
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
 	</head>
 	<body>
 		<div id="navigation">
-			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 				<div class="container-fluid">
 					
 					<div class="navbar-header navbar-left">
@@ -37,7 +41,7 @@
 
 					<div id="ist-logo" class="collapse navbar-collapse navbar-right">
 						<a class="navbar-brand" href="http://tecnico.ulisboa.pt/">
-							<img class="collapsed" src="img/set_media/tecnico_small.png" alt="IST Logo">
+							<img class="collapsed" src="img/set_media/tecnico_neg_big.png" alt="IST Logo">
 						</a>
 					</div>
 
@@ -194,6 +198,7 @@
 			</div>
 		</div>
 
+		<!-- DEPRECATED
 		<div id="history-container" class="container-fluid fixed-height-container ">
 			<div id="history-carousel" class="carousel slide center-block" data-ride="carousel">
 	
@@ -223,16 +228,41 @@
       		<a class="right carousel-control" href="#history-carousel" role="button" data-slide="next">
       			<span class="glyphicon glyphicon-chevron-right"></span>
       		</a>
-      		
 		</div>	
+		-->
 			
 		</div>
 
 		<hr class="footer-divider">
-
+		
+		<div id="map" class="container fixed-height-container">
+			<div id="contacts">  
+				
+                <h2><span class="glyphicon glyphicon-map-marker blue"></span> Localização </h2>
+                <address class="contacts-info">
+                    <strong>Instituto Superior Técnico - Campus Taguspark</strong><br>
+                    Av. Prof. Doutor Aníbal Cavaco Silva<br> 2744-016 Porto
+                    Salvo<br>
+                </address>
+                <a href="mailto:set@lage2.tecnico.ulisboa.pt">
+                <p class="contacts-info">
+                	<span class="glyphicon glyphicon-envelope"></span> set&#64;lage2.tecnico.ulisboa.pt
+                	</p>
+                </a>
+                <p class="contacts-info">
+                	<span class="glyphicon glyphicon-earphone"></span>
+                		(&#43; 351) 214 233 579  Extensão: 5179
+                </p>
+                <p class="contacts-info">
+                	<span class="glyphicon glyphicon-eye-open"></span>
+                	Se ainda não conhece o nosso <i>campus</i>, faça já <a href="https://tecnico.ulisboa.pt/misc/vv-taguspark/tour.swf" target="blank">uma visita guiada</a>.
+                </p>
+            </div>
+        </div>
+        
 		<div id="contacts-container" class="container fixed-height-container">
-			<h1>Contactos</h1>
 			<div class="row">
+				<!--
 				<div class="col-md-6">
                     <div>  
                         <h2>Localização <span class="glyphicon glyphicon-map-marker"></span></h2>
@@ -241,7 +271,7 @@
                             Av. Prof. Doutor Aníbal Cavaco Silva<br> 2744-016 Porto
                             Salvo<br>
                         </address>
-                        <p class="contacts-info"><!--<a href="mailto:set@lage2.tecnico.ulisboa.pt"> TODO: por o link live -->
+                        <p class="contacts-info">
                         	<span class="glyphicon glyphicon-envelope"></span> set&#64;lage2.tecnico.ulisboa.pt
                         </p>
                         <p class="contacts-info">
@@ -253,12 +283,16 @@
                         	Se ainda não conhece o nosso <i>campus</i>, faça já <a href="https://tecnico.ulisboa.pt/misc/vv-taguspark/tour.swf" target="blank">uma visita guiada</a>.
                         </p>
                     </div>
+
                 </div>
+            	-->
+                <!-- Google Maps - TODO: remover totalmente
                 <div class="col-md-6">
                 	<iframe width="450" height="300" 
                 			frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Av.%20Prof.%20Dr.%20Cavaco%20Silva%2C%20Porto%20Salvo%2C%20Portugal&key=AIzaSyApdTdEggK0dmdfEY-ZanjWXFV3vAWTK1o">
                 	</iframe>
             	</div>
+            	-->
             	<div class="col-md-12">
             		<h2>Como chegar</h2>
 					<div id="train-option" class="transportation-option">
@@ -314,17 +348,35 @@
 
 		<footer>
 			<div class="container">
-			<p class="pull-right">
-				<span class="glyphicon glyphicon-copyright-mark"></span><!--&copy--> <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
-				<br>
-				Fotos <i>by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
-				<br>
-				<i>Built with</i> <a href="http://getbootstrap.com/">Bootstrap</a>
-			</p>
+				<div id="ist-logo-footer" class="pull-left">
+					<a href="http://tecnico.ulisboa.pt/">
+						<img class="collapsed" src="img/set_media/tecnico_big.png" alt="IST Logo">
+					</a>
+				</div>
+				<p class="pull-right">
+					<span class="glyphicon glyphicon-copyright-mark"></span><!--&copy--> <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
+					<br>
+					Fotos <i>by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
+					<br>
+					<i>Built with</i> <a href="http://getbootstrap.com/">Bootstrap</a>
+				</p>
 			</div>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
+    	<script>
+    		// create a map in the "map" div, set the view to a given place and zoom
+			var map = L.map('map').setView([38.7425995, -9.3019505], 13);
+
+			// add an OpenStreetMap tile layer
+			L.tileLayer(
+				'http://{s}.tile.osm.org/{z}/{x}/{y}.png', 
+				{attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+			// add a marker in the given location, attach some popup content to it and open the popup
+			L.marker([38.7425995, -9.3019505]).addTo(map)
+    			.openPopup();
+    	</script>
 	</body>
 </html>
