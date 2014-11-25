@@ -19,6 +19,9 @@
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
+		<!-- WebFonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400' rel='stylesheet' type='text/css'>
+
 	</head>
 	<body>
 		<div id="navigation">
@@ -53,7 +56,7 @@
 							<!--<li><a id="ist-logo" href="http://tecnico.ulisboa.pt/"><img src="img/set_media/tecnico_small.png" alt=""></a></li>-->
 							<li><a href="#speakers-container">Oradores</a></li>
 							<li><a href="#sponsorship-container">Patrocínios</a></li>
-							<li><a href="#contacts-container">Contactos</a></li>
+							<li><a href="#contacts-anchor">Contactos</a></li>
 							<li><a href="#team-container">Organização</a></li>
 						</ul>
 					</div>
@@ -75,10 +78,12 @@
 					<img src="img/examples/example1.jpg" alt="First slide">
 					<div class="container">
             			<div class="carousel-caption">
-							<h1>Recruitment</h1>
-							<h2>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum venenatis eros, a ullamcorper urna condimentum et. Morbi mauris felis, consectetur ac dictum sit amet, bibendum ullamcorper sapien. Etiam diam augue.
-							</h2>
+            				<div class="caption-container">
+								<h1>Recruitment</h1>
+								<h2>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum venenatis eros, a ullamcorper urna condimentum et. Morbi mauris felis, consectetur ac dictum sit amet, bibendum ullamcorper sapien. Etiam diam augue.
+								</h2>
+							</div>	
 			            </div>
           			</div>
 				</div>
@@ -86,10 +91,12 @@
 					<img src="img/examples/example2.jpg" alt="Second slide">
 					<div class="container">
             			<div class="carousel-caption">
-							<h1>Official Date</h1>
-							<h2>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus urna nec turpis interdum volutpat. Suspendisse potenti. Curabitur vitae magna rutrum ex volutpat semper. Nam enim nunc, accumsan vitae ex.
-							</h2>
+            				<div class="caption-container">
+								<h1>Official Date</h1>
+								<h2>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus urna nec turpis interdum volutpat. Suspendisse potenti. Curabitur vitae magna rutrum ex volutpat semper. Nam enim nunc, accumsan vitae ex.
+								</h2>
+			            	</div>
 			            </div>
           			</div>
 				</div>
@@ -97,13 +104,16 @@
 					<img src="img/examples/example3.jpg" alt="Third slide">
 					<div class="container">
             			<div class="carousel-caption">
-							<h1>Social Network Marketing</h1>
-							<h2>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus risus, pellentesque a congue rutrum, varius id dolor. Pellentesque at velit sit amet nibh ultricies porta. Fusce lobortis justo quis.
-							</h2>
+            				<div class="caption-container">
+								<h1>Social Network Marketing</h1>
+								<h2>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus risus, pellentesque a congue rutrum, varius id dolor. Pellentesque at velit sit amet nibh ultricies porta. Fusce lobortis justo quis.
+								</h2>
+							</div>
 			            </div>	
           			</div>
 				</div>
+				-->
 			</div>
 			<a class="left carousel-control" href="#jumbo-carousel" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left"></span>
@@ -120,41 +130,28 @@
 				<div class="col-md-6">
 					<img class="img-circle" src="./img/speakers/unknown-person.jpg" alt="Generic placeholder image" style="width: 300px; height: 300px;">
 					<p class="push-btn-middle">
-          				<a class="btn btn-primary" 
+          				<a class="btn btn-phantom" 
           					target="blank"
           					href="https://docs.google.com/forms/d/1gx-1eJP2OuLV2XJGa_sE9k02HOi84Fw6mLpr9qq-JxE/viewform" role="button">Recomendar
           				</a>
           			</p>
 				</div>
-				<div class="col-md-6 center-text">
-          			<p>
-          				Já pensaste quem gostarias de ver na próxima edição da SET?
-          				<br>
-          				Participa já e ajuda-nos a organizar o melhor evento de sempre.
-          			</p>
+				<div class="col-md-6 center-text" style="text-align:right;"	>
+					<h1 >Oradores</h1>
+          			<p>Já pensaste quem gostarias de ver na próxima edição da SET?</p>
+          			<p>Participa já e ajuda-nos a organizar o melhor evento de sempre.</p>
 				</div>
 			</div>
-
-			<!-- TODO: escolher o que fica melhor
-			<div class="row"> 
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4">
-					<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 300px; height: 300px;">
-					<h2>Heading</h2>
-	      			<p>
-	      				Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-	      			<p>
-	      				<a class="btn btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Recomendar</a>
-	      			</p>
-				</div>
-				<div class="col-lg-4"></div>
-			</div>
-			-->
-
 		</div>
 
 		<div id="sponsorship-container" class="container-fluid fixed-height-container">
 			<h1>Patrocínios</h1>
+			<p class="push-btn-middle">
+				<a class="btn btn-phantom-neg" 
+					target="blank"
+					href="#sponsorship-container" role="button">INSERIR TEXTO
+				</a>
+  			</p>
 		</div>
 
 		
@@ -194,7 +191,7 @@
 			
 		</div>
 
-		<hr class="footer-divider">
+		<hr id="contacts-anchor" class="footer-divider">
 		
 		<div id="map" class="container fixed-height-container">
 			<div id="contacts">  
