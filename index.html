@@ -426,7 +426,8 @@
     	<script type="text/javascript" src="js/oradorFlipScript.js"></script>
     	<script>
     		// create a map in the "map" div, set the view to a given place and zoom
-			var map = L.map('map').setView([38.7425995, -9.3019505], 13);
+			var map = L.map('map', {scrollWheelZoom:false}).setView([38.7425995, -9.3019505], 13);
+			
 
 			// add an OpenStreetMap tile layer
 			L.tileLayer(
