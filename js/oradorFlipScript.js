@@ -14,7 +14,7 @@ $(document).ready(function(){
         if(elem.data('flipped')){}
         else
         {
-            elem.fadeTo("fast", 0.2);
+            elem.stop(true,true).fadeTo("fast", 0.2);
             elem.siblings('.oradorData').slideToggle(1500);
             elem.data("flipped",true);
         }
@@ -27,8 +27,8 @@ $(document).ready(function(){
         var elem = $(this);
 
             if(elem.data('flipped')){
-                elem.fadeTo(1000, 1.0);
-                elem.siblings('.oradorData').slideToggle(1000);
+                elem.stop(true,true).fadeTo(1000, 1.0);
+                elem.siblings('.oradorData').slideToggle(1000, function(){ var x = $(this); x.clearQueue(); });
                 elem.data("flipped",false); 
             }
         });
