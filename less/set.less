@@ -62,6 +62,11 @@ h3 { font-weight: 500; }
 	
 }
 
+.row{
+	margin-left:auto;
+	margin-right:auto;
+}
+
 #jumbo-carousel{
 
 	  	height: 600px;
@@ -250,14 +255,23 @@ footer{
 #speakers-container{
 	
 	text-align: center;
-	padding: 50px;
+	padding: 50px 0 0 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: none;
 
 	//background-color: @set-light-blue;
+
+	#speakers-row{
+		//background-color: #07B4FF;
+
+		#orador2 { background-color: #006E9E;}
+	}
 
 }
 
 #sponsorship-container {
-	background-color: @set-light-blue;
+	background-color: white;
 }
 
 #team-container {
@@ -346,89 +360,101 @@ footer{
 }
 
 
+.orador, .oradorSmall, .oradorLarge{
+	float:left;
+    //margin:4px;
+    
+    /* Giving the orador div a relative positioning: */
+    position:relative;
+    cursor:pointer;
+
+    .oradorTrigger{
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    z-index: 2;	
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0;
+	}
+
+	.oradorData{
+	    /* Hiding the .oradorData div */
+	    background-color: rgba(000,000,000,0.7);
+	    //background-color: rgba(200,200,200,0.7);
+	    width:100%;
+	    height:100%;
+	    display:none;
+	    
+
+	    //new
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    z-index: 1;
+
+
+	    .oradorDescription{
+		    font-size:1em;
+		    font-color:#FFF;
+		    //font-weight:bold;
+		    padding:15% 5% 5% ;
+		    font-style:italic;
+		    height:75%;
+		    color: white;
+		}
+	}
+
+	.oradorFlip{
+	    /*  The orador div will be positioned absolutely with respect
+	        to its parent .orador div and fill it in entirely */
+
+	    position:absolute;
+	    left:0;
+	    top:0;
+	    width:100%;
+	    height:100%;
+	    //border:1px solid #ddd;
+	    //z-index:1000;
+
+	    &:hover{
+		    //border:1px solid #999;
+
+		    /* CSS3 inset shadow: */
+		    -moz-box-shadow:0 0 30px #999 inset;
+		    -webkit-box-shadow:0 0 30px #999 inset;
+		    box-shadow:0 0 30px #999 inset;
+		}
+
+		img{
+		    /* Centering the logo image in the middle of the .oradorFlip div */
+		    position:absolute;
+		    width:100%;
+		    height:100%;
+		    top:0%;
+		    left:0%;
+		    //z-index:1002;
+		}
+	}
+}
 
 .orador{
     width:180px;
     height:180px;
-    float:left;
-    margin:4px;
-    font-color: #FFF;
-    /* Giving the orador div a relative positioning: */
-    position:relative;
-    cursor:pointer;
+    
 }
 
 .oradorSmall{
     width:270px;
     height:270px;
-    float:left;
-    margin:4px;
-    font-color: #FFF;
-    /* Giving the orador div a relative positioning: */
-    position:relative;
-    cursor:pointer;
 }
 
 .oradorLarge{
     width:360px;
     height:360px;
-    float:left;
-    margin:4px;
-
-    /* Giving the orador div a relative positioning: */
-    position:relative;
-    cursor:pointer;
 }
 
-.oradorFlip{
-    /*  The orador div will be positioned absolutely with respect
-        to its parent .orador div and fill it in entirely */
 
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    border:1px solid #ddd;
-    z-index:1000;
-}
-
-.oradorFlip:hover{
-    border:1px solid #999;
-
-    /* CSS3 inset shadow: */
-    -moz-box-shadow:0 0 30px #999 inset;
-    -webkit-box-shadow:0 0 30px #999 inset;
-    box-shadow:0 0 30px #999 inset;
-}
-
-.oradorFlip img{
-    /* Centering the logo image in the middle of the .oradorFlip div */
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0%;
-    left:0%;
-    z-index:1002;
-}
-
-.oradorData{
-    /* Hiding the .oradorData div */
-    /*background-color: rgba(000,000,000,0.7);*/
-    background-color: rgba(200,200,200,0.7);
-    width:100%;
-    height:100%;
-    display:none;
-}
-
-.oradorDescription{
-    font-size:11px;
-    font-color:#FFF;
-    font-weight:bold;
-    padding:15% 5% 5% ;
-    font-style:italic;
-    height:75%;
-}
 
 .oradorURL{
     font-size:10px;
