@@ -14,7 +14,7 @@ $(document).ready(function(){
         if(elem.data('flipped')){}
         else
         {
-            elem.stop(true,true).fadeTo("fast", 0.2);
+            elem.stop(true,true).fadeTo(1500, 0.2);
             elem.siblings('.oradorData').slideToggle(1500);
             elem.data("flipped",true);
         }
