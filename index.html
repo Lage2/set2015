@@ -210,20 +210,20 @@
 					href="faq/index.html" role="button">FAQ
 				</a>
   			</p>
-			<div class="sponsorship-section">
+			<div class="sponsorship-section" style="display: none;">
 				<h1>Patrocinador Principal</h1>
 				<div class = "sponsors_list">
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 				</div>
 			</div>
-			<div class="sponsorship-section">
+			<div class="sponsorship-section" style="display: none;">
 				<h1>Patrocinadores Ouro</h1>
 				<div class = "sponsors_list">
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 				</div>
 			</div>
-			<div class="sponsorship-section">
+			<div class="sponsorship-section" style="display: none;">
 				<h1>Patrocinadores Prata</h1>
 				<div class = "sponsors_list">
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
@@ -234,7 +234,7 @@
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 				</div>
 			</div>
-			<div class="sponsorship-section">
+			<div class="sponsorship-section" style="display: none;">
 				<h1>Patrocinadores Bronze</h1>
 				<div class = "sponsors_list">
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
@@ -246,7 +246,7 @@
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 				</div>
 			</div>
-			<div class="sponsorship-section">
+			<div class="sponsorship-section" style="display: none;">
 				<h1>Apoios</h1>
 				<div class = "sponsors_list">
 					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
@@ -498,26 +498,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
-		<script>
-		function fade(fadein, fadeout)
-		{
-			var div = document.getElementById(fadein);
-			var container = document.getElementById(fadeout);
-			
-			for(var i =0; i<container.children.length; i++)
-			{
-				$('#'+container.children[i].id).fadeOut();
-			}
-			
-			$('#'+fadein).fadeIn('slow');
-			
-		}
-		
-		function change_src(id, src)
-		{
-			document.getElementById(id).src = src;			
-		}
-		</script>
+		<script src="js/fading.js"></script>
     	<script type="text/javascript" src="js/oradorFlipScript.js"></script>
     	<script>
     		// create a map in the "map" div, set the view to a given place and zoom
