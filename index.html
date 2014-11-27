@@ -17,10 +17,17 @@
 		<link href="css/localizacoes.css" rel="stylesheet">
 		<link href="css/patrocinios.css" rel="stylesheet">
 
+    	<!-- Leaflet Maps -->
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+		<!-- WebFonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400' rel='stylesheet' type='text/css'>
+
 	</head>
 	<body>
 		<div id="navigation">
-			<nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 				<div class="container-fluid">
 					
 					<div class="navbar-header navbar-left">
@@ -38,8 +45,8 @@
 					</div>
 
 					<div id="ist-logo" class="collapse navbar-collapse navbar-right">
-						<a class="navbar-brand" href="http://tecnico.ulisboa.pt/">
-							<img class="collapsed" src="img/set_media/tecnico_small.png" alt="IST Logo">
+						<a class="navbar-brand" target="blank" href="http://tecnico.ulisboa.pt/">
+							<img class="collapsed" src="img/set_media/tecnico_neg_big.png" alt="IST Logo">
 						</a>
 					</div>
 
@@ -51,9 +58,8 @@
 							<!--<li><a id="ist-logo" href="http://tecnico.ulisboa.pt/"><img src="img/set_media/tecnico_small.png" alt=""></a></li>-->
 							<li><a href="#speakers-container">Oradores</a></li>
 							<li><a href="#sponsorship-container">Patrocínios</a></li>
+							<li><a href="#contacts-anchor">Contactos</a></li>
 							<li><a href="#team-container">Organização</a></li>
-							<li><a href="#history-container">História</a></li>
-							<li><a href="#contacts-container">Contactos</a></li>
 						</ul>
 					</div>
 
@@ -74,10 +80,12 @@
 					<img src="img/examples/example1.jpg" alt="First slide">
 					<div class="container">
             			<div class="carousel-caption">
-							<h1>Recruitment</h1>
-							<h2>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum venenatis eros, a ullamcorper urna condimentum et. Morbi mauris felis, consectetur ac dictum sit amet, bibendum ullamcorper sapien. Etiam diam augue.
-							</h2>
+            				<div class="caption-container">
+								<h1>Recruitment</h1>
+								<h2>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum venenatis eros, a ullamcorper urna condimentum et. Morbi mauris felis, consectetur ac dictum sit amet, bibendum ullamcorper sapien. Etiam diam augue.
+								</h2>
+							</div>	
 			            </div>
           			</div>
 				</div>
@@ -85,10 +93,12 @@
 					<img src="img/examples/example2.jpg" alt="Second slide">
 					<div class="container">
             			<div class="carousel-caption">
-							<h1>Official Date</h1>
-							<h2>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus urna nec turpis interdum volutpat. Suspendisse potenti. Curabitur vitae magna rutrum ex volutpat semper. Nam enim nunc, accumsan vitae ex.
-							</h2>
+            				<div class="caption-container">
+								<h1>Official Date</h1>
+								<h2>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus urna nec turpis interdum volutpat. Suspendisse potenti. Curabitur vitae magna rutrum ex volutpat semper. Nam enim nunc, accumsan vitae ex.
+								</h2>
+			            	</div>
 			            </div>
           			</div>
 				</div>
@@ -96,10 +106,12 @@
 					<img src="img/examples/example3.jpg" alt="Third slide">
 					<div class="container">
             			<div class="carousel-caption">
-							<h1>Social Network Marketing</h1>
-							<h2>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus risus, pellentesque a congue rutrum, varius id dolor. Pellentesque at velit sit amet nibh ultricies porta. Fusce lobortis justo quis.
-							</h2>
+            				<div class="caption-container">
+								<h1>Social Network Marketing</h1>
+								<h2>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus risus, pellentesque a congue rutrum, varius id dolor. Pellentesque at velit sit amet nibh ultricies porta. Fusce lobortis justo quis.
+								</h2>
+							</div>
 			            </div>	
           			</div>
 				</div>
@@ -117,38 +129,74 @@
 			
 			<div class="row">
 				<div class="col-md-6">
-					<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 300px; height: 300px;">
-					<p>
-          				<a class="btn btn-primary" href="#" role="button">Recomendar</a>
+					<img class="img-circle" src="./img/speakers/unknown-person.jpg" alt="Generic placeholder image" style="width: 300px; height: 300px;">
+					<p class="push-btn-middle">
+          				<a class="btn btn-phantom" 
+          					target="blank"
+          					href="https://docs.google.com/forms/d/1gx-1eJP2OuLV2XJGa_sE9k02HOi84Fw6mLpr9qq-JxE/viewform" role="button">Recomendar
+          				</a>
           			</p>
 				</div>
-				<div class="col-md-6 center-text">
-					<h2>Heading</h2>
-          			<p>
-          				Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-          			</p>
+				
+				<div class="col-md-6 center-text" style="text-align:right;"	>
+					<h1 >Oradores</h1>
+          			<p>Já pensaste quem gostarias de ver na próxima edição da SET?</p>
+          			<p>Participa já e ajuda-nos a organizar o melhor evento de sempre.</p>
 				</div>
+				
 			</div>
 
-			<!-- TODO: escolher o que fica melhor
-			<div class="row"> 
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4">
-					<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 300px; height: 300px;">
-					<h2>Heading</h2>
-	      			<p>
-	      				Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-	      			<p>
-	      				<a class="btn btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Recomendar</a>
-	      			</p>
-				</div>
-				<div class="col-lg-4"></div>
-			</div>
-			-->
+			<hr id="speakers-anchor" class="footer-divider">
 
+			<div id="speakers-row">
+				
+				<div class="row">
+					<div title="Click to flip" class="oradorLarge">
+					    <div class="oradorFlip">
+					        <img alt="More about google" src="./img/speakers/vasco_cropped.PNG">
+					    </div>
+
+					    <div class="oradorData">
+					        <div class="oradorDescription">
+					            
+					        </div>
+					    </div>
+					    <div class="oradorTrigger"></div>
+					</div>
+					<div id= "rightDescrip" class="speaker-description">
+						Vasco Calais Pedro<br></br>
+
+						Bio:<br></br>
+
+						Dr. Vasco Pedro is a Co-founder and CEO of Unbabel, Inc, a Y Combinator startup that combines machine translation and post-editing to eliminate language barriers between companies and their customers. Previously he was research faculty at the Technical University of Lisbon, a Co-founder of Dezine.com and the Founder and CEO of Bueda.com. Dr. Pedro holds a PHD and a Masters in Language Technologies from Carnegie Mellon University in the field of computational semantics. He is a Fulbright Scholar, a mentor and advisor to startups and serial entrepreneur. He has spent the last 6 years working on problems related to NLP and Machine Learning in startups, enterprise and academia.<br></br>
+
+						Unbabel is a human quality translation service. By combining Machine with Human Translation we capture the best of both worlds: the speed and scale of machine and crowd translation, key for the quick turnaround and large content volumes, and the Human Quality, indispensable for communicating with customers. And the cherry on top is our affordable price. Working with customers like Coursera, Yummly and Pinterest. Unbabel is backed by Google Ventures, Matrix Partners, Y Combinator and others. The company was founded in August 2013 and is headquartered in San Francisco, California with offices in Lisbon, Portugal.
+					</div>
+				</div>
+				
+				<div id="orador2" class="row">
+					<div title="Click to flip" class="oradorLarge pull-right">
+					    <div class="oradorFlip">
+					        <img alt="More about google" src="./img/speakers/JohanAndersson_StudioManager_ParadoxDevelopmentStudio_1.jpg">
+					    </div>
+
+					    <div class="oradorData">
+					        <div class="oradorDescription">
+					            The company that redefined grand strategy
+					        </div>
+					    </div>
+					    <div class="oradorTrigger"></div>
+					</div>
+					<div id= "leftDescrip" class="speaker-description">
+						CENAS AND STUFF WILL GO HERE
+					</div>
+				</div>
+				
+			</div>
 		</div>
 
 		<div id="sponsorship-container" class="container-fluid fixed-height-container">
+<<<<<<< HEAD
 			<!-- <h1>Patrocínios</h1> -->
 			<a id="sponsorship-clickme" href="faq/index.html" target="_blank">Click me for faq</a>
 			<div class="sponsorship-section">
@@ -201,52 +249,20 @@
 			</div>
 			
 			
+=======
+			<h1>Patrocínios</h1>
+			<p class="push-btn-middle">
+				<a class="btn btn-phantom" 
+					target="blank"
+					href="./empresas/CadernoPatrocinador.pdf" role="button">Caderno de Patrocinadores
+				</a>
+  			</p>
+>>>>>>> origin/gh-pages
 		</div>
 
-		<div id="team-container" class="container-fluid fixed-height-container">
-			<h1>Equipa</h1>
-			<div class="row">Apresentar a equipa?</div>
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Organização</h2>
-				</div>
-			</div>
-	
-			<div class="row">
-				<div class="col-md-12">
-					<table id="wrapper">
-						<tr>
-							<td id="lage2-group" class="student-group">
-								<a href="http://lage2.ist.utl.pt/" target="blank">
-									<img class="student-group-logo" src="img/organization/lage2.png">
-								</a>
-							</td>
-							<td id="neiist-group" class="student-group">
-								<a href="http://neiist.ist.utl.pt/" target="blank">
-									<img class="student-group-logo" src="img/organization/NEIIST[white].png">
-								</a>
-							</td>
-							<td id="ieee-group" class="student-group">
-								<a href="http://www.ieee-ist.org/" target="blank">
-									<img class="student-group-logo" src="img/organization/IEEE.png">
-								</a>
-							</td>
-							<td id="neeti-group" class="student-group">
-								<a href="http://neerci.ist.utl.pt/" target="blank">
-									<img class="student-group-logo" src="img/organization/NEETI.png">
-								</a>
-							</td>
-							<td id="n3e-group" class="student-group">
-								<a href="http://n3e.tecnico.ulisboa.pt/" target="blank">
-									<img class="student-group-logo" src="img/organization/N3E.png">
-								</a>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
+		
 
+		<!-- DEPRECATED
 		<div id="history-container" class="container-fluid fixed-height-container ">
 			<div id="history-carousel" class="carousel slide center-block" data-ride="carousel">
 	
@@ -276,16 +292,41 @@
       		<a class="right carousel-control" href="#history-carousel" role="button" data-slide="next">
       			<span class="glyphicon glyphicon-chevron-right"></span>
       		</a>
-      		
 		</div>	
+		-->
 			
 		</div>
 
-		<hr class="footer-divider">
-
+		<hr id="contacts-anchor" class="footer-divider">
+		
+		<div id="map" class="container fixed-height-container">
+			<div id="contacts">  
+				
+                <h2><span class="glyphicon glyphicon-map-marker blue"></span> Localização </h2>
+                <address class="contacts-info">
+                    <strong>Instituto Superior Técnico - Campus Taguspark</strong><br>
+                    Av. Prof. Doutor Aníbal Cavaco Silva<br> 2744-016 Porto
+                    Salvo<br>
+                </address>
+                <a href="mailto:set@lage2.tecnico.ulisboa.pt">
+                <p class="contacts-info">
+                	<span class="glyphicon glyphicon-envelope"></span> set&#64;lage2.tecnico.ulisboa.pt
+                	</p>
+                </a>
+                <p class="contacts-info">
+                	<span class="glyphicon glyphicon-earphone"></span>
+                		(&#43; 351) 214 233 579  Extensão: 5179
+                </p>
+                <p class="contacts-info">
+                	<span class="glyphicon glyphicon-eye-open"></span>
+                	Se ainda não conhece o nosso <i>campus</i>, faça já <a href="https://tecnico.ulisboa.pt/misc/vv-taguspark/tour.swf" target="blank">uma visita guiada</a>.
+                </p>
+            </div>
+        </div>
+        
 		<div id="contacts-container" class="container fixed-height-container">
-			<h1>Contactos</h1>
 			<div class="row">
+				<!--
 				<div class="col-md-6">
                     <div>  
                         <h2>Localização <span class="glyphicon glyphicon-map-marker"></span></h2>
@@ -294,7 +335,7 @@
                             Av. Prof. Doutor Aníbal Cavaco Silva<br> 2744-016 Porto
                             Salvo<br>
                         </address>
-                        <p class="contacts-info"><!--<a href="mailto:set@lage2.tecnico.ulisboa.pt"> TODO: por o link live -->
+                        <p class="contacts-info">
                         	<span class="glyphicon glyphicon-envelope"></span> set&#64;lage2.tecnico.ulisboa.pt
                         </p>
                         <p class="contacts-info">
@@ -306,12 +347,16 @@
                         	Se ainda não conhece o nosso <i>campus</i>, faça já <a href="https://tecnico.ulisboa.pt/misc/vv-taguspark/tour.swf" target="blank">uma visita guiada</a>.
                         </p>
                     </div>
+
                 </div>
+            	-->
+                <!-- Google Maps - TODO: remover totalmente
                 <div class="col-md-6">
                 	<iframe width="450" height="300" 
                 			frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Av.%20Prof.%20Dr.%20Cavaco%20Silva%2C%20Porto%20Salvo%2C%20Portugal&key=AIzaSyApdTdEggK0dmdfEY-ZanjWXFV3vAWTK1o">
                 	</iframe>
             	</div>
+            	-->
             	<div class="col-md-12">
             		<h2>Como chegar</h2>
 					<div id="train-option" class="transportation-option" onclick="fade('train-option_text')">
@@ -367,22 +412,91 @@
 			</div>
 		</div>
 
+		<div id="team-container" class="container-fluid fixed-height-container">
+			
+			<div class="row todo">
+				<p class="push-btn-middle">
+					<a class="btn btn-lg btn-phantom-neg" href="./equipa.html">
+						Conhece a Equipa
+					</a>
+				</p>
+
+				<hr class="footer-divider">
+			</div>
+
+			<!--
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Organização</h2>
+				</div>
+			</div>
+			-->
+			
+
+			<div class="row">
+				<div class="col-md-12">
+					<table id="wrapper">
+						<tr>
+							<td class="student-group"><br></td>
+							<td id="lage2-group" class="student-group">
+								<a href="http://lage2.ist.utl.pt/" target="blank">
+									<img class="student-group-logo" src="img/organization/lage2.png">
+								</a>
+							</td>
+							<td id="ieee-group" class="student-group">
+								<a href="http://www.ieee-ist.org/" target="blank">
+									<img id="ieee-logo" class="student-group-logo" src="img/organization/ieee_white.png">
+								</a>
+							</td>
+							<td id="neiist-group" class="student-group">
+								<a href="http://neiist.ist.utl.pt/" target="blank">
+									<img id="neiist-logo" class="student-group-logo" src="img/organization/neiist.png">
+								</a>
+							</td>
+							<td id="neegi-group" class="student-group">
+								<a href="http://neegi.tecnico.ulisboa.pt/" target="blank">
+									<img class="student-group-logo" src="img/organization/neegi.png">
+								</a>
+							</td>
+							<td id="neeti-group" class="student-group">
+								<a href="http://neerci.ist.utl.pt/" target="blank">
+									<img id="neeti-logo" class="student-group-logo" src="img/organization/NEETI.png">
+								</a>
+							</td>
+							<td id="n3e-group" class="student-group">
+								<a href="http://n3e.tecnico.ulisboa.pt/" target="blank">
+									<img class="student-group-logo" src="img/organization/N3E.png">
+								</a>
+							</td>
+							<td class="student-group"><br></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
 		<hr class="footer-divider">
 
 		<footer>
 			<div class="container">
-			<p class="pull-right">
-				<span class="glyphicon glyphicon-copyright-mark"></span><!--&copy--> <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
-				<br>
-				Fotos <i>by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
-				<br>
-				<i>Built with</i> <a href="http://getbootstrap.com/">Bootstrap</a>
-			</p>
+				<div id="ist-logo-footer" class="pull-left">
+					<a href="http://tecnico.ulisboa.pt/">
+						<img class="collapsed" src="img/set_media/tecnico_big.png" alt="IST Logo">
+					</a>
+				</div>
+				<p class="pull-right">
+					<span class="glyphicon glyphicon-copyright-mark"></span><!--&copy--> <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
+					<br>
+					Fotos <i>by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
+					<br>
+					<i>Built with</i> <a href="http://getbootstrap.com/">Bootstrap</a>
+				</p>
 			</div>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 		<script>
 		function fade(id)
 		{
@@ -395,5 +509,22 @@
 			
 		}
 		</script>
+=======
+    	<script type="text/javascript" src="js/oradorFlipScript.js"></script>
+    	<script>
+    		// create a map in the "map" div, set the view to a given place and zoom
+			var map = L.map('map', {scrollWheelZoom:false}).setView([38.7425995, -9.3019505], 13);
+			
+
+			// add an OpenStreetMap tile layer
+			L.tileLayer(
+				'http://{s}.tile.osm.org/{z}/{x}/{y}.png', 
+				{attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+			// add a marker in the given location, attach some popup content to it and open the popup
+			L.marker([38.7425995, -9.3019505]).addTo(map)
+    			.openPopup();
+    	</script>
+>>>>>>> origin/gh-pages
 	</body>
 </html>

@@ -1,4 +1,5 @@
 @import "bootstrap.less";
+@import url(http://fonts.googleapis.com/css?family=Roboto:900,700,400);
 
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
@@ -25,7 +26,7 @@
 
 /* Typography - Font, line-height, and color for body text, headings, and more. */
 @font-size-base: 16px;
-
+@font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif; 
 
 /* Navbar */
 @navbar-height:						55px;
@@ -36,6 +37,10 @@
 /* Navs - shared navs styles*/
 @nav-link-hover-bg:			@set-dark-blue;
 
+
+h1 { font-weight: 900; }
+h2 { font-weight: 700; }
+h3 { font-weight: 500; }
 
 
 /*****************************************************************
@@ -57,6 +62,11 @@
 	
 }
 
+.row{
+	margin-left:auto;
+	margin-right:auto;
+}
+
 #jumbo-carousel{
 
 	  	height: 600px;
@@ -68,9 +78,20 @@
 
 		.carousel-caption {
 
-			z-index: 10;
+			z-index: 4;
 			margin-bottom: 12.5%;
 			text-align: left;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(255, 183, 0, .2); //orange filter pode ser mudado
+
+			.caption-container{
+				width: 50%;
+				margin: 0px auto;
+				padding-top: 10%;
+			}
 
 			h1 {
 				font-weith: bolder;
@@ -87,6 +108,8 @@
 			height: 600px;
 			
 		}
+
+		.carousel-control { z-index: 5;}
 }	
 
 #history-carousel {
@@ -142,6 +165,32 @@
 	font-size: 1.5em;
 }
 
+.btn-phantom {
+	border: 1px solid @set-primary-blue;
+	color: @set-primary-blue;
+	background-color: transparent;
+	&:hover{
+		color: white; //whitesmoke;
+		background-color: @set-primary-blue;
+	}
+}
+
+.btn-phantom-neg {
+	border: 1px solid white; //whitesmoke;
+	color: white; //whitesmoke;
+	opacity: .9;
+
+	&:hover{
+		color: @set-primary-blue;
+		background-color: white; //whitesmoke;
+	}
+
+}
+
+.push-btn-middle {
+	text-align: center;
+}
+
 footer{
 	
 	p {
@@ -166,16 +215,32 @@ footer{
  *****************************************************************/
 #set-logo{
 	padding: 0;
+	padding-left: 15px;
 	z-index: 5;
+
 	/*@media screen and (max-width: @grid-float-breakpoint-max){
 	 	display: none;
  	}*/
+
 }
 
 #ist-logo{
 	margin-left: 20px;
+	width: 90px;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
 }
 
+#ist-logo-footer {
+	width: 120px;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
 
 #nav-collapse{
 	
@@ -190,16 +255,27 @@ footer{
 #speakers-container{
 	
 	text-align: center;
-	padding: 50px;
+	padding: 50px 0 0 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: none;
 
 	//background-color: @set-light-blue;
+
+	#speakers-row{
+		//background-color: #07B4FF;
+
+		#orador2 { background-color: #006E9E;}
+	}
+
 }
 
 #sponsorship-container {
-	background-color: @set-primary-orange; 	//TODO: remover, apenas para fins de testes
+	background-color: white;
 }
 
 #team-container {
+	min-height: 100px;
 	background-color: @set-dark-blue;
 	
 	#wrapper {
@@ -227,6 +303,18 @@ footer{
 	margin: 30px 0;
 	height: 520px; //TODO: corrigir para web-responsive
 
+}
+
+#contacts{
+	
+	position: absolute;
+	left:0; 
+	bottom: 0;
+	z-index: 4;
+	padding: 25px;
+	background: rgba(242, 240, 224, 0.6);
+	color: black;
+	font-size: 1.25em;
 }
 
 #contacts-container {
@@ -267,7 +355,145 @@ footer{
 }
 
 
+.blue {
+	color: @set-primary-blue;
+}
+
+.speaker-description{
+	width: 65%;
+	height: 360px;
+	font-size: 1em;
+	color:#000;
+	overflow:auto;
+	position:relative;
+	left:5%;
+	right:10%;
+}
+
+.orador, .oradorSmall, .oradorLarge{
+	float:left;
+    //margin:4px;
+    
+    /* Giving the orador div a relative positioning: */
+    position:relative;
+    cursor:pointer;
+
+    .oradorTrigger{
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    z-index: 2;	
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0;
+	}
+
+	.oradorData{
+	    /* Hiding the .oradorData div */
+	    background-color: rgba(000,000,000,0.7);
+	    //background-color: rgba(200,200,200,0.7);
+	    width:100%;
+	    height:100%;
+	    display:none;
+	    
+
+	    //new
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    z-index: 1;
+
+
+	    .oradorDescription{
+		    font-size:1em;
+		    font-color:#FFF;
+		    //font-weight:bold;
+		    padding:15% 5% 5% ;
+		    font-style:italic;
+		    height:75%;
+		    color: white;
+
+		}
+	}
+
+	.oradorFlip{
+	    /*  The orador div will be positioned absolutely with respect
+	        to its parent .orador div and fill it in entirely */
+
+	    position:absolute;
+	    left:0;
+	    top:0;
+	    width:100%;
+	    height:100%;
+	    //border:1px solid #ddd;
+	    //z-index:1000;
+
+	    &:hover{
+		    //border:1px solid #999;
+
+		    /* CSS3 inset shadow: */
+		    -moz-box-shadow:0 0 30px #999 inset;
+		    -webkit-box-shadow:0 0 30px #999 inset;
+		    box-shadow:0 0 30px #999 inset;
+		}
+
+		img{
+		    /* Centering the logo image in the middle of the .oradorFlip div */
+		    position:absolute;
+		    width:100%;
+		    height:100%;
+		    top:0%;
+		    left:0%;
+		    //z-index:1002;
+		}
+	}
+}
+
+.orador{
+    width:180px;
+    height:180px;
+    
+}
+
+.oradorSmall{
+    width:270px;
+    height:270px;
+}
+
+.oradorLarge{
+    width:360px;
+    height:360px;
+}
+
+
+
+.oradorURL{
+    font-size:10px;
+    font-color:#FFF;
+    font-weight:bold;
+    alignment:center;
+    height:25%;
+}
+
+.clear{
+    /* This class clears the floats */
+    clear:both;
+}
+
 
 
 
 /******************************************************************************************/
+
+.student-group{
+	width: 30px;
+}
+
+#ieee-logo {
+	width: 50px;
+	heigh: auto;
+}
+
+.todo{
+	display: none;
+}
