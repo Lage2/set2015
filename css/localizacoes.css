@@ -1,0 +1,9 @@
+.hidden_transport_info
+{
+	display: none;
+}
+
+.transportation-option
+{
+	cursor: pointer; 
+}
