@@ -5,10 +5,9 @@ function sinple_fade_inout(fadein)
 	var element = document.getElementById(fadein);
 	
 	if(element.style.display == 'none' || element.style.display == '')
-		$('#'+fadein).fadeIn('slow');
-		
+		$('#'+fadein).fadeIn('fast');
 	else
-		$('#'+fadein).fadeOut('slow');
+		$('#'+fadein).fadeOut('fast');
 	
 }	
 
@@ -19,10 +18,11 @@ function fade(fadein, fadeout)
 	
 	for(var i =0; i<container.children.length; i++)
 	{
-		$('#'+container.children[i].id).fadeOut();
+		$('#'+container.children[i].id).fadeOut("fast");
 	}
 	
-	$('#'+fadein).fadeIn('slow');
+	$('#'+fadein).fadeIn('fast');
+	
 	
 }
 
