@@ -7,6 +7,14 @@
           border-radius: @radius;
 }
 
+.background-size(@bg-size) {
+    -webkit-background-size: @bg-size;
+       -moz-background-size: @bg-size;
+         -o-background-size: @bg-size;
+            background-size: @bg-size;
+}
+
+
 /*****************************************************************
  * 01 - LESS Variable definition & customization 
  * SEE: http://getbootstrap.com/customize/#less-variables-section
@@ -534,6 +542,34 @@ footer{
 
 
 
+/******************************************************************************************
+ *  04 - Páginas dos Oradores
+ ******************************************************************************************/
+.speaker-holder{
+	
+	margin-top: 60px;
+
+	.speaker-img-holder {
+		height: 400px;
+		width: 400px;
+		background-color: black;
+		border-radius: 50%;	
+		margin: 0 auto;
+	}
+
+	.speaker-media {
+		color: @set-dark-blue;
+		font-size: 2em;
+		text-align: center;
+		a { color: @set-dark-blue; text-decoration: none; &:hover{ color: @set-xdark-blue;}; }
+	}
+
+	#vasco-pedro { 
+		background:  black url(../img/speakers/vasco-pedro.png) no-repeat;
+		.background-size(100%);		
+
+	}
+}
 
 
 
