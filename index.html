@@ -14,6 +14,8 @@
 
          <!-- Bootstrap -->
     	<link href="css/set.css" rel="stylesheet">
+		<link href="css/localizacoes.css" rel="stylesheet">
+		<link href="css/patrocinios.css" rel="stylesheet">
 
     	<!-- Leaflet Maps -->
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
@@ -192,6 +194,7 @@
 		</div>
 
 		<div id="sponsorship-container" class="container-fluid fixed-height-container">
+			<!-- <h1>Patrocínios</h1> -->
 			<h1>Patrocínios</h1>
 			<p class="push-btn-middle">
 				<a class="btn btn-phantom" 
@@ -199,6 +202,60 @@
 					href="./empresas/CadernoPatrocinador.pdf" role="button">Caderno de Patrocinadores
 				</a>
   			</p>
+			<p class="push-btn-middle">
+				<a class="btn btn-phantom" 
+					target="blank"
+					href="faq/index.html" role="button">FAQ
+				</a>
+  			</p>
+			<div class="sponsorship-section" style="display: none;">
+				<h1>Patrocinador Principal</h1>
+				<div class = "sponsors_list">
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+				</div>
+			</div>
+			<div class="sponsorship-section" style="display: none;">
+				<h1>Patrocinadores Ouro</h1>
+				<div class = "sponsors_list">
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+				</div>
+			</div>
+			<div class="sponsorship-section" style="display: none;">
+				<h1>Patrocinadores Prata</h1>
+				<div class = "sponsors_list">
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+				</div>
+			</div>
+			<div class="sponsorship-section" style="display: none;">
+				<h1>Patrocinadores Bronze</h1>
+				<div class = "sponsors_list">
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+				</div>
+			</div>
+			<div class="sponsorship-section" style="display: none;">
+				<h1>Apoios</h1>
+				<div class = "sponsors_list">
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+					<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
+				</div>
+			</div>
 		</div>
 
 		
@@ -300,52 +357,58 @@
             	-->
             	<div class="col-md-12">
             		<h2>Como chegar</h2>
-					<div id="train-option" class="transportation-option">
-						<h3><img class="transportation-img" src="img/contacts/train.png">Comboio</h3>
-						<p>
-							Há ligações ao campus a partir das linhas ferroviárias Lisboa-Sintra e Lisboa-Cascais. A empresa que tem a concessão do transporte público rodoviário para esta zona é a <a href="http://www.vimeca.pt/" target="blank">Vimeca Transportes.</a>
-						</p>
+					<div id="train-option" class="transportation-option" onclick="fade('train-option_text', 'transportation-option-info')" onmouseover="change_src('train-option-img', 'img/contacts/train_white.png')" onmouseout="change_src('train-option-img', 'img/contacts/train.png')">
+						<h3><img id="train-option-img" class="transportation-img" src="img/contacts/train.png">Comboio</h3>
 					</div>
-            		<div id="bus-option" class="transportation-option">
-            			<h3><img class="transportation-img" src="img/contacts/bus.png">Autocarro</h3>
-						<p>
-							A empresa de transporte rodoviário Vimeca efectua algumas carreiras que servem o campus do Taguspark. Para informação actualizada e detalhada sobre os percursos e horários visite, por favor, o web site da Vimeca.
-						</p>
-						<p class="sub-option">
-							<b>Carreira Nº 15</b> (Marquês de Pombal - Universidade Católica) frequência de 15 a 180 minutos, entre as 7:20 e as 20:10.
-						</p>
-						<p class="sub-option">
-							<b>Carreira Nº 23</b> (Casal do Cotão - Circulação via Tercena, São Marcos e Taguspark) frequência de 10 a 20 minutos, entre as 06:30 e as 19:20.
-						</p>
-						<p class="sub-option">
-							<b>Carreira Nº 112</b> (Belas - Oeiras) frequência de 15 a 120 minutos, entre as 06:20 e as 00:05.
-						</p>
-						<p class="sub-option">
-							<b>Carreira Nº 119</b> (Paço de Arcos, Estação Norte - Talaíde, Largo) frequência de 20 a 40 minutos, entre as 06:35 e as 20:45.
-						</p>
-						<p class="sub-option">
-							<b>Carreira Nº 125</b> (Paço de Arcos, Estação Norte - Talaíde) frequência de cerca de 20 minutos, entre as 06:25 e as 21:45.
-						</p>
-						<p>
-							Para alunos e funcionários do Técnico Lisboa, é ainda disponibilizado um serviço <a href="http://tecnico.ulisboa.pt/pt/sobre-IST/localizacao/#shuttle" target="blank"><i>Shuttle IST</i></a>, que faz os acessos ao <i>campus Taguspark</i> de forma gratuita, no período das 07:00 às 20:10.
-						</p>
+            		<div id="bus-option" class="transportation-option" onclick="fade('bus-option_text', 'transportation-option-info')" onmouseover="change_src('bus-option-img', 'img/contacts/bus_white.png')" onmouseout="change_src('bus-option-img', 'img/contacts/bus.png')">
+            			<h3><img id="bus-option-img" class="transportation-img" src="img/contacts/bus.png">Autocarro</h3>
             		</div>
-            		<div id="taxi-option" class="transportation-option">
-            			<h3><img class="transportation-img" src="img/contacts/taxi.png">Taxi</h3>
-            			<p>
-	                        Os táxis permitem chegar ao Taguspark a partir de qualquer ponto da cidade, mas os custos também aumentam de acordo com a distância, trânsito e hora. Uma viagem do centro de Lisboa até ao Taguspark tem uma duração de cerca de 30 minutos.
-                        </p>			
+            		<div id="taxi-option" class="transportation-option" onclick="fade('taxi-option_text', 'transportation-option-info')" onmouseover="change_src('taxi-option-img', 'img/contacts/taxi_white.png')" onmouseout="change_src('taxi-option-img', 'img/contacts/taxi.png')">
+            			<h3><img id="taxi-option-img" class="transportation-img" src="img/contacts/taxi.png">Taxi</h3>	
             		</div>
-            		<div id="car-option" class="transportation-option">
-            			<h3><img class="transportation-img" src="img/contacts/car.png">Carro</h3>
-            			<p class="sub-option">
-                            Pela A5 - Auto-estrada Lisboa-Cascais: saída em Cacém/Porto Salvo. A via rápida (Porto Salvo) entre a A5 e o Cacém permite um acesso mais directo ao campus.
-                        </p>
-                        <p class="sub-option">
-                            Pelo IC 19 - saída no Cacém, em direcção a Paço d'Arcos, e ligação ao Campus do IST.
-                        </p>
+            		<div id="car-option" class="transportation-option" onclick="fade('car-option_text', 'transportation-option-info')" onmouseover="change_src('car-option-img', 'img/contacts/car_white.png')" onmouseout="change_src('car-option-img', 'img/contacts/car.png')">
+            			<h3><img id="car-option-img" class="transportation-img" src="img/contacts/car.png">Carro</h3>
             		</div>
-            	</div>
+					<div id="transportation-option-info">
+						<div class="hidden_transport_info" id="train-option_text">
+							<p>Há ligações ao campus a partir das linhas ferroviárias Lisboa-Sintra e Lisboa-Cascais. A empresa que tem a concessão do transporte público rodoviário para esta zona é a <a href="http://www.vimeca.pt/" target="blank">Vimeca Transportes.</a></p>
+						</div>
+						<div class="hidden_transport_info" id="bus-option_text">
+							<p>
+								A empresa de transporte rodoviário Vimeca efectua algumas carreiras que servem o campus do Taguspark. Para informação actualizada e detalhada sobre os percursos e horários visite, por favor, o web site da Vimeca.
+							</p>
+							<p class="sub-option">
+								<b>Carreira Nº 15</b> (Marquês de Pombal - Universidade Católica) frequência de 15 a 180 minutos, entre as 7:20 e as 20:10.
+							</p>
+							<p class="sub-option">
+								<b>Carreira Nº 23</b> (Casal do Cotão - Circulação via Tercena, São Marcos e Taguspark) frequência de 10 a 20 minutos, entre as 06:30 e as 19:20.
+							</p>
+							<p class="sub-option">
+								<b>Carreira Nº 112</b> (Belas - Oeiras) frequência de 15 a 120 minutos, entre as 06:20 e as 00:05.
+							</p>
+							<p class="sub-option">
+								<b>Carreira Nº 119</b> (Paço de Arcos, Estação Norte - Talaíde, Largo) frequência de 20 a 40 minutos, entre as 06:35 e as 20:45.
+							</p>
+							<p class="sub-option">
+								<b>Carreira Nº 125</b> (Paço de Arcos, Estação Norte - Talaíde) frequência de cerca de 20 minutos, entre as 06:25 e as 21:45.
+							</p>
+							<p>
+								Para alunos e funcionários do Técnico Lisboa, é ainda disponibilizado um serviço <a href="http://tecnico.ulisboa.pt/pt/sobre-IST/localizacao/#shuttle" target="blank"><i>Shuttle IST</i></a>, que faz os acessos ao <i>campus Taguspark</i> de forma gratuita, no período das 07:00 às 20:10.
+							</p>
+						</div>
+						<div class="hidden_transport_info" id="taxi-option_text">
+	                        <p>Os táxis permitem chegar ao Taguspark a partir de qualquer ponto da cidade, mas os custos também aumentam de acordo com a distância, trânsito e hora. Uma viagem do centro de Lisboa até ao Taguspark tem uma duração de cerca de 30 minutos.</p>
+                        </div>
+						<div class="hidden_transport_info" id="car-option_text">
+							<p class="sub-option">
+								Pela A5 - Auto-estrada Lisboa-Cascais: saída em Cacém/Porto Salvo. A via rápida (Porto Salvo) entre a A5 e o Cacém permite um acesso mais directo ao campus.
+							</p>
+							<p class="sub-option">
+								Pelo IC 19 - saída no Cacém, em direcção a Paço d'Arcos, e ligação ao Campus do IST.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -433,6 +496,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
+		<script src="js/fading.js"></script>
     	<script type="text/javascript" src="js/oradorFlipScript.js"></script>
     	<script>
     		// create a map in the "map" div, set the view to a given place and zoom

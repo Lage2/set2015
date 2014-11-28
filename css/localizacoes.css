@@ -1,0 +1,31 @@
+.hidden_transport_info
+{
+	border: 2px solid #999999;
+    display: none;
+    width: 100%;
+}
+
+.transportation-option
+{
+	border: 2px solid #999999;
+    border-radius: 5px;
+	cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+}
+
+.transportation-option:hover
+{
+	background-color: #999999;
+	color: #ffffff;
+}
+
+.transportation-option h3
+{
+	margin: 0;	
+}
+
+#transportation-option-info
+{
+}

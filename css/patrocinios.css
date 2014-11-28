@@ -1,0 +1,32 @@
+.sponsorship-section
+{
+	margin-bottom: 25px;
+}
+
+.sponsorship-section h1
+{
+	font-size: 26px;
+	text-align: center;
+}
+
+.sponsorship-section .sponsors_list
+{
+	margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.sponsorship-section .sponsors_list a
+{
+	display: inline-block;
+    height: auto;
+    margin: 1%;
+    width: 40%;
+}
+
+.sponsorship-section .sponsors_list a img
+{
+	max-width: 100%;
+}
