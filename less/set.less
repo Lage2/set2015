@@ -57,7 +57,6 @@ h3 { font-weight: 500; }
 /*****************************************************************
  * 02 - Element Customization 
  *****************************************************************/
-
 .navbar{
 	border: none;
 	border-radius: 0;
@@ -187,12 +186,15 @@ h3 { font-weight: 500; }
 	border: 2px solid @set-dark-blue;
 	color: @set-dark-blue;
 	background-color: transparent;
+	
 	&:hover{
 		color: white; //whitesmoke;
 		background-color: @set-dark-blue;
 	}
-
-	
+	&:active{
+		color: white; //whitesmoke;
+		background-color: @set-dark-blue;
+	}
 }
 
 .phantom-active{
