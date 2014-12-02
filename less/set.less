@@ -57,6 +57,14 @@ h3 { font-weight: 500; }
 /*****************************************************************
  * 02 - Element Customization 
  *****************************************************************/
+
+h1, h2, h3{
+	a { 
+		color: @set-dark-blue; text-decoration:none; 
+		&:hover{ color: @set-primary-blue; text-decoration:none;}
+	}
+}
+
 .navbar{
 	border: none;
 	border-radius: 0;
@@ -109,13 +117,19 @@ h3 { font-weight: 500; }
 			h1 { 
 				font-size: 3em;
 				
+				color: whitesmoke;
+
+
+				
 			}
 
 			.center-text{
 				text-align: center;
 			}
 
-			a { text-decoration: none;
+			h1.a, a { 
+				color: whitesmoke;
+				text-decoration: none;
 
 				&:hover{ color: @set-light-blue; }
 			}

@@ -1,5 +1,8 @@
 //indlude jquery required
 
+//GLOBAL Variable
+active_option = null;
+
 function sinple_fade_inout(fadein)
 {
 	var element = document.getElementById(fadein);
@@ -13,20 +16,36 @@ function sinple_fade_inout(fadein)
 
 function fade(fadein, fadeout)
 {
-	var div = document.getElementById(fadein);
-	var container = document.getElementById(fadeout);
 	
+	if(active_option != fadein){
+
+		if(active_option != null){
+			$('#'+active_option).fadeOut("fast", function(){
+				$('#'+fadein).fadeIn('slow');
+				active_option = fadein;				
+			});
+		}else{
+			$('#'+fadein).fadeIn('slow');
+			active_option = fadein;		
+		}
+
+	}
+
+	/*
 	for(var i =0; i<container.children.length; i++)
 	{
 		$('#'+container.children[i].id).fadeOut("fast");
+		
 	}
 	
 	$('#'+fadein).fadeIn('fast');
-	
+	active_option = fadein;
+	*/
 	
 }
 
 function change_src(id, src)
 {
+	alert("change_src");
 	document.getElementById(id).src = src;			
 }
