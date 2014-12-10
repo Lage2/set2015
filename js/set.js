@@ -1,6 +1,5 @@
-
-
 $(document).ready(function(){
+
     /* The following code is executed once the DOM is loaded */
     $('a[href*=#]').each(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -23,6 +22,15 @@ $(document).ready(function(){
                 }
         }
     }); 
+
+    i18n.init(function(t) {
+        // translate nav
+        $(".nav").i18n();
+
+        // programatical access
+        var appName = t("app.name");
+    });    
+
 
     $('.oradorTrigger').mouseenter(function(){
 
