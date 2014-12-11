@@ -1,4 +1,26 @@
+var active_option = null;
+
+function fade(fadein, fadeout)
+{
+    
+    if(active_option != fadein){
+
+        if(active_option != null){
+            $('#'+active_option).fadeOut("fast", function(){
+                $('#'+fadein).fadeIn('slow');
+                active_option = fadein;             
+            });
+        }else{
+            $('#'+fadein).fadeIn('slow');
+            active_option = fadein;     
+        }
+
+    }
+}
+
 $(document).ready(function(){
+
+    console.log("Document is Ready...");
 
     /* The following code is executed once the DOM is loaded */
     $('a[href*=#]').each(function() {
@@ -22,6 +44,7 @@ $(document).ready(function(){
                 }
         }
     }); 
+    
 
     i18n.init(function(t) {
         // translate nav
@@ -30,6 +53,7 @@ $(document).ready(function(){
         // programatical access
         var appName = t("app.name");
     });    
+    
 
 
     $('.oradorTrigger').mouseenter(function(){
@@ -62,36 +86,23 @@ $(document).ready(function(){
             }
         });
 
+    /************************************************************************************
+     * 00 - Countdown                                                                *
+     ************************************************************************************/
+     var timespan = countdown(new Date(2015, 03, 2), null, countdown.DAYS);
+     console.log("time "+timespan.days);
+
+     $('#days').append(timespan.days);
 
     /************************************************************************************
      * 02 - Leaflet Maps                                                                *
      ************************************************************************************/
-    // create a map in the "map" div, set the view to a given place and zoom
-    var map = L.map('map', {scrollWheelZoom:false}).setView([38.7425995, -9.3019505], 13);
-    
+    $('#company-submit').click(function(){
+        console.log("TODO");
+        alert("TODO: implementar algo");
 
-    // add an OpenStreetMap tile layer
-    L.tileLayer(
-        'http://{s}.tile.osm.org/{z}/{x}/{y}.png', 
-        {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+    });
 
-    // add a marker in the given location, attach some popup content to it and open the popup
-    L.marker([38.7425995, -9.3019505]).addTo(map)
-        .openPopup();
-
-
-
-    function sinple_fade_inout(fadein)
-    {
-        var element = document.getElementById(fadein);
-        
-        if(element.style.display == 'none' || element.style.display == '')
-            $('#'+fadein).fadeIn('slow');
-            
-        else
-            $('#'+fadein).fadeOut('slow');
-        
-    }   
 
     /************************************************************************************
      * 03 - Modos de Deslocação                                                         *
@@ -114,5 +125,21 @@ $(document).ready(function(){
     {
         document.getElementById(id).src = src;          
     }
+
+    /************************************************************************************
+     * 04 - Redes Sociais
+     ************************************************************************************/
+    //Altura da div 'speakers-container'
+    $('#social-media').hide();
+    
+    var social_media_threshold = $('#speakers-container').offset().top - ($('#jumbo-carousel').height()/2);
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= social_media_threshold)
+            $('#social-media').show("slow");
+        else
+            $('#social-media').hide("slow");
+    });
+
 
 });

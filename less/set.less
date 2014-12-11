@@ -85,123 +85,6 @@ h1, h2, h3{
 	margin-right:auto;
 }
 
-#jumbo-carousel{
-
-		margin-top: 50px;
-	  	height: 600px;
-
-		.item{
-			height: 600px;
-			background-color: #777;
-		}
-
-		.carousel-caption {
-
-			z-index: 4;
-			margin-bottom: 12.5%;
-			text-align: left;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			//background-color: rgba(255, 183, 0, .2); //orange filter pode ser mudado
-			//background-color: rgba(198, 142, 0, .2); //dark orange filter pode ser mudado
-			background-color: rgba(0,87,125,0.3); //dark blue
-
-			.caption-container{
-				width: 50%;
-				margin: 0px auto;
-				padding-top: 10%;
-			}
-
-			h1 { 
-				font-size: 3em;
-				
-				color: whitesmoke;
-
-
-				
-			}
-
-			.center-text{
-				text-align: center;
-			}
-
-			h1.a, a { 
-				color: whitesmoke;
-				text-decoration: none;
-
-				&:hover{ color: @set-light-blue; }
-			}
-
-			.btn {
-				font-size: 2em;
-				font-weight: 900;
-				border-width: 2px;
-
-			}
-		}
-
-		.carousel-inner > .item > img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			min-width: 100%;
-			height: 600px;
-			
-		}
-
-		.carousel-control { z-index: 5;}
-
-		.emph{
-			font-style: italic;
-			color: @set-primary-orange;
-		}
-
-		#item-main{
-			background:  black url(../img/jumbo/taguspark_light.jpg) no-repeat;
-			.background-size(cover);
-
-			 @media screen {
-			 	@media (min-width: @screen-lg-desktop){
-			 		background-position-y: -250px;
-			 	} 
-			 	@media (min-width: @screen-xlg-desktop){
-			 		background-position-y: -500px;
-			 	} 
-			 }
-		}
-
-		#item-sponsor{
-			background:  black url(../img/jumbo/3dhand_light.png) no-repeat;
-			.background-size(100%);
-
-			
-			@media screen {
-				@media (min-width: @screen-lg-desktop){
-					background-position-y: -150px;
-				} 
-				@media (min-width: @screen-xlg-desktop){
-					background-position-y: -450px;
-				} 
-			}
-		}
-
-		#item-social-media{
-			background:  black url(../img/jumbo/cover2_light.png) no-repeat;
-			.background-size(cover);
-
-			@media screen {
-				
-				@media (min-width: @screen-xlg-desktop){
-					background-position-y: -90px;
-				} 
-			}
-
-
-		}
-}	
-
 
 .btn {
 	opacity: 0.7;
@@ -319,59 +202,7 @@ footer{
 	
 }
 
-#speakers-container{
-	
-	text-align: center;
-	padding: 50px 0 0 0;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: none;
 
-	#speakers-row{
-
-		.speaker-description{
-			width: 60%;
-			overflow:auto;
-			position:relative;
-			left:5%;
-			right:10%;
-			color: @gray-lighter;
-			margin-top: 7%;
-		}
-
-		.oradorName{
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			color: @gray-lighter;
-			font-size: 1.1em;
-			background-color: rgba(0, 0, 0, .5);
-		}
-
-		.quote {
-			font-size: 2em;
-			font-weight: 900;
-			text-align: right;
-			font-style: italic;
-			padding-right: 5px;
-		}
-
-		.quote-src {
-			text-align: right;
-			font-size: 1.2em;
-		}
-
-	}
-
-	#recuit-speaker {
-		width: 70%;
-		position: relative;
-		//bottom: 100px;
-		text-align: right;
-		margin-top: 10%;
-	}
-
-}
 
 #sponsorship-container {
 	background-color: white;
@@ -403,17 +234,7 @@ footer{
 }
 
 
-#contacts{
-	
-	position: absolute;
-	left:0; 
-	bottom: 0;
-	z-index: 4;
-	padding: 25px;
-	background: rgba(242, 240, 224, 0.6);
-	color: black;
-	font-size: 1.25em;
-}
+
 
 #contacts-container {
 
@@ -516,7 +337,7 @@ footer{
 		    text-align: left;
 		    padding:0 5% ;
 		    position: absolute;
-		    bottom: 10%;
+		    bottom: 25%;
 		    
 		    color: white;
 
@@ -615,10 +436,223 @@ footer{
 .set-xdark-blue-bg 	{ background-color: @set-xdark-blue; }
 .set-light-blue-bg 	{ background-color: @set-light-blue; }
 
-
+.no-gutter{
+	padding-left : 0px;
+	padding-right: 0px;
+	margin-right : 0px;
+	margin-left  : 0px;
+}
 
 /******************************************************************************************
- *  04 - Páginas dos Oradores
+ *  01 - Main
+ ******************************************************************************************/
+
+#company-form {
+	width: 70%;
+	margin: 0 auto;
+
+	.input-group{
+		width: 100%;
+		height: 47px;
+	}
+
+
+	.form-control { height: 47px; }
+
+	button {
+		width: 100%;
+		height: 47px;
+		background-color: @set-primary-blue;
+		color: whitesmoke;
+		border: 0;
+	}
+}
+
+
+#jumbo-carousel{
+
+		margin-top: 50px;
+	  	height: 600px;
+
+		.item{
+			height: 600px;
+			background-color: #777;
+		}
+
+		.btn {
+			height: 100%;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			border-radius: 0px;
+			font-size: 16px;
+
+		}
+
+		.carousel-caption {
+
+			z-index: 4;
+			margin-bottom: 12.5%;
+			text-align: left;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,87,125,0.5); //dark blue
+
+			.caption-container{
+				width: 60%;
+				margin: 0px auto;
+				padding-top: 10%;
+			}
+
+			h1, h2, h3 {
+				text-align: center;			
+			}
+
+			h1 { 
+				font-size: 3em;
+				color: whitesmoke;
+			}
+
+			.center-text{
+				text-align: center;
+			}
+
+			h1.a, a { 
+				color: whitesmoke;
+				text-decoration: none;
+
+				&:hover{ color: @set-light-blue; }
+			}
+
+			
+		}
+
+		.carousel-inner > .item > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			height: 600px;
+			
+		}
+
+		.carousel-control { z-index: 5;}
+
+		.emph{
+			font-style: italic;
+			color: @set-primary-orange;
+		}
+
+		#item-main{
+			background:  black url(../img/jumbo/taguspark_light.jpg) no-repeat;
+			.background-size(cover);
+
+			 @media screen {
+			 	@media (min-width: @screen-lg-desktop){
+			 		background-position-y: -250px;
+			 	} 
+			 	@media (min-width: @screen-xlg-desktop){
+			 		background-position-y: -500px;
+			 	} 
+			 }
+		}
+
+		#item-sponsor{
+			background:  black url(../img/jumbo/3dhand_light.png) no-repeat;
+			.background-size(100%);
+
+			
+			@media screen {
+				@media (min-width: @screen-lg-desktop){
+					background-position-y: -150px;
+				} 
+				@media (min-width: @screen-xlg-desktop){
+					background-position-y: -450px;
+				} 
+			}
+		}
+
+		#item-social-media{
+			background:  black url(../img/jumbo/cover2_light.png) no-repeat;
+			.background-size(cover);
+
+			@media screen {
+				
+				@media (min-width: @screen-xlg-desktop){
+					background-position-y: -90px;
+				} 
+			}
+
+
+		}
+}	
+
+/******************************************************************************************
+ *  02 - Oradores
+ ******************************************************************************************/
+
+#speakers-container{
+	
+	text-align: center;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: none;
+
+	#speakers-row{
+
+		.speaker-description{
+			width: 60%;
+			overflow:auto;
+			position:relative;
+			left:5%;
+			right:10%;
+			color: @gray-lighter;
+			margin-top: 7%;
+		}
+
+		.oradorName{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: @gray-lighter;
+			font-size: 1.1em;
+			background-color: rgba(0, 0, 0, .5);
+
+			.name { color: @set-primary-orange; }
+
+			p { padding: 0; margin: 0;}
+		}
+
+		.quote {
+			font-size: 2em;
+			font-weight: 900;
+			text-align: right;
+			font-style: italic;
+			padding-right: 5px;
+		}
+
+		.quote-src {
+			text-align: right;
+			font-size: 1.2em;
+		}
+
+	}
+
+	#recuit-speaker {
+		width: 70%;
+		position: relative;
+		//bottom: 100px;
+		text-align: right;
+		margin-top: 10%;
+	}
+
+}
+
+/******************************************************************************************
+ * [Externo] Páginas dos Oradores
  ******************************************************************************************/
 .speaker-holder{
 	
@@ -650,3 +684,59 @@ footer{
 
 
 
+
+#social-media {
+
+	position: fixed;
+	top: 200px;
+	right: 0px;
+	z-index: 5;
+
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+
+	#facebook, #google, #twitter, #linkedin{
+		width: 50px;
+		height: auto;
+	}
+	
+	#facebook	{ background-color: #3b5998; }
+	#google 	{ background-color: #C63D2D; }
+	#twitter 	{ background-color: #4099FF; }
+	#linkedin 	{ background-color: #4875B4; }
+	#youtube	{ background-color: #FF3333; }
+}
+
+#map{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	#osm-frame{
+		width: 100%;
+		height: 450px;
+		border: 0;
+		overflow-y: hidden; //hides de scroll-bar
+	}
+
+	#contacts{
+	
+		position: absolute;
+		left:0; 
+		bottom: 0;
+		z-index: 4;
+		margin: 0;
+		padding: 0 25px;
+		background: rgba(242, 240, 224, 0.6);
+		color: black;
+		font-size: 1em;
+
+		a {
+			text-decoration: none;
+			color: @set-primary-blue;
+
+		}
+	}
+}
