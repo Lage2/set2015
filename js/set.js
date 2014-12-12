@@ -3,6 +3,17 @@ var active_option = null;
 
 var nav = { active_div : null, speakers : 1, sponsors: 2, map: 3, route: 4, organization: 5 };
 
+var transportation = {
+    active: 0,
+    buttons : {
+        train   : $('#train-option'),
+        bus     : $('#bus-option'),
+        taxi    : $('#taxi-option'),
+        car     : $('#car-option')    
+    }
+    
+}
+
 function fade(fadein, fadeout)
 {
     
@@ -130,6 +141,8 @@ $(document).ready(function(){
     /************************************************************************************
      * 03 - Modos de Deslocação                                                         *
      ************************************************************************************/
+    
+
     function fade(fadein, fadeout)
     {
         var div = document.getElementById(fadein);
