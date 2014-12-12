@@ -1,5 +1,8 @@
 var active_option = null;
 
+
+var nav = { active_div : null, speakers : 1, sponsors: 2, map: 3, route: 4, organization: 5 };
+
 function fade(fadein, fadeout)
 {
     
@@ -95,11 +98,31 @@ $(document).ready(function(){
      $('#days').append(timespan.days);
 
     /************************************************************************************
-     * 02 - Leaflet Maps                                                                *
+     * 01 - Formulário de Participação das Empresas
      ************************************************************************************/
     $('#company-submit').click(function(){
-        console.log("TODO");
-        alert("TODO: implementar algo");
+        console.log("sending mail");
+
+        
+        var sendto = "set@lage2.tecnico.ulisboa.pt";
+        var company = $('#company-name').val();
+        var phone   = $('#company-phone').val();
+        var email   = $('#company-email').val();
+
+        console.log("\'"+company+"\'")
+        if(company === '' || email === ''){
+            $('#form-error').show("slow");
+        }else{
+            var body_pt = "Nós na empresa "+company+" estamos interessados em ficar a conhecer melhor o vosso evento.\r\n"+
+                "Gostariamos assim de entrar em contacto convosco.\r\n\r\n"+
+                "Email:\t"+email+"\r\n"+
+                "Telefone:\t"+phone+"\r\n";
+                $('#form-error').hide();
+
+                window.open('mailto:'+sendto+'?subject='+company+' como parceiros da SET'+'&body='+body_pt);
+        }
+            
+        
 
     });
 
@@ -121,10 +144,6 @@ $(document).ready(function(){
         
     }
 
-    function change_src(id, src)
-    {
-        document.getElementById(id).src = src;          
-    }
 
     /************************************************************************************
      * 04 - Redes Sociais
@@ -132,13 +151,25 @@ $(document).ready(function(){
     //Altura da div 'speakers-container'
     $('#social-media').hide();
     
-    var social_media_threshold = $('#speakers-container').offset().top - ($('#jumbo-carousel').height()/2);
+    var speakers_threshold = $('#speakers-container').offset();
+    var main_threshold = $('#jumbo-carousel').offset().top;
+    
+    //var social_media_threshold = $('#speakers-container').offset().top - ($('#jumbo-carousel').height()/2);
+    var social_media_threshold = main_threshold;
 
     $(window).scroll(function(){
-        if($(window).scrollTop() >= social_media_threshold)
+        if($(window).scrollTop() >= 1)
             $('#social-media').show("slow");
         else
             $('#social-media').hide("slow");
+
+        /* Mudar a cor da opcao na nav bar quando a janela se encontra nessa div
+        if($(window).scrollTop() >= speakers_threshold.top && nav.active_option != nav.speakers){
+            nav.active_option = nav.speakers;
+            $('#nav-speakers').css('color', 'orange');
+        }
+        */
+
     });
 
 

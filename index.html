@@ -58,11 +58,10 @@
 
 						<div class="collapse navbar-collapse" id="nav-collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#speakers-container">Oradores</a></li>
+								<li><a id="nav-speakers" href="#speakers-container">Oradores</a></li>
 								<!-- TODO <li><a href="#sponsorship-container">Empresas</a></li>-->
 								<li><a href="#contacts-anchor">Contactos</a></li>
 								<li><a href="#contacts-container">Como Chegar?</a></li>
-								<li><a href="#" data-i18n="nav.test"></a></li>
 							</ul>
 						</div>
 
@@ -77,32 +76,34 @@
             			<div class="carousel-caption">
             				<div class="caption-container">
             					<h1><span class="emph">2 a 6 de Março</span></h1>
-            					<h3>Já só faltam <span id="days"></span> dias<h3>
-
-
+            					<h3 class="todo">Já só faltam <span id="days"></span> dias<h3>
 								<h1>A sua empresa como parceira da SET</h1>
 								<h2>Para mais informações</h2>
 			            	</div>
+			            	
 			            	<div id="company-form" class="row">
 			            		<div class="col-lg-3 no-gutter">
 			            			<div class="input-group">
-					            		<input type="text" class="form-control" placeholder="Nome da Empresa">
+					            		<input id="company-name" type="text" class="form-control" placeholder="Nome da Empresa*">
 					            	</div>
 			            		</div>
 			            		<div class="col-lg-3 no-gutter">
 			            			<div class="input-group">
-					            		<input type="text" class="form-control" placeholder="Telefone">
+					            		<input id="company-email" type="email" class="form-control" placeholder="Email*">
 					            	</div>
 			            		</div>
 			            		<div class="col-lg-3 no-gutter">
 			            			<div class="input-group">
-					            		<input type="text" class="form-control" placeholder="Email">
+					            		<input id="company-phone" type="tel" class="form-control" placeholder="Telefone">
 					            	</div>
 			            		</div>
 			            		<div class="col-lg-3 no-gutter">
 			            			<div class="input-group">
 					            		<button id="company-submit" class="form-button">Parceiros da SET</button>
 					            	</div>
+			            		</div>
+			            		<div id="form-error" class="col-lg-12">
+			            			<p>* Os campos <span>Nome da Empresa</span> e <span>Email</span> são de preenchimento obrigatório</p> 
 			            		</div>
 			            	</div>
 			            </div>
@@ -111,7 +112,10 @@
 			</div>
 				
 			
-			<div id="speakers-container" class="container-fluid fixed-height-container">
+			<div id="speakers-container" class="container-fluid">
+				<div class="row">
+					<h2>Oradores</h2>
+				</div>
 				<div id="speakers-row">
 					<div class="row set-xdark-blue-bg">
 						<div class="oradorLarge">
@@ -125,9 +129,9 @@
 						        </div>
 						    </div>
 						    <div class="oradorName">
-						    	<p class="name">Vasco Calais Pedro</p>
+						    	<p class="name">Vasco Calais Pedro <i class="fa fa-external-link"></i></p>
 						    	<p>Co-Fundador e CEO</p>
-						    	<p>Unbabel, Inc <i class="fa fa-external-link"></i> </p>
+						    	<p>Unbabel, Inc  </p>
 						    </div>
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/vasco-pedro.html'"></div>
 						</div>
@@ -162,6 +166,36 @@
 				</div>
 			</div>
 
+			<div id="media-container" class="container-fluid todo">
+				<div class="row">
+					<div class="col-md-12">
+						<table id="wrapper">
+							<tr>
+								<td class="media-group"><br></td>
+								<td id="destak" class="media-group">
+									<img class="student-group-logo" src="img/media/destak.gif">
+								</td>
+								<td id="esquilo" class="media-group">
+									<img id="ieee-logo" class="student-group-logo" src="img/media/esquilo.gif">
+								</td>
+								<td id="forum-estudante" class="media-group">
+									<img id="neiist-logo" class="student-group-logo" src="img/media/forumestudante.jpg">
+								</td>
+								<td id="oeiras-digital" class="media-group">
+									<img class="student-group-logo" src="img/media/oeiras_digital.jpg">
+								</td>
+								<td id="portugal-news" class="media-group">
+									<img id="neeti-logo" class="student-group-logo" src="img/media/portugal_news.png">
+								</td>
+								<td id="sapotek" class="media-group">
+									<img class="student-group-logo" src="img/media/sapotek.png">
+								</td>
+								<td class="media-group"><br></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
 
 			<div id="sponsorship-container" class="container-fluid fixed-height-container todo">
 				<!-- <h1>Patrocínios</h1> -->

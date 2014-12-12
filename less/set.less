@@ -208,29 +208,31 @@ footer{
 	background-color: white;
 }
 
+#wrapper {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	td {
+		vertical-align: middle;
+		text-align: center;
+
+		img {
+			width: 80%;
+			height: auto;
+			max-height: 130px;
+
+		}
+	}
+}
+
 #team-container {
 	min-height: 100px;
 	background-color: @set-dark-blue;
 	
-	#wrapper {
-		height: 100%;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		border: 0;
-
-		td {
-			vertical-align: middle;
-			text-align: center;
-
-			img {
-				width: 80%;
-				height: auto;
-				max-height: 130px;
-
-			}
-		}
-	}
+	
 }
 
 
@@ -456,6 +458,11 @@ footer{
 		height: 47px;
 	}
 
+	#form-error {
+		display: none;
+		font-weight: 500;
+		span { font-weight: 900; color: @set-primary-orange; }
+	}
 
 	.form-control { height: 47px; }
 
@@ -650,6 +657,19 @@ footer{
 	}
 
 }
+
+/******************************************************************************************
+ *  03 - Média
+ ******************************************************************************************/
+#media-container{
+	min-height: 200px;
+	background-color: white;
+
+	.student-group{
+		width: 30px;
+	}
+}
+
 
 /******************************************************************************************
  * [Externo] Páginas dos Oradores
