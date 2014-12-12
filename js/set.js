@@ -43,8 +43,8 @@ var transportation = {
     
     var phone=document.enq.phone.value;
     var phone_regex = /^\d{9}$/;
-    if(!phone.match(phone_regex)){
-        console.log("FORM: telefone errado");
+    if(phone!=='' && !phone.match(phone_regex) ){
+        console.log("FORM: telefone errado \'"+phone+"\'");
         $(".error").hide(function(){$('#phone-error').show();});
         document.enq.email.focus();
         return false;   
