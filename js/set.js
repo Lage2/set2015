@@ -51,6 +51,9 @@ var transportation = {
     }
 
     $(".error").hide();
+
+    
+
     return true;
     
  }
@@ -153,7 +156,7 @@ $(document).ready(function(){
     /************************************************************************************
      * 01 - Formulário de Participação das Empresas
      ************************************************************************************/
-    $('#company-submit').click(function(){
+    $('#submitButton').click(function(){
         console.log("sending mail");
 
         
@@ -163,13 +166,11 @@ $(document).ready(function(){
         var email   = $('#company-email').val();
 
         console.log("\'"+company+"\'")
-        if(company === '' || email === ''){
-            $('#form-error').show("slow");
-        }else{
-            var body_pt = "Nós na empresa "+company+" estamos interessados em ficar a conhecer melhor o vosso evento.\r\n"+
-                "Gostariamos assim de entrar em contacto convosco.\r\n\r\n"+
-                "Email:\t"+email+"\r\n"+
-                "Telefone:\t"+phone+"\r\n";
+        if(validation()){
+                var body_pt = "Nós na empresa "+company+" estamos interessados em ficar a conhecer melhor o vosso evento.<br>"+
+                "Gostariamos assim de entrar em contacto convosco.<br><br>"+
+                "Email:\t"+email+"<br>"+
+                "Telefone:\t"+phone+"<br>";
                 $('#form-error').hide();
 
                 window.open('mailto:'+sendto+'?subject='+company+' como parceiros da SET'+'&body='+body_pt);
