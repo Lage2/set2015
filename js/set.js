@@ -14,6 +14,48 @@ var transportation = {
     
 }
 
+ function validation()
+ {
+
+    
+        
+    var contactname=document.enq.name.value;
+    var name_exp=/^[A-Za-z\s]+$/;
+    if(contactname=='' || email=='')
+    {
+        console.log("FORM: não tem nome ou email");
+        $(".error").hide(function(){$('#form-error').show();});
+        document.enq.name.focus();
+        return false;
+    }
+    
+    
+    var email=document.enq.email.value;
+    //var email_exp=/^[A-Za-z0-9\.-_\$]+@[A-Za-z]+\.[a-z]{2,4}$/;
+    var email_exp=/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    if(!email.match(email_exp))
+    {
+        console.log("FORM: formato do email não é suportado");
+        $(".error").hide(function(){$('#form-error').show();});
+        document.enq.email.focus();
+        return false;
+    }
+    
+    var phone=document.enq.phone.value;
+    var phone_regex = /^\d{9}$/;
+    if(!phone.match(phone_regex)){
+        console.log("FORM: telefone errado");
+        $(".error").hide(function(){$('#phone-error').show();});
+        document.enq.email.focus();
+        return false;   
+    }
+
+    $(".error").hide();
+    return true;
+    
+ }
+
+
 function fade(fadein, fadeout)
 {
     
