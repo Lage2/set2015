@@ -1,0 +1,4 @@
+.sprites { background: url(sprites.png) no-repeat; }
+.set_white_medium { width: 144px; height: 80px; background-position: 0 0; }
+.set_white_small { width: 120px; height: 66px; background-position: 0 -81px; }
+.set_white_tiny { width: 90px; height: 50px; background-position: 0 -148px; }
