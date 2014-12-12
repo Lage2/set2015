@@ -60,7 +60,7 @@
 							<ul class="nav navbar-nav navbar-right">
 								<li><a id="nav-speakers" href="#speakers-container">Oradores</a></li>
 								<!-- TODO <li><a href="#sponsorship-container">Empresas</a></li>-->
-								<li><a href="#contacts-anchor">Contactos</a></li>
+								<li><a href="#map">Contactos</a></li>
 								<li><a href="#contacts-container">Como Chegar?</a></li>
 							</ul>
 						</div>
@@ -82,26 +82,30 @@
 			            	</div>
 			            	
 			            	<div id="company-form" class="row">
-			            		<div class="col-lg-3 no-gutter">
-			            			<div class="input-group">
-					            		<input id="company-name" type="text" class="form-control" placeholder="Nome da Empresa*">
-					            	</div>
-			            		</div>
-			            		<div class="col-lg-3 no-gutter">
-			            			<div class="input-group">
-					            		<input id="company-email" type="email" class="form-control" placeholder="Email*">
-					            	</div>
-			            		</div>
-			            		<div class="col-lg-3 no-gutter">
-			            			<div class="input-group">
-					            		<input id="company-phone" type="tel" class="form-control" placeholder="Telefone">
-					            	</div>
-			            		</div>
-			            		<div class="col-lg-3 no-gutter">
-			            			<div class="input-group">
-					            		<button id="company-submit" class="form-button">Parceiros da SET</button>
-					            	</div>
-			            		</div>
+			            		<form name="enq" method="post" action="email/" onsubmit="return validation();">
+				            		<fieldset>
+					            		<div class="col-lg-3 no-gutter">
+					            			<div class="input-group">
+							            		<input id="company-name" type="text" class="form-control" placeholder="Nome da Empresa*">
+							            	</div>
+					            		</div>
+					            		<div class="col-lg-3 no-gutter">
+					            			<div class="input-group">
+							            		<input id="company-email" type="email" class="form-control" placeholder="Email*">
+							            	</div>
+					            		</div>
+					            		<div class="col-lg-3 no-gutter">
+					            			<div class="input-group">
+							            		<input id="company-phone" type="tel" class="form-control" placeholder="Telefone">
+							            	</div>
+					            		</div>
+					            		<div class="col-lg-3 no-gutter">
+					            			<div class="input-group">
+							            		<button id="company-submit" class="form-button">Parceiros da SET</button>
+							            	</div>
+					            		</div>
+					            	</fieldset>
+				            	</form>
 			            		<div id="form-error" class="col-lg-12">
 			            			<p>* Os campos <span>Nome da Empresa</span> e <span>Email</span> são de preenchimento obrigatório</p> 
 			            		</div>
@@ -167,23 +171,42 @@
 				</div>
 			</div>
 
-			<div id="media-container" class="container-fluid todo">
+			<div id="media-container" class="container-fluid set-dark-blue-bg">
+				<div class="row ">
+					<h3>
+						<i class="fa fa-quote-left"></i> facilitando o contacto directo dos estudantes com o mundo empresarial <i class="fa fa-quote-right"></i>
+					</h3>
+				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="col-md-4">
+							<img class="media-logo" src="img/media/destak.png">
+						</div>
+						<div class="col-md-4">
+							<img class="media-logo" src="img/media/portugal_news.png">
+						</div>
+						<div class="col-md-4">
+							<img class="media-logo" src="img/media/forumestudante.png">
+						</div>
+					</div>
+				</div>
+				<!--
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
 						<table id="wrapper">
 							<tr>
 								<td class="media-group"><br></td>
 								<td id="destak" class="media-group">
-									<img class="student-group-logo" src="img/media/destak.gif">
+									<img class="student-group-logo" src="img/media/destak.png">
 								</td>
 								<td id="esquilo" class="media-group">
-									<img id="ieee-logo" class="student-group-logo" src="img/media/esquilo.gif">
+									<img id="ieee-logo" class="student-group-logo" src="img/media/esquilo.PNG">
 								</td>
 								<td id="forum-estudante" class="media-group">
-									<img id="neiist-logo" class="student-group-logo" src="img/media/forumestudante.jpg">
+									<img id="neiist-logo" class="student-group-logo" src="img/media/forumestudante.png">
 								</td>
 								<td id="oeiras-digital" class="media-group">
-									<img class="student-group-logo" src="img/media/oeiras_digital.jpg">
+									<img class="student-group-logo" src="img/media/od.png">
 								</td>
 								<td id="portugal-news" class="media-group">
 									<img id="neeti-logo" class="student-group-logo" src="img/media/portugal_news.png">
@@ -196,6 +219,7 @@
 						</table>
 					</div>
 				</div>
+				-->
 			</div>
 
 			<div id="sponsorship-container" class="container-fluid fixed-height-container todo">
@@ -260,8 +284,7 @@
 				</div>
 			</div>	
 
-			<hr id="contacts-anchor" class="footer-divider">
-			
+					
 			<div id="map" class="container fixed-height-container">
 				<iframe id="osm-frame" src="./map.html"></iframe>
 
