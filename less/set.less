@@ -446,10 +446,10 @@ footer{
 #jumbo-carousel{
 
 		margin-top: 50px;
-	  	height: 600px;
+	  	min-height: 600px;
 
 		.item{
-			height: 600px;
+			min-height: 600px;
 			background-color: #777;
 		}
 
@@ -472,13 +472,15 @@ footer{
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-color: rgba(0,87,125,0.5); //dark blue
+			/* moved to blue_container in parent div in order to improve responsiveness*/
+			/* background-color: rgba(0,87,125,0.5); //dark blue */
 
 			.caption-container{
 				width: 60%;
 				margin: 0px auto;
 				padding-top: 10%;
 			}
+			
 
 			h1, h2, h3 {
 				text-align: center;			
@@ -499,9 +501,18 @@ footer{
 
 				&:hover{ color: @set-light-blue; }
 			}
-
 			
+						
 		}
+		
+		#blue_container
+			{
+				display: block;
+				height: 100%;
+				padding: 0;
+				width: 100%;
+				background-color: rgba(0,87,125,0.5); //dark blue
+			}
 
 		.carousel-inner > .item > img {
 			position: absolute;
