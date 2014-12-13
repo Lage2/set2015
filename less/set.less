@@ -261,8 +261,9 @@ footer{
 
 
 .orador, .oradorSmall, .oradorLarge{
-	float:left;
+	//float:left;
     //margin:4px;
+	display: inline-block;
     
     /* Giving the orador div a relative positioning: */
     position:relative;
@@ -353,6 +354,7 @@ footer{
 
 .oradorLarge{
     width:360px;
+	max-width: 100%;
     height:360px;
 }
 
@@ -604,15 +606,18 @@ footer{
 	}
 
 	#speakers-row{
+		text-align: middle;
 
 		.speaker-description{
-			width: 60%;
+			width: 100%;
+			max-width: 650px;
 			overflow:auto;
-			position:relative;
-			left:5%;
-			right:10%;
+			//position:relative;
+			//left:5%;
+			//right:10%;
 			color: @gray-lighter;
 			margin-top: 7%;
+			display: inline-block;
 		}
 
 		.oradorName{
