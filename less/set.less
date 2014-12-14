@@ -186,10 +186,25 @@ footer{
 
 #ist-logo-footer {
 	width: 120px;
+	width: 19%;
+	max-width: 741px;
+	display: inline-block;
+	vertical-align: top;
 	img{
-		width: 100%;
 		height: auto;
+		width: 100%;
 	}
+}
+
+#text-footer
+{
+	width: 79%;
+	display: inline-block;
+}
+
+.container_footer
+{
+	padding: 0 1%;
 }
 
 #nav-collapse{
@@ -211,7 +226,8 @@ footer{
 #wrapper {
 	height: 100%;
 	width: 100%;
-	margin: 0;
+	max-width: 1170px;
+	margin: 0 auto;
 	padding: 0;
 	border: 0;
 
@@ -229,8 +245,9 @@ footer{
 }
 
 #team-container {
-	min-height: 100px;
+	min-height: 20px;
 	background-color: @set-dark-blue;
+	padding: 0;
 	
 	
 }
@@ -741,6 +758,12 @@ footer{
 
 		}
 	}
+}
+
+@media screen and (max-width: 500px) {
+    #map {
+        display: none !important;
+    }
 }
 
 /******************************************************************************************
