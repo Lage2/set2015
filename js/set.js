@@ -75,6 +75,11 @@ function fade(fadein, fadeout)
         }
 
     }
+	else
+	{
+		$('#'+active_option).fadeOut("fast");
+		active_option = null;
+	}
 }
 
 $(document).ready(function(){

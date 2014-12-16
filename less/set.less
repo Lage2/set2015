@@ -186,10 +186,25 @@ footer{
 
 #ist-logo-footer {
 	width: 120px;
+	width: 19%;
+	max-width: 741px;
+	display: inline-block;
+	vertical-align: top;
 	img{
-		width: 100%;
 		height: auto;
+		width: 100%;
 	}
+}
+
+#text-footer
+{
+	width: 79%;
+	display: inline-block;
+}
+
+.container_footer
+{
+	padding: 0 1%;
 }
 
 #nav-collapse{
@@ -211,7 +226,8 @@ footer{
 #wrapper {
 	height: 100%;
 	width: 100%;
-	margin: 0;
+	max-width: 1170px;
+	margin: 0 auto;
 	padding: 0;
 	border: 0;
 
@@ -229,8 +245,9 @@ footer{
 }
 
 #team-container {
-	min-height: 100px;
+	min-height: 20px;
 	background-color: @set-dark-blue;
+	padding: 0;
 	
 	
 }
@@ -261,8 +278,9 @@ footer{
 
 
 .orador, .oradorSmall, .oradorLarge{
-	float:left;
+	//float:left;
     //margin:4px;
+	display: inline-block;
     
     /* Giving the orador div a relative positioning: */
     position:relative;
@@ -353,6 +371,7 @@ footer{
 
 .oradorLarge{
     width:360px;
+	max-width: 100%;
     height:360px;
 }
 
@@ -446,10 +465,10 @@ footer{
 #jumbo-carousel{
 
 		margin-top: 50px;
-	  	height: 600px;
+	  	min-height: 600px;
 
 		.item{
-			height: 600px;
+			min-height: 600px;
 			background-color: #777;
 		}
 
@@ -472,13 +491,15 @@ footer{
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-color: rgba(0,87,125,0.5); //dark blue
+			/* moved to blue_container in parent div in order to improve responsiveness*/
+			/* background-color: rgba(0,87,125,0.5); //dark blue */
 
 			.caption-container{
 				width: 60%;
 				margin: 0px auto;
 				padding-top: 10%;
 			}
+			
 
 			h1, h2, h3 {
 				text-align: center;			
@@ -499,9 +520,18 @@ footer{
 
 				&:hover{ color: @set-light-blue; }
 			}
-
 			
+						
 		}
+		
+		#blue_container
+			{
+				display: block;
+				height: 100%;
+				padding: 0;
+				width: 100%;
+				background-color: rgba(0,87,125,0.5); //dark blue
+			}
 
 		.carousel-inner > .item > img {
 			position: absolute;
@@ -593,15 +623,18 @@ footer{
 	}
 
 	#speakers-row{
+		text-align: middle;
 
 		.speaker-description{
-			width: 60%;
+			width: 100%;
+			max-width: 650px;
 			overflow:auto;
-			position:relative;
-			left:5%;
-			right:10%;
+			//position:relative;
+			//left:5%;
+			//right:10%;
 			color: @gray-lighter;
 			margin-top: 7%;
+			display: inline-block;
 		}
 
 		.oradorName{
@@ -647,11 +680,33 @@ footer{
  ******************************************************************************************/
 #media-container{
 	min-height: 200px;
+	padding: 0;
 	
 	.student-group{
 		width: 30px;
 	}
-
+	
+	#logos_container
+	{
+		.col-md-10
+		{
+			padding: 0;
+			text-align: center;
+			
+			.col-md-4
+			{
+				padding: 0 1%;			
+				display: inline-block;
+				max-width: 30%;
+				
+				.media-logo
+				{
+					max-width:100%;
+				}
+			}
+		}
+		
+	}
 
 
 	.media-logo {
@@ -703,6 +758,12 @@ footer{
 
 		}
 	}
+}
+
+@media screen and (max-width: 500px) {
+    #map {
+        display: none !important;
+    }
 }
 
 /******************************************************************************************
@@ -802,6 +863,11 @@ footer{
 
 	#vasco-pedro { 
 		background:  black url(../img/speakers/vasco-pedro.png) no-repeat;
+		.background-size(100%);		
+
+	}
+    #paulo-rosado { 
+		background:  black url(../img/speakers/paulo-rosado.png) no-repeat;
 		.background-size(100%);		
 
 	}

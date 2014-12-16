@@ -44,10 +44,10 @@
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 							</button>
-							<a id="set-logo" class="navbar-brand" href="#">
+							<!--<a id="set-logo" class="navbar-brand" href="#">
 								<img class="hidden-xs" src="img/set_media/set_small.png" alt="SET Logo">
 								<img class="visible-xs-block" src="img/set_media/set_tiny.png" alt="SET Logo">
-							</a>
+							</a> -->
 						</div>
 
 						<div id="ist-logo" class="collapse navbar-collapse navbar-left">
@@ -69,12 +69,14 @@
 				</nav>
 			</div>
 
-			
 			<div id="jumbo-carousel" class="carousel slide" data-ride="carousel">
 				<div id="item-main" class="item">
-					<div class="container">
-            			<div class="carousel-caption">
+					<div class="container" id="white_container" style="background-image: url(img/fundo1.png);">
+						<div class="carousel-caption">
             				<div class="caption-container">
+								<a id="set-logo" href="#">
+								<img class="hidden-xs" src="img/set_media/set.png" alt="SET Logo" style="width:50%">
+								</a>
             					<h1><span class="emph">2 a 6 de Março</span></h1>
             					<h3 class="todo">Já só faltam <span id="days"></span> dias<h3>
 								<h1>A sua empresa como parceira da SET</h1>
@@ -119,69 +121,13 @@
 				</div>
 			</div>
 				
-			
-			<div id="speakers-container" class="container-fluid">
-				<div id="title" class="row row set-xdark-blue-bg">
-					<!--<hr id="contacts-anchor" class="footer-divider">-->
-					<h2>Oradores</h2>
-				</div>
-				<div id="speakers-row">
-					<div class="row set-xdark-blue-bg">
-						<div class="oradorLarge">
-						    <div class="oradorFlip">
-						        <img src="./img/speakers/vasco_cropped.PNG">
-						    </div>
-
-						    <div class="oradorData">
-						        <div class="oradorDescription">
-						        	Vasco Pedro é o Co-Fundador e CEO da Unbabel, uma start-up que combina tradução máquina e pós-edição de forma a eliminar as barreiras de comunicações entre as empresas e os seus clientes.
-						        </div>
-						    </div>
-						    <div class="oradorName">
-						    	<p class="name">Vasco Calais Pedro <i class="fa fa-external-link"></i></p>
-						    	<p>Co-Fundador e CEO</p>
-						    	<p>Unbabel, Inc  </p>
-						    </div>
-						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/vasco-pedro.html'"></div>
-						</div>
-						<div id= "rightDescrip" class="speaker-description">
-							<p class="quote">
-								<i class="fa fa-quote-left quote-left"></i>
-								Os portugueses da Unbabel estão a revolucionar a tradução na Internet
-								<i class="fa fa-quote-right quote-right"></i>
-							</p>
-							<p class="quote-src">- Público</p>
-						</div>
-					</div>
-					
-					<div id="orador2" class="row todo">
-						<div title="Click to flip" class="oradorLarge pull-right">
-						    <div class="oradorFlip">
-						        <img alt="More about google" src="./img/speakers/JohanAndersson_StudioManager_ParadoxDevelopmentStudio_1.jpg">
-						    </div>
-
-						    <div class="oradorData">
-						        <div class="oradorDescription">
-						            The company that redefined grand strategy
-						        </div>
-						    </div>
-						    <div class="oradorTrigger"></div>
-						</div>
-						<div id= "leftDescrip" class="speaker-description">
-							CENAS AND STUFF WILL GO HERE
-						</div>
-					</div>
-					
-				</div>
-			</div>
-
-			<div id="media-container" class="container-fluid set-dark-blue-bg">
+			<div id="media-container" class="container-fluid set-white-bg">
 				<div class="row ">
 					<h3>
 						<i class="fa fa-quote-left"></i> facilitando o contacto directo dos estudantes com o mundo empresarial <i class="fa fa-quote-right"></i>
 					</h3>
 				</div>
-				<div class="row">
+				<div class="row" id="logos_container">
 					<div class="col-md-10 col-md-offset-1">
 						<div class="col-md-4">
 							<img class="media-logo" src="img/media/destak.png">
@@ -225,6 +171,71 @@
 				</div>
 				-->
 			</div>
+			
+			<div id="speakers-container" class="container-fluid">
+				<div id="title" class="row row set-white-bg">
+					<!--<hr id="contacts-anchor" class="footer-divider">-->
+					<h2>Oradores</h2>
+				</div>
+				<div id="speakers-row">
+					<div class="row set-white-bg">
+						<div class="oradorLarge">
+						    <div class="oradorFlip">
+						        <img src="./img/speakers/vasco_cropped.PNG">
+						    </div>
+
+						    <div class="oradorData">
+						        <div class="oradorDescription">
+						        	Vasco Pedro é o Co-Fundador e CEO da Unbabel, uma start-up que combina tradução máquina e pós-edição de forma a eliminar as barreiras de comunicações entre as empresas e os seus clientes.
+						        </div>
+						    </div>
+						    <div class="oradorName">
+						    	<p class="name">Vasco Calais Pedro <i class="fa fa-external-link"></i></p>
+						    	<p>Co-Fundador e CEO</p>
+						    	<p>Unbabel, Inc  </p>
+						    </div>
+						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/vasco-pedro.html'"></div>
+						</div>
+						<div id= "rightDescrip" class="speaker-description">
+							<p class="quote">
+								<i class="fa fa-quote-left quote-left"></i>
+								Os portugueses da Unbabel estão a revolucionar a tradução na Internet
+								<i class="fa fa-quote-right quote-right"></i>
+							</p>
+							<p class="quote-src">- Público</p>
+						</div>
+					</div>
+                    <div class="row set-white-bg">
+						<div class="oradorLarge">
+						    <div class="oradorFlip">
+						        <img src="./img/speakers/paulo-rosado_cropped.PNG">
+						    </div>
+
+						    <div class="oradorData">
+						        <div class="oradorDescription">
+						        	Paulo Rosado, Co-Fundador e CEO da OutSystems, é o vencedor do Best leader Awards 2014 na categoria de Líder nas Novas Tecnologias de 2014.
+						        </div>
+						    </div>
+						    <div class="oradorName">
+						    	<p class="name">Paulo Rosado <i class="fa fa-external-link"></i></p>
+						    	<p>Co-Fundador e CEO</p>
+						    	<p>OutSystems</p>
+						    </div>
+						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/paulo-rosado.html'"></div>
+						</div>
+						<div id= "rightDescrip" class="speaker-description">
+							<p class="quote">
+								<i class="fa fa-quote-left quote-left"></i>
+								Nos próximos dois anos queremos conquistar o mundo
+								<i class="fa fa-quote-right quote-right"></i>
+							</p>
+							<p class="quote-src">- Paulo Rosado</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
 
 			<div id="sponsorship-container" class="container-fluid fixed-height-container todo">
 				<!-- <h1>Patrocínios</h1> -->
@@ -288,7 +299,7 @@
 				</div>
 			</div>	
 
-					
+			
 			<div id="map" class="container fixed-height-container">
 				<iframe id="osm-frame" src="./map.html"></iframe>
 
@@ -405,11 +416,12 @@
 
 					<hr class="footer-divider">
 				</div>
+				<hr class="footer-divider">
 				<div class="row">
 					<div class="col-md-12">
 						<table id="wrapper">
 							<tr>
-								<td class="student-group"><br></td>
+								<!-- <td class="student-group"><br></td> -->
 								<td id="lage2-group" class="student-group">
 									<a href="http://lage2.ist.utl.pt/" target="blank">
 										<img class="student-group-logo" src="img/organization/lage2.png">
@@ -440,7 +452,7 @@
 										<img class="student-group-logo" src="img/organization/N3E.png">
 									</a>
 								</td>
-								<td class="student-group"><br></td>
+								<!-- <td class="student-group"><br></td> -->
 							</tr>
 						</table>
 					</div>
@@ -467,13 +479,13 @@
 
 			<hr class="footer-divider">
 
-			<div class="container">
-				<div id="ist-logo-footer" class="pull-left">
+			<div class="container container_footer">
+				<div id="ist-logo-footer">
 					<a href="http://tecnico.ulisboa.pt/">
 						<img class="collapsed" src="img/set_media/tecnico_big.png" alt="IST Logo">
 					</a>
 				</div>
-				<p class="pull-right">
+				<p id="text-footer">
 					<span class="glyphicon glyphicon-copyright-mark"></span><!--&copy--> <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
 					<br>
 					Fotos <i>by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
