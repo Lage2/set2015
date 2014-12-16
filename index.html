@@ -5,12 +5,17 @@
 	<head>
 		<meta charset="utf-8">	
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="SET - Semana Empresarial e Tecnologia do Instituto Superior Técnico, edição 2015">
+        <meta name="description" content="SET - Semana Empresarial e Tecnológica do Instituto Superior Técnico, edição 2015">
         <meta name="keywords" content="SET, evento, IST, empreendedorismo, académico, empresarial">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta property="og:image" content="img/set_media/set.png" />
+
+        <!-- Facebook -->
+        <meta property="og:url" content="http://set.tecnico.ulisboa.pt/"/>
+        <meta property="og:title" content="SET 2015"/>
+        <meta property="og:description" content="Semana Empresarial e Tecnológica do Instituto Superior Técnico, edição 2015"/>
+        <meta property="og:image" content="http://set.tecnico.ulisboa.pt/img/set_media/set.png"/>
 
         <title>SET 2015</title>
         <link rel="shortcut icon" href="img/set_media/set_favicon.ico">
@@ -58,83 +63,135 @@
 
 						<div class="collapse navbar-collapse" id="nav-collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a id="nav-speakers" href="#speakers-container">Oradores</a></li>
-								<!-- TODO <li><a href="#sponsorship-container">Empresas</a></li>-->
-								<li><a href="#map">Contactos</a></li>
-								<li><a href="#contacts-container">Como Chegar?</a></li>
+								<li><a href="#speakers-container">Oradores</a></li>
+								<li><a href="#sponsorship-container">Empresas</a></li>
+								<li><a href="#contacts-anchor">Contactos</a></li>
 							</ul>
 						</div>
-
 					</div>
 				</nav>
 			</div>
 
 			
 			<div id="jumbo-carousel" class="carousel slide" data-ride="carousel">
-				<div id="item-main" class="item">
-					<div class="container" id="blue_container">
-            			<div class="carousel-caption">
-            				<div class="caption-container">
-            					<h1><span class="emph">2 a 6 de Março</span></h1>
-            					<h3 class="todo">Já só faltam <span id="days"></span> dias<h3>
-								<h1>A sua empresa como parceira da SET</h1>
-								<h2>Para mais informações</h2>
-			            	</div>
-			            	
-			            	<div id="company-form" class="row">
-			            		<form name="enq" onsubmit="return false;" ><!-- onsubmit="return validation();" method="post"  action="company_form"> -->
-				            		<fieldset>
-					            		<div class="col-lg-3 no-gutter">
-					            			<div class="input-group">
-							            		<input id="name" type="text" class="form-control" placeholder="Nome da Empresa*">
-							            	</div>
-					            		</div>
-					            		<div class="col-lg-3 no-gutter">
-					            			<div class="input-group">
-							            		<input id="email" type="email" class="form-control" placeholder="Email*">
-							            	</div>
-					            		</div>
-					            		<div class="col-lg-3 no-gutter">
-					            			<div class="input-group">
-							            		<input id="phone" type="tel" class="form-control" placeholder="Telefone">
-							            	</div>
-					            		</div>
-					            		<div class="col-lg-3 no-gutter">
-					            			<div class="input-group">
-							            		<!--<button id="company-submit" type="submit" class="form-button">Parceiros da SET</button>-->
-							            		<button id="submitButton" type="submit" class="form-button">Parceiros da SET</button>
-							            	</div>
-					            		</div>
-					            	</fieldset>
-				            	</form>
-			            		<div id="form-error" class="col-lg-12 error">
-			            			<p>* Os campos <span>Nome da Empresa</span> e <span>Email</span> são de preenchimento obrigatório</p> 
-			            		</div>
-			            		<div id="phone-error" class="col-lg-12 error">
-			            			<p>O <span>número de telefone</span> não está correcto</p> 
-			            		</div>
-			            	</div>
-			            </div>
-          			</div>
-				</div>
-			</div>
 				
-			
-			<div id="speakers-container" class="container-fluid">
-				<div id="title" class="row row set-xdark-blue-bg">
-					<!--<hr id="contacts-anchor" class="footer-divider">-->
-					<h2>Oradores</h2>
+				<ol class="carousel-indicators">
+					<li data-target="#jumbo-carousel" data-slide-to="0" ></li>
+					<li data-target="#jumbo-carousel" data-slide-to="1" class="active"></li>
+					<li data-target="#jumbo-carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div id="item-sponsor" class="item">
+						<!--<img src="img/jumbo/3dhand.png" alt="First slide">-->
+						<div class="container">
+	            			<div class="carousel-caption">
+	            				<div class="caption-container">
+	            					<h1>Venham conhecer os <span class="emph">futuros profissionais</span> de Portugal</h1>
+	            					<h2>num evento que tem como objetivo juntar os <span class="emph">estudantes</span> com as <span class="emph">empresas</span></h2>
+									<p class="push-btn-middle">
+										<a class="btn btn-phantom-neg" 
+											href="./empresas.html" role="button"><i class="fa fa-info-circle"></i> Informações para Empresas
+										</a>
+	  								</p>
+								</div>	
+				            </div>
+	          			</div>
+					</div>
+					
+					<div id="item-main" class="item active">
+						<!--<img src="img/jumbo/taguspark.jpg" alt="Second slide">-->
+						<div class="container">
+	            			<div class="carousel-caption">
+	            				<div class="caption-container">
+									
+									<div><img src="img/set_media/set_white_medium.png"></div>
+									<h1>
+										<span class="emph">2 a 6 de Março</span><br>não percas o evento do ano.
+									</h1>
+				            	</div>
+				            </div>
+	          			</div>
+					</div>
+					<div id="item-social-media" class="item">
+						<!--<img src="img/jumbo/cover.png" alt="Third slide">-->
+						<div class="container">
+	            			<div class="carousel-caption">
+	            				<div class="caption-container center-text">
+	            					<h1>Sigam-nos nas <span class="emph">redes sociais</span></h1>
+	            					<h2>para ficarem a conhecer todas as novidades</h2>
+	            					<br>
+	            					<h1 class="center-text">
+		        						<a href="https://www.facebook.com/SET.Tagus">
+		        							<i class="fa fa-facebook-square"></i>
+		        						</a>
+		        						<a href="https://plus.google.com/100528915228383672706/posts">
+		        							<i class="fa fa-google-plus-square"></i>
+		        						</a>
+		        						<a href="http://www.linkedin.com/company/set---semana-empresarial-e-tecnol%C3%B3gica">
+		        							<i class="fa fa-linkedin-square"></i>
+		        						</a>
+										<a href="http://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=ISTTagusSET">
+											<i class="fa fa-twitter-square"></i>
+										</a>
+										<a href="https://www.youtube.com/channel/UC9cuIqUMi2v5S5TvFn0HQNg">
+											<i class="fa fa-youtube-square"></i>
+										</a>
+									</h1>
+								</div>
+				            </div>	
+	          			</div>
+					</div>
 				</div>
+				<a class="left carousel-control" href="#jumbo-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+	      		<a class="right carousel-control" href="#jumbo-carousel" role="button" data-slide="next">
+	      			<span class="glyphicon glyphicon-chevron-right"></span>
+	      		</a>
+			</div>
+			
+			
+			<div id="speakers-container" class="container-fluid fixed-height-container">
+
 				<div id="speakers-row">
+					<!-- Paulo Rosado - OutSystems -->
+					<div class="row set-dark-blue-bg">
+						<div class="oradorLarge orador-right">
+						    <div class="oradorFlip">
+						        <img src="./img/speakers/paulo-rosado_cropped.PNG">
+						    </div>
+
+						    <div class="oradorData">
+						        <div class="oradorDescription">
+						        	Paulo Rosado, Co-Fundador e CEO da OutSystems, é o vencedor do Best leader Awards 2014 na categoria de Líder nas Novas Tecnologias de 2014.
+						        </div>
+						    </div>
+						    <div class="oradorName">
+						    	<p class="name">Paulo Rosado <i class="fa fa-external-link"></i></p>
+						    	<p>Co-Fundador e CEO</p>
+						    	<p>OutSystems</p>
+						    </div>
+						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/paulo-rosado.html'"></div>
+						</div>
+						<div id="paulo-rosado-description" class="speaker-description">
+							<p class="quote">
+								<i class="fa fa-quote-left quote-left"></i>
+								Nos próximos dois anos queremos conquistar o mundo
+								<i class="fa fa-quote-right quote-right"></i>
+							</p>
+							<p class="quote-src">- Paulo Rosado</p>
+						</div>
+					</div>
+
 					<div class="row set-xdark-blue-bg">
-						<div class="oradorLarge">
+						<div class="oradorLarge orador-left">
 						    <div class="oradorFlip">
 						        <img src="./img/speakers/vasco_cropped.PNG">
 						    </div>
 
 						    <div class="oradorData">
 						        <div class="oradorDescription">
-						        	Vasco Pedro é o Co-Fundador e CEO da Unbabel, uma start-up que combina tradução máquina e pós-edição de forma a eliminar as barreiras de comunicações entre as empresas e os seus clientes.
+						        	Dr. Vasco Pedro é o Co-Fundador e CEO da Unbabel, uma start-up que combina tradução máquina e pós-edição de forma a eliminar as barreiras de comunicações entre as empresas e os seus clientes.
 						        </div>
 						    </div>
 						    <div class="oradorName">
@@ -144,7 +201,7 @@
 						    </div>
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/vasco-pedro.html'"></div>
 						</div>
-						<div id= "rightDescrip" class="speaker-description">
+						<div id="vasco-pedro-description" class="speaker-description">
 							<p class="quote">
 								<i class="fa fa-quote-left quote-left"></i>
 								Os portugueses da Unbabel estão a revolucionar a tradução na Internet
@@ -175,84 +232,52 @@
 				</div>
 			</div>
 
-			<div id="media-container" class="container-fluid set-dark-blue-bg">
-				<div class="row ">
-					<h3>
-						<i class="fa fa-quote-left"></i> facilitando o contacto directo dos estudantes com o mundo empresarial <i class="fa fa-quote-right"></i>
-					</h3>
-				</div>
-				<div class="row" id="logos_container">
-					<div class="col-md-10 col-md-offset-1">
-						<div class="col-md-4">
-							<img class="media-logo" src="img/media/destak.png">
-						</div>
-						<div class="col-md-4">
-							<img class="media-logo" src="img/media/portugal_news.png">
-						</div>
-						<div class="col-md-4">
-							<img class="media-logo" src="img/media/forumestudante.png">
-						</div>
-					</div>
-				</div>
-				<!--
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<table id="wrapper">
-							<tr>
-								<td class="media-group"><br></td>
-								<td id="destak" class="media-group">
-									<img class="student-group-logo" src="img/media/destak.png">
-								</td>
-								<td id="esquilo" class="media-group">
-									<img id="ieee-logo" class="student-group-logo" src="img/media/esquilo.PNG">
-								</td>
-								<td id="forum-estudante" class="media-group">
-									<img id="neiist-logo" class="student-group-logo" src="img/media/forumestudante.png">
-								</td>
-								<td id="oeiras-digital" class="media-group">
-									<img class="student-group-logo" src="img/media/od.png">
-								</td>
-								<td id="portugal-news" class="media-group">
-									<img id="neeti-logo" class="student-group-logo" src="img/media/portugal_news.png">
-								</td>
-								<td id="sapotek" class="media-group">
-									<img class="student-group-logo" src="img/media/sapotek.png">
-								</td>
-								<td class="media-group"><br></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				-->
-			</div>
-
-			<div id="sponsorship-container" class="container-fluid fixed-height-container todo">
+			<div id="sponsorship-container" class="container-fluid fixed-height-container">
 				<!-- <h1>Patrocínios</h1> -->
 				<h1>Empresas</h1>
-				
+				<p class="push-btn-middle">
+					<a class="btn btn-phantom" 
+						href="./empresas.html" role="button"><i class="fa fa-info-circle"></i> Informações para Empresas
+					</a>
+	  			</p>
 				<p class="push-btn-middle todo">
 					<a class="btn btn-phantom" 
 						target="blank"
 						href="faq/index.html" role="button">FAQ
 					</a>
 	  			</p>
-	  			<div>
+
+	  			<div class="row">
+	  				<div class="col-md-5 col-md-offset-1">
+	  					<h2>Qual a nossa visão?</h2>
+	  					<p>
+							Este evento visa promover a discussão de experiências e troca de ideias relacionadas com a área das Tecnologias de Informação, bem como a sua influência no mundo empresarial. Sendo organizado por alunos do Instituto Superior Técnico (campus do Taguspark), este evento tem tido uma crescente participação de pessoas provenientes desta área, sendo já um conceituado palco para a apresentação de projectos inovadores e de forte impacto no mercado.
+						</p>
+					</div>
+	  				<div class="col-md-5">
+	  					<h2>O que nos torna únicos?</h2>
+						<p>
+							No ano lectivo 2012/2013, na sua 10ª edição, o evento Seminários IST-Tagus juntou-se a todos os núcleos de estudantes presentes no IST-Tagus dando lugar à SET. A SET, Semana Empresarial e Tecnológica, é então organizado por uma comissão de alunos de todos os cursos do IST-Taguspark, tendo por objectivo aproximar a comunidade académica com o meio empresarial.
+						</p>
+		  			</div>
+		  		</div>
+	  			<div class="todo">
 					<div class="sponsorship-section">
 						<h1>Patrocinador Principal</h1>
-						<div class = "sponsors_list sponsor_principal">
+						<div class = "sponsors_list">
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 						</div>
 					</div>
 					<div class="sponsorship-section">
 						<h1>Patrocinadores Ouro</h1>
-						<div class = "sponsors_list sponsor_2">
+						<div class = "sponsors_list">
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 						</div>
 					</div>
 					<div class="sponsorship-section">
 						<h1>Patrocinadores Prata</h1>
-						<div class = "sponsors_list sponsor_3">
+						<div class = "sponsors_list">
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
@@ -263,7 +288,7 @@
 					</div>
 					<div class="sponsorship-section">
 						<h1>Patrocinadores Bronze</h1>
-						<div class = "sponsors_list sponsor_3">
+						<div class = "sponsors_list">
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
@@ -275,7 +300,7 @@
 					</div>
 					<div class="sponsorship-section">
 						<h1>Apoios</h1>
-						<div class = "sponsors_list sponsor_apoios">
+						<div class = "sponsors_list">
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
@@ -288,7 +313,8 @@
 				</div>
 			</div>	
 
-					
+			<hr id="contacts-anchor" class="footer-divider">
+			
 			<div id="map" class="container fixed-height-container">
 				<iframe id="osm-frame" src="./map.html"></iframe>
 
@@ -315,6 +341,8 @@
 				    </p>
 				</div>
 	        </div>
+
+			
 	        
 			<div id="contacts-container" class="container fixed-height-container">
 				<div class="row">	
@@ -409,7 +437,7 @@
 					<div class="col-md-12">
 						<table id="wrapper">
 							<tr>
-								<!-- <td class="student-group"><br></td> -->
+								<td class="student-group"><br></td>
 								<td id="lage2-group" class="student-group">
 									<a href="http://lage2.ist.utl.pt/" target="blank">
 										<img class="student-group-logo" src="img/organization/lage2.png">
@@ -440,7 +468,7 @@
 										<img class="student-group-logo" src="img/organization/N3E.png">
 									</a>
 								</td>
-								<!-- <td class="student-group"><br></td> -->
+								<td class="student-group"><br></td>
 							</tr>
 						</table>
 					</div>
@@ -467,13 +495,13 @@
 
 			<hr class="footer-divider">
 
-			<div class="container container_footer">
-				<div id="ist-logo-footer">
+			<div class="container">
+				<div id="ist-logo-footer" class="pull-left">
 					<a href="http://tecnico.ulisboa.pt/">
 						<img class="collapsed" src="img/set_media/tecnico_big.png" alt="IST Logo">
 					</a>
 				</div>
-				<p id="text-footer">
+				<p class="pull-right">
 					<span class="glyphicon glyphicon-copyright-mark"></span><!--&copy--> <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
 					<br>
 					Fotos <i>by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
@@ -483,10 +511,9 @@
 			</div>
 		</footer>
 
-		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
-    	<script type="text/javascript" src="js/i18next-1.7.5.min.js"></script>
-    	<script type="text/javascript" src="js/countdown.min.js"></script>
+		<script src="js/fading.js"></script>
     	<script type="text/javascript" src="js/set.js"></script>
 	</body>
 </html>

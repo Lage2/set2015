@@ -5,52 +5,16 @@
 
 .sponsorship-section h1
 {
-	font-size: 15px;
+	font-size: 26px;
+	text-align: center;
 }
 
 .sponsorship-section .sponsors_list
 {
 	margin: 0 auto;
+    max-width: 700px;
     text-align: center;
     width: 100%;
-}
-
-.sponsor_principal
-{
-}
-
-.sponsor_principal a
-{
-}
-
-.sponsor_2
-{
-	max-width: 700px;
-}
-
-.sponsor_2 a
-{
-	width: 40%;
-}
-
-.sponsor_3
-{
-	max-width: 1050px;
-}
-
-.sponsor_3 a
-{
-	width: 30%;
-}
-
-.sponsor_apoios
-{
-	max-width: 1050px;
-}
-
-.sponsor_apoios a
-{
-	width: 20%;
 }
 
 
@@ -59,6 +23,7 @@
 	display: inline-block;
     height: auto;
     margin: 1%;
+    width: 40%;
 }
 
 .sponsorship-section .sponsors_list a img

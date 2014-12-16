@@ -18,7 +18,7 @@
 
 
 /*****************************************************************
- * A - LESS Variable definition & customization 
+ * 01 - LESS Variable definition & customization 
  * SEE: http://getbootstrap.com/customize/#less-variables-section
  *****************************************************************/
 /* SET Color Scheme */
@@ -55,7 +55,7 @@ h3 { font-weight: 500; }
 
 
 /*****************************************************************
- * B - Element Customization 
+ * 02 - Element Customization 
  *****************************************************************/
 
 h1, h2, h3{
@@ -84,6 +84,123 @@ h1, h2, h3{
 	margin-left:auto;
 	margin-right:auto;
 }
+
+#jumbo-carousel{
+
+		margin-top: 50px;
+	  	height: 600px;
+
+		.item{
+			height: 600px;
+			background-color: #777;
+		}
+
+		.carousel-caption {
+
+			z-index: 4;
+			margin-bottom: 12.5%;
+			text-align: left;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			//background-color: rgba(255, 183, 0, .2); //orange filter pode ser mudado
+			//background-color: rgba(198, 142, 0, .2); //dark orange filter pode ser mudado
+			background-color: rgba(0,87,125,0.3); //dark blue
+
+			.caption-container{
+				width: 50%;
+				margin: 0px auto;
+				padding-top: 10%;
+			}
+
+			h1 { 
+				font-size: 3em;
+				
+				color: whitesmoke;
+
+
+				
+			}
+
+			.center-text{
+				text-align: center;
+			}
+
+			h1.a, a { 
+				color: whitesmoke;
+				text-decoration: none;
+
+				&:hover{ color: @set-light-blue; }
+			}
+
+			.btn {
+				font-size: 2em;
+				font-weight: 900;
+				border-width: 2px;
+
+			}
+		}
+
+		.carousel-inner > .item > img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			height: 600px;
+			
+		}
+
+		.carousel-control { z-index: 5;}
+
+		.emph{
+			font-style: italic;
+			color: @set-primary-orange;
+		}
+
+		#item-main{
+			background:  black url(../img/jumbo/taguspark_light.jpg) no-repeat;
+			.background-size(cover);
+
+			 @media screen {
+			 	@media (min-width: @screen-lg-desktop){
+			 		background-position-y: -250px;
+			 	} 
+			 	@media (min-width: @screen-xlg-desktop){
+			 		background-position-y: -500px;
+			 	} 
+			 }
+		}
+
+		#item-sponsor{
+			background:  black url(../img/jumbo/3dhand_light.png) no-repeat;
+			.background-size(100%);
+
+			
+			@media screen {
+				@media (min-width: @screen-lg-desktop){
+					background-position-y: -150px;
+				} 
+				@media (min-width: @screen-xlg-desktop){
+					background-position-y: -450px;
+				} 
+			}
+		}
+
+		#item-social-media{
+			background:  black url(../img/jumbo/cover2_light.png) no-repeat;
+			.background-size(cover);
+
+			@media screen {
+				
+				@media (min-width: @screen-xlg-desktop){
+					background-position-y: -90px;
+				} 
+			}
+
+
+		}
+}	
 
 
 .btn {
@@ -161,7 +278,7 @@ footer{
 }
 
 /*****************************************************************
- * C - Elements Definition
+ * 03 - Elements Definition
  *****************************************************************/
 #set-logo{
 	padding: 0;
@@ -186,25 +303,10 @@ footer{
 
 #ist-logo-footer {
 	width: 120px;
-	width: 19%;
-	max-width: 741px;
-	display: inline-block;
-	vertical-align: top;
 	img{
-		height: auto;
 		width: 100%;
+		height: auto;
 	}
-}
-
-#text-footer
-{
-	width: 79%;
-	display: inline-block;
-}
-
-.container_footer
-{
-	padding: 0 1%;
 }
 
 #nav-collapse{
@@ -217,52 +319,150 @@ footer{
 	
 }
 
+#speakers-container{
+	
+	text-align: center;
+	padding: 50px 0 0 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: none;
 
+	#speakers-row{
+
+		.speaker-description{
+			width: 60%;
+			overflow:auto;
+			position:relative;
+			//left:5%;
+			//right:10%;
+			color: @gray-lighter;
+			margin-top: 7%;
+		}
+
+		.oradorName{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: @gray-lighter;
+			font-size: 1.1em;
+			background-color: rgba(0, 0, 0, .5);
+		}
+
+		.quote {
+			font-size: 2em;
+			font-weight: 900;
+			text-align: right;
+			font-style: italic;
+			padding-right: 5px;
+		}
+
+		.quote-src {
+			text-align: right;
+			font-size: 1.2em;
+		}
+
+	}
+
+	#recuit-speaker {
+		width: 70%;
+		position: relative;
+		//bottom: 100px;
+		text-align: right;
+		margin-top: 10%;
+	}
+
+}
 
 #sponsorship-container {
 	background-color: white;
 }
 
-#wrapper {
-	height: 100%;
-	width: 100%;
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 0;
-	border: 0;
+#team-container {
+	min-height: 100px;
+	background-color: @set-dark-blue;
+	
+	#wrapper {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
 
-	td {
-		vertical-align: middle;
-		text-align: center;
+		td {
+			vertical-align: middle;
+			text-align: center;
 
-		img {
-			width: 80%;
-			height: auto;
-			max-height: 130px;
+			img {
+				width: 80%;
+				height: auto;
+				max-height: 130px;
 
+			}
 		}
 	}
 }
 
-#team-container {
-	min-height: 20px;
-	background-color: @set-dark-blue;
-	padding: 0;
+
+#contacts{
 	
-	
+	position: absolute;
+	left:0; 
+	bottom: 0;
+	z-index: 4;
+	padding: 25px;
+	background: rgba(242, 240, 224, 0.6);
+	color: black;
+	font-size: 1.25em;
 }
 
+#contacts-container {
+
+	a { 
+		color: @set-primary-blue; 
+		
+		&:hover{ 
+			text-decoration:none;
+			color: @set-light-blue;
+		}
+	}
+	
+	.hidden_transport_info
+	{
+	    display: none;
+	    width: 100%;
+	    //height: 300px;
+	    padding: 0 2.5%;
+	}
+
+	.transportation-option
+	{
+	    width: 100%;
+	    text-align: center;
+	}
 
 
+	.transportation-option h3
+	{
+		margin: 0;	
+	}
 
+	.transportation-img{
+		margin: 0 5px;
+	}
 
+	.sub-option{
+		margin-left: 15px;
+	}
+
+	.contacts-info { padding-left: 15px; }
+}
 
 .center-text {
 	text-align: center;
 }
 
 .fixed-height-container {
-	min-height: 300px;
+	min-height: 450px;
 
 }
 
@@ -277,10 +477,150 @@ footer{
 
 
 
+
+
+.clear{
+    /* This class clears the floats */
+    clear:both;
+}
+
+
+
+
+/******************************************************************************************/
+
+.student-group{
+	width: 30px;
+}
+
+#ieee-logo {
+	width: 50px;
+	heigh: auto;
+}
+
+.todo{
+	display: none;
+}
+
+
+/******************************************************************************************
+ *  C - Color Scheme 																		  
+ ******************************************************************************************/
+.set-blue-bg 		{ background-color: @set-primary-blue; }
+.set-dark-blue-bg 	{ background-color: @set-dark-blue; }
+.set-xdark-blue-bg 	{ background-color: @set-xdark-blue; }
+.set-light-blue-bg 	{ background-color: @set-light-blue; }
+
+
+
+/******************************************************************************************
+ *  02 - Oradores
+ ******************************************************************************************/
+
+#speakers-container{
+	
+	text-align: center;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: none;
+
+	#title{
+		position:relative;
+
+		h2 {
+		//	position: absolute;
+			margin: 0;
+			width: 100%;
+			top: 0;
+			color: white;
+			padding-left: 15%;
+			text-align: left;
+			margin: 20px 0;
+			font-size: 3.5em;
+
+		}
+	}
+
+	#speakers-row{
+		text-align: middle;
+
+		.row { position: relative; }
+
+		.speaker-description{
+			width: 100%;
+		//	max-width: 650px;
+			overflow:auto;
+			//position:relative;
+			//left:5%;
+			//right:10%;
+			color: @gray-lighter;
+			margin-top: 7%;
+			display: inline-block;
+		}
+
+		.oradorName{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: @gray-lighter;
+			font-size: 1.1em;
+			background-color: rgba(0, 0, 0, .5);
+
+			.name { color: @set-primary-orange; }
+
+			p { padding: 0; margin: 0;}
+		}
+
+		.quote {
+			font-size: 2em;
+			font-weight: 900;
+//			text-align: right;
+			font-style: italic;
+			padding-right: 5px;
+		}
+
+		.quote-src {
+//			text-align: right;
+			font-size: 1.2em;
+		}
+
+	}
+
+	#recuit-speaker {
+		width: 70%;
+		position: relative;
+		//bottom: 100px;
+		text-align: right;
+		margin-top: 10%;
+	}
+
+	#paulo-rosado-description {
+
+		max-width: 550px;
+
+		.quote {
+			text-align: left;
+		}
+	}
+
+	#vasco-pedro-description {
+
+		max-width: 650px;
+
+		.quote {
+			text-align: right;
+		}
+	}
+
+}
+
+.orador-left	{ float: left; 	 }
+.orador-right	{ float: right;  }
+
 .orador, .oradorSmall, .oradorLarge{
 	//float:left;
     //margin:4px;
-	display: inline-block;
     
     /* Giving the orador div a relative positioning: */
     position:relative;
@@ -314,10 +654,10 @@ footer{
 
 	    .oradorDescription{
 		    font-size:1em;
-		    text-align: left;
+		    //text-align: left;
 		    padding:0 5% ;
 		    position: absolute;
-		    bottom: 25%;
+		    bottom: 10%;
 		    
 		    color: white;
 
@@ -371,11 +711,8 @@ footer{
 
 .oradorLarge{
     width:360px;
-	max-width: 100%;
     height:360px;
 }
-
-
 
 .oradorURL{
     font-size:10px;
@@ -383,345 +720,6 @@ footer{
     font-weight:bold;
     alignment:center;
     height:25%;
-}
-
-.clear{
-    /* This class clears the floats */
-    clear:both;
-}
-
-
-
-
-/******************************************************************************************/
-
-.student-group{
-	width: 30px;
-}
-
-#ieee-logo {
-	width: 50px;
-	heigh: auto;
-}
-
-.todo{
-	display: none;
-}
-
-
-/******************************************************************************************
- *  03 - Color Scheme 																		  
- ******************************************************************************************/
-.set-blue-bg 		{ background-color: @set-primary-blue; }
-.set-dark-blue-bg 	{ background-color: @set-dark-blue; }
-.set-xdark-blue-bg 	{ background-color: @set-xdark-blue; }
-.set-light-blue-bg 	{ background-color: @set-light-blue; }
-
-.no-gutter{
-	padding-left : 0px;
-	padding-right: 0px;
-	margin-right : 0px;
-	margin-left  : 0px;
-}
-
-/******************************************************************************************
- *  01 - Main
- ******************************************************************************************/
-
-#company-form {
-	width: 70%;
-	margin: 0 auto;
-
-	.input-group{
-		width: 100%;
-		height: 47px;
-	}
-
-	.error { 
-		display: none; 
-		span { font-weight: 900; color: @set-primary-orange; }
-	}
-
-	#form-error {
-	
-		font-weight: 500;
-	
-	}
-
-
-
-	.form-control { height: 47px; }
-
-	button {
-		width: 100%;
-		height: 47px;
-		background-color: @set-primary-blue;
-		color: whitesmoke;
-		border: 0;
-	}
-}
-
-
-#jumbo-carousel{
-
-		margin-top: 50px;
-	  	min-height: 600px;
-
-		.item{
-			min-height: 600px;
-			background-color: #777;
-		}
-
-		.btn {
-			height: 100%;
-			width: 100%;
-			margin: 0px;
-			padding: 0px;
-			border-radius: 0px;
-			font-size: 16px;
-
-		}
-
-		.carousel-caption {
-
-			z-index: 4;
-			margin-bottom: 12.5%;
-			text-align: left;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			/* moved to blue_container in parent div in order to improve responsiveness*/
-			/* background-color: rgba(0,87,125,0.5); //dark blue */
-
-			.caption-container{
-				width: 60%;
-				margin: 0px auto;
-				padding-top: 10%;
-			}
-			
-
-			h1, h2, h3 {
-				text-align: center;			
-			}
-
-			h1 { 
-				font-size: 3em;
-				color: whitesmoke;
-			}
-
-			.center-text{
-				text-align: center;
-			}
-
-			h1.a, a { 
-				color: whitesmoke;
-				text-decoration: none;
-
-				&:hover{ color: @set-light-blue; }
-			}
-			
-						
-		}
-		
-		#blue_container
-			{
-				display: block;
-				height: 100%;
-				padding: 0;
-				width: 100%;
-				background-color: rgba(0,87,125,0.5); //dark blue
-			}
-
-		.carousel-inner > .item > img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			min-width: 100%;
-			height: 600px;
-			
-		}
-
-		.carousel-control { z-index: 5;}
-
-		.emph{
-			font-style: italic;
-			color: @set-primary-orange;
-		}
-
-		#item-main{
-			background:  black url(../img/jumbo/taguspark_light.jpg) no-repeat;
-			.background-size(cover);
-
-			 @media screen {
-			 	@media (min-width: @screen-lg-desktop){
-			 		background-position-y: -250px;
-			 	} 
-			 	@media (min-width: @screen-xlg-desktop){
-			 		background-position-y: -500px;
-			 	} 
-			 }
-		}
-
-		#item-sponsor{
-			background:  black url(../img/jumbo/3dhand_light.png) no-repeat;
-			.background-size(100%);
-
-			
-			@media screen {
-				@media (min-width: @screen-lg-desktop){
-					background-position-y: -150px;
-				} 
-				@media (min-width: @screen-xlg-desktop){
-					background-position-y: -450px;
-				} 
-			}
-		}
-
-		#item-social-media{
-			background:  black url(../img/jumbo/cover2_light.png) no-repeat;
-			.background-size(cover);
-
-			@media screen {
-				
-				@media (min-width: @screen-xlg-desktop){
-					background-position-y: -90px;
-				} 
-			}
-
-
-		}
-}	
-
-/******************************************************************************************
- *  02 - Oradores
- ******************************************************************************************/
-
-#speakers-container{
-	
-	text-align: center;
-	padding: 0;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: none;
-
-	#title{
-		position:relative;
-
-		h2 {
-		//	position: absolute;
-			margin: 0;
-			width: 100%;
-			top: 0;
-			color: white;
-			padding-left: 15%;
-			text-align: left;
-			margin: 20px 0;
-			font-size: 3.5em;
-
-		}
-	}
-
-	#speakers-row{
-		text-align: middle;
-
-		.speaker-description{
-			width: 100%;
-			max-width: 650px;
-			overflow:auto;
-			//position:relative;
-			//left:5%;
-			//right:10%;
-			color: @gray-lighter;
-			margin-top: 7%;
-			display: inline-block;
-		}
-
-		.oradorName{
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			color: @gray-lighter;
-			font-size: 1.1em;
-			background-color: rgba(0, 0, 0, .5);
-
-			.name { color: @set-primary-orange; }
-
-			p { padding: 0; margin: 0;}
-		}
-
-		.quote {
-			font-size: 2em;
-			font-weight: 900;
-			text-align: right;
-			font-style: italic;
-			padding-right: 5px;
-		}
-
-		.quote-src {
-			text-align: right;
-			font-size: 1.2em;
-		}
-
-	}
-
-	#recuit-speaker {
-		width: 70%;
-		position: relative;
-		//bottom: 100px;
-		text-align: right;
-		margin-top: 10%;
-	}
-
-}
-
-/******************************************************************************************
- *  03 - Média
- ******************************************************************************************/
-#media-container{
-	min-height: 200px;
-	padding: 0;
-	
-	.student-group{
-		width: 30px;
-	}
-	
-	#logos_container
-	{
-		.col-md-10
-		{
-			padding: 0;
-			text-align: center;
-			
-			.col-md-4
-			{
-				padding: 0 1%;			
-				display: inline-block;
-				max-width: 30%;
-				
-				.media-logo
-				{
-					max-width:100%;
-				}
-			}
-		}
-		
-	}
-
-
-	.media-logo {
-		//width: 100%;
-		max-height: 50px;
-		display: block;
-		margin: auto;
-	}
-
-	h1, h2, h3, p {
-		text-align: center;
-		color: whitesmoke;
-		margin: 25px 0;
-		font-style: italic;
-	}
 }
 
 /******************************************************************************************
@@ -760,58 +758,6 @@ footer{
 	}
 }
 
-@media screen and (max-width: 500px) {
-    #map {
-        display: none !important;
-    }
-}
-
-/******************************************************************************************
- *  05 - Como chegar?
- ******************************************************************************************/
-#contacts-container {
-
-	a { 
-		color: @set-primary-blue; 
-		
-		&:hover{ 
-			text-decoration:none;
-			color: @set-light-blue;
-		}
-	}
-	
-	.hidden_transport_info
-	{
-	    display: none;
-	    width: 95%;
-	    //height: 300px;
-	    padding: 0 2.5%;
-	    margin: 0 auto;
-	}
-
-	.transportation-option
-	{
-	    width: 100%;
-	    text-align: center;
-	}
-
-
-	.transportation-option h3
-	{
-		margin: 0;	
-	}
-
-	.transportation-img{
-		margin: 0 5px;
-	}
-
-	.sub-option{
-		margin-left: 15px;
-	}
-
-	.contacts-info { padding-left: 15px; }
-}
-
 /******************************************************************************************
  *  06 - Outros
  ******************************************************************************************/
@@ -840,7 +786,7 @@ footer{
 }
 
 /******************************************************************************************
- * [Externo] Páginas dos Oradores
+ *  D - Páginas Externas
  ******************************************************************************************/
 .speaker-holder{
 	
@@ -864,6 +810,37 @@ footer{
 	#vasco-pedro { 
 		background:  black url(../img/speakers/vasco-pedro.png) no-repeat;
 		.background-size(100%);		
+	}
 
+	#paulo-rosado { 
+		background:  black url(../img/speakers/paulo-rosado.png) no-repeat;
+		.background-size(100%);		
 	}
 }
+
+#company-faq{
+	
+	margin-top: 60px;
+
+	.question-container
+	{
+		margin: 15px;
+	}
+
+	.question
+	{
+		font-size: 16px;
+	    font-weight: bold;
+		cursor: pointer;
+	}
+
+	.answer
+	{
+		border: 1px solid #000000;
+	    margin-top: 5px;
+	    padding: 5px;
+		display: none;
+	}
+}
+
+

@@ -109,7 +109,7 @@ $(document).ready(function(){
         }
     }); 
     
-
+    /*
     i18n.init(function(t) {
         // translate nav
         $(".nav").i18n();
@@ -117,7 +117,7 @@ $(document).ready(function(){
         // programatical access
         var appName = t("app.name");
     });    
-    
+    */
 
 
     $('.oradorTrigger').mouseenter(function(){
@@ -152,11 +152,12 @@ $(document).ready(function(){
 
     /************************************************************************************
      * 00 - Countdown                                                                *
-     ************************************************************************************/
+     ************************************************************************************
      var timespan = countdown(new Date(2015, 03, 2), null, countdown.DAYS);
      console.log("time "+timespan.days);
 
      $('#days').append(timespan.days);
+     */
 
     /************************************************************************************
      * 01 - Formulário de Participação das Empresas
