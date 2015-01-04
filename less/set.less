@@ -213,6 +213,11 @@ h1, h2, h3{
 	border: 2px solid @set-dark-blue;
 	color: @set-dark-blue;
 	background-color: transparent;
+	max-width: 100%;
+	
+	span {
+		text-overflow: ellipsis;
+	}
 	
 	&:hover{
 		color: white; //whitesmoke;
@@ -378,8 +383,9 @@ footer{
 }
 
 #team-container {
-	min-height: 100px;
+	min-height: 0px;
 	background-color: @set-dark-blue;
+	padding: 5px 0;
 	
 	#wrapper {
 		height: 100%;
@@ -712,6 +718,7 @@ footer{
 .oradorLarge{
     width:360px;
     height:360px;
+	max-width: 100%;
 }
 
 .oradorURL{
@@ -722,6 +729,43 @@ footer{
     height:25%;
 }
 
+/******************************************************************************************
+ *  03 - Patrocinadores
+ ******************************************************************************************/
+
+ .sponsorship-section
+{
+	margin-bottom: 25px;
+}
+
+.sponsorship-section h1
+{
+	font-size: 18px;
+	margin-left: 9%;
+}
+
+.sponsorship-section .sponsors_list
+{
+	margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.sponsorship-section .sponsors_list a
+{
+	display: inline-block;
+    height: auto;
+    margin: 1%;
+    width: 40%;
+}
+
+.sponsorship-section .sponsors_list a img
+{
+	max-width: 100%;
+}
+ 
 /******************************************************************************************
  *  04 - Mapa
  ******************************************************************************************/
