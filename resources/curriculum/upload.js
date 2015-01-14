@@ -1,27 +1,42 @@
 var files;
+var linkedinId;
 
 // Grab the files and set them to our variable
-function prepareUpload(event)
+function prepareFile(event)
 {
-	console.log("prepareUpload");
+	console.log("prepareFile");
 	files = event.target.files;
 }
 
 function uploadFile(event){
 
 	console.log("uploadFile");
-
 	event.stopPropagation();
 	event.preventDefault();
 
-	//Ficheiros são adicionados à FormData
-	var data = new FormData();
-	$.each(files, function(key, value)
-    {
-    	console.log("Submiting "+key+" "+value);
-        data.append(key, value);
-    });
 
+	var data = new FormData();
+	var file_count = 0;
+
+	linkedinId = $('#linkedinId').val();
+	if(linkedinId != ""){
+		console.log("LinkedIn ID is "+linkedinId);
+		data.append("linkedinId", linkedinId);
+	}else
+		console.log("No LinkedIn ID specified");
+
+	//Ficheiros são adicionados à FormData	
+	if(files === undefined)
+		console.log("No curriculum was uploaded");
+	else
+		$.each(files, function(key, value)
+	    {
+	    	console.log("Submiting "+key+" "+value);
+	        data.append(key, value);
+	        file_count++;
+	    });
+
+	console.log(file_count+" files being sent");
 	
 	$.ajax({
 		url: 'submit.php?files',
@@ -103,7 +118,7 @@ $(document).ready(function(){
 
 	console.log("Document is ready...");
 
-	$('input[type=file]').on('change', prepareUpload);
+	$('input[type=file]').on('change', prepareFile);
 	$('form').on('submit', uploadFile);
 
 });
