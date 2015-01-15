@@ -613,6 +613,15 @@ footer{
 		}
 	}
 
+	#susana-sargento-description {
+		max-width: 650px;
+
+		.quote {
+			text-align: left;
+		}
+	}	
+
+	.inline-speakers { margin-top: 5px;}
 }
 
 .orador-left	{ float: left; 	 }
@@ -625,6 +634,7 @@ footer{
     /* Giving the orador div a relative positioning: */
     position:relative;
     cursor:pointer;
+    display: inline-block;
 
     .oradorTrigger{
 		position: absolute;
@@ -710,8 +720,8 @@ footer{
 }
 
 .oradorLarge{
-    width:360px;
-    height:360px;
+    width:300px;
+    height:300px;
 }
 
 .oradorURL{
@@ -721,6 +731,40 @@ footer{
     alignment:center;
     height:25%;
 }
+
+/******************************************************************************************
+ *  03 - Empresas e Patrocínios
+ ******************************************************************************************/
+
+ #sponsorship-container{
+
+ 	.sponsorship-section{
+		margin-bottom: 25px;
+		
+		h1{
+			font-size: 26px;
+			text-align: center;
+		}
+
+		.sponsors_list{
+			margin: 0 auto;
+		    max-width: 700px;
+		    text-align: center;
+		    width: 100%;
+		}
+
+		a{
+			display: inline-block;
+		    height: auto;
+		    margin: 1%;
+		    width: 40%;
+		}
+
+		a img{
+			max-width: 100%;
+		}
+	}
+ }
 
 /******************************************************************************************
  *  04 - Mapa
@@ -852,4 +896,33 @@ footer{
 	.btn {
 		float: right;
 	}
+}
+
+#curriculum-submit{
+
+	.btn {
+		display: block;
+		font-size: 1em;
+		min-width: 150px;
+
+
+		border-width: 1.25px;
+		i {font-size: 1.2em;}
+	}
+
+	#filename{ display: inline-block; }
+
+	#success, #error {
+		display:none;
+	}
+
+	#success {
+		color : green;
+	}
+
+	#error {
+		color: red;
+	}
+
+	#submit { float: right; display: inline-block}
 }

@@ -4,8 +4,18 @@ var linkedinId;
 // Grab the files and set them to our variable
 function prepareFile(event)
 {
-	console.log("prepareFile");
+	
 	files = event.target.files;
+
+	console.log("prepareFile "+files[0].name);
+
+	$('#filename').empty();
+	$('#filename').append(files[0].name);
+}
+
+function fakeClick(event){
+	console.log("fakeClicking...")
+	$('#curriculum').click();
 }
 
 function uploadFile(event){
@@ -19,6 +29,8 @@ function uploadFile(event){
 	var file_count = 0;
 
 	linkedinId = $('#linkedinId').val();
+
+
 	if(linkedinId != ""){
 		console.log("LinkedIn ID is "+linkedinId);
 		data.append("linkedinId", linkedinId);
@@ -52,12 +64,40 @@ function uploadFile(event){
 		    {
 		        // Success so call function to process the form
 		        console.log('SUCCESS: '+data+"; mime="+data.mime);
-		        submitForm(event, data);
+
+		        $('#filename').empty();
+		        $('#linkedinId').val('');
+		        files = null;
+
+		        $('#success').css('display','inline-block');
+				$('#success').show().delay(5000).fadeOut();
+
+		        submitForm(event, data);   
 		    }
 		    else
 		    {
 		        // Handle errors here
-		        console.log('ERRORS2: ' + data.error + " - "+data+"; mime="+data.mime);
+		        console.log('ERRORS2: ' + data.error + " - "+data+"; mime="+data.mime+"; Error code="+data.error_code);
+
+		        $('#error-msg').empty();
+
+		        switch(data.error_code){
+		        	case 0: 
+		        		$('#error-msg').append(decodeURIComponent(escape("Por favor envia o teu currículo como um PDF.")));
+		        		break;
+		        	case 1:
+		        		$('#error-msg').append(decodeURIComponent(escape("O teu currículo é demasiado grande, envia um currículo até 12MB.")));
+		        		break;
+		        	case 2:
+		        		$('#error-msg').append(decodeURIComponent(escape("O teu currículo é demasiado pequeno, envia um currículo com pelo menos 64kB.")));
+		        		break;
+		        	case 3:
+		        		$('#error-msg').append(decodeURIComponent(escape("Este currículo já foi submetido, por favor introduz outro currículo."))));
+		        		break;
+		        }
+
+		        $('#error').css('display','inline-block');
+				$('#error').show().delay(5000).fadeOut();
 		    }
 		},
 		error: function(jqXHR, textStatus, errorThrown)
@@ -119,6 +159,8 @@ $(document).ready(function(){
 	console.log("Document is ready...");
 
 	$('input[type=file]').on('change', prepareFile);
-	$('form').on('submit', uploadFile);
+	$('#file-input').on('click', fakeClick);
+	$('#submit').on('click', uploadFile);
+
 
 });

@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="../css/set.css" rel="stylesheet">
-		<!-- WebFonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">	
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="../../css/set.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 		<!-- FontAwsome Icons -->
-		<link href="../css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	<body>
-	<form>
-		<fieldset>
-		    <div>
-		    	<p>https://www.linkedin.com/profile/view?id=</p><input id="linkedinId" typy="text" name="linkedinId">
-		    </div>
-		    <div>	    
-			    <input id="curriculum" name="curriculum" type="file" accept="application/pdf">
-			</div>
-		    <input type="submit" value="Submeter" name="submit" class="button">
-	    </fieldset>
-	</form>
+		<div id="curriculum-submit">
+			<h4>Deixa aqui o teu currículo, ou até mesmo o teu perfil do LinkedIn, para as empresas da SET.</h4>
+			<form>
+				<div class="form-group">
+					<label for="exampleInputFile">Perfil LinkedIn</label>
+					<div class="input-group">
+						<div class="input-group-addon">https://www.linkedin.com/profile/view?id=</div>
+						<input type="text" class="form-control" id="linkedinId" placeholder="" name="linkedinId">
+					</div>
+				</div>
+				<div class="form-group" >
+					<label for="exampleInputFile">Currículo: </label><p id="filename"></p>
+					<button id="file-input" class="btn btn-phantom" type="button">Escolher Currículo <i class="fa fa-file-pdf-o"></i></button>
+
+					<input type="file" id="curriculum" name="curriculum" accept="application/pdf" style="visibility: hidden;">
+				</div>
+				<div>
+					<div id="success" class="info"><i class="fa fa-check"></i> Obrigado pela tua participação</div>
+					<div id="error"   class="info"><i class="fa fa-times"></i> <span id="error-msg"></span></div>
+					<button id="submit" type="submit" class="btn btn-phantom">Enviar <i class="fa fa-paper-plane"></i></button>
+				</div>
+			</form>
+		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="upload.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="upload.js"></script>
 	</body>
 </html>
