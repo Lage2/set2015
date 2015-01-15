@@ -197,8 +197,13 @@ h1, h2, h3{
 					background-position-y: -90px;
 				} 
 			}
+		}
 
-
+		#curriculum-jumbo{
+			width: 900px;
+			height: 350px;
+			border: 0;
+			overflow-y: hidden;
 		}
 }	
 
@@ -233,10 +238,31 @@ h1, h2, h3{
 	border: 2px solid white; //whitesmoke;
 	color: white; //whitesmoke;
 	opacity: .9;
+	background-color: @set-dark-blue;
 
 	&:hover{
 		color: @set-dark-blue;
 		background-color: white; //whitesmoke;
+		border-color: @set-dark-blue;
+	}
+
+	.phantom-active{
+		color: @set-dark-blue;
+		background-color: white; //whitesmoke;
+	}
+
+}
+
+.btn-phantom-xneg {
+	border: 2px solid white; //whitesmoke;
+	color: white; //whitesmoke;
+	opacity: .9;
+	//background-color: @set-dark-blue;
+
+	&:hover{
+		color: @set-dark-blue;
+		background-color: white; //whitesmoke;
+		//border-color: @set-dark-blue;
 	}
 
 	.phantom-active{
@@ -766,6 +792,47 @@ footer{
 	}
  }
 
+#curriculum-container{
+
+	h1, h2, h3, h4, h5 { text-align: center; }
+
+	#curriculum-submit{
+		
+		width: 55%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 30px;
+
+		.btn {
+			display: inline-block;
+			font-size: 1em;
+			min-width: 150px;
+
+
+			border-width: 1.25px;
+			i {font-size: 1.2em;}
+		}
+
+		#file-input { display: inline-block; }
+
+		#filename{ display: inline-block; }
+
+		#success, #error {
+			display:none;
+		}
+
+		#success {
+			color : green;
+		}
+
+		#error {
+			color: red;
+		}
+
+		#submit { float: right; display: inline-block}
+	}
+}
+
 /******************************************************************************************
  *  04 - Mapa
  ******************************************************************************************/
@@ -898,7 +965,10 @@ footer{
 	}
 }
 
+/*
 #curriculum-submit{
+	
+	padding: 30px;
 
 	.btn {
 		display: block;
@@ -926,3 +996,4 @@ footer{
 
 	#submit { float: right; display: inline-block}
 }
+*/

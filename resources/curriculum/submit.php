@@ -14,7 +14,7 @@
 	    foreach($_FILES as $file)
 	    {
 	    	$temp = explode(".",$file["name"]);
-			$new_name = sha1(file_get_contents($file)) . '.' .end($temp);
+			$new_name = sha1(file_get_contents($file['tmp_name'])) . '.' .end($temp);
 	    	$target_file = $uploaddir .basename($new_name);
 	    	$target_file_extention = pathinfo($target_file,PATHINFO_EXTENSION);
 
@@ -50,8 +50,8 @@
 				$temp = explode(".",$file["name"]);
 				$new_name = sha1(file_get_contents($file)) . '.' .end($temp);
 
-	        	//if(move_uploaded_file($file['tmp_name'], $target_file)){
-        		if(move_uploaded_file($file['tmp_name'], $uploaddir . $new_name)){	
+	        	if(move_uploaded_file($file['tmp_name'], $target_file)){
+        		//if(move_uploaded_file($file['tmp_name'], $uploaddir . $new_name)){	
 		            $files[] = $uploaddir .$file['name'];
 		        }else{
 		            $error = true;

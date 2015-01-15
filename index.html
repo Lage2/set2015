@@ -88,7 +88,7 @@
 	            					<h1>Venham conhecer os <span class="emph">futuros profissionais</span> de Portugal</h1>
 	            					<h2>num evento que tem como objetivo juntar os <span class="emph">estudantes</span> com as <span class="emph">empresas</span></h2>
 									<p class="push-btn-middle">
-										<a class="btn btn-phantom-neg" 
+										<a class="btn btn-phantom-xneg" 
 											href="./empresas.html" role="button">
 											<i class="fa fa-info-circle"></i>Informações para Empresas
 										</a>
@@ -114,10 +114,16 @@
 					<div id="item-social-media" class="item">
 						<div class="container">
 	            			<div class="carousel-caption">
-	            				<div class="caption-container center-text">
-	            					<h1>Curriculos Aqui</h1>
-								</div>
-				            </div>	
+	            				<div class="caption-container">
+	            					<h1>Venham conhecer os <span class="emph">futuros profissionais</span> de Portugal</h1>
+	            					<h2>num evento que tem como objetivo juntar os <span class="emph">estudantes</span> com as <span class="emph">empresas</span></h2>
+									<p class="push-btn-middle">
+										<a class="btn btn-phantom" href="#curriculos" >
+											Envia o teu currículo
+										</a>
+	  								</p>
+								</div>	
+				            </div>
 	          			</div>
 					</div>
 				</div>
@@ -272,6 +278,9 @@
 						</p>
 		  			</div>
 		  		</div>
+
+		  		<div style="display: block;"><hr id="" class="footer-divider"></div>
+
 	  			<div class="sponsorship-section">
 					<div class="sponsorship-section todo">
 						<h1>Patrocinador Principal</h1>
@@ -279,7 +288,7 @@
 							<a href="http://placehold.it" target="_blank"><img src="http://placehold.it/300x150"></a>
 						</div>
 					</div>
-					<div class="sponsorship-section">
+					<div id="gold" class="sponsorship-section">
 						<h1>Patrocinadores Ouro</h1>
 						<div class = "sponsors_list">
 							<a href="http://www.everis.com/" target="_blank">
@@ -329,6 +338,36 @@
 					</div>
 				</div>
 			</div>	
+
+			<div style="display: block;"><hr id="curriculos" class="footer-divider"></div>
+
+			<div class="container" id="curriculum-container">
+				<h4>Deixa aqui o teu currículo, ou até mesmo o teu perfil do LinkedIn, para as empresas da SET.</h4>
+				<div id="curriculum-submit">
+					<form>
+					<div class="form-group">
+						<label for="exampleInputFile">Perfil LinkedIn</label>
+						<div class="input-group">
+							<div class="input-group-addon">https://www.linkedin.com/profile/view?id=</div>
+							<input type="text" class="form-control" id="linkedinId" placeholder="" name="linkedinId">
+						</div>
+					</div>
+					<div class="form-group" >
+						<label for="exampleInputFile">Currículo: </label><p id="filename"></p>
+						
+					</div>
+					<div>
+						<button id="file-input" class="btn btn-phantom" type="button">
+							Escolher Currículo <i class="fa fa-file-pdf-o"></i>
+						</button>
+						<button id="submit" type="submit" class="btn btn-phantom-neg">Enviar <i class="fa fa-paper-plane"></i></button>
+					</div>
+					<div id="success" class="info"><i class="fa fa-check"></i> Obrigado pela tua participação</div>
+					<div id="error"   class="info"><i class="fa fa-times"></i> <span id="error-msg"></span></div>
+					<input type="file" id="curriculum" name="curriculum" accept="application/pdf" style="visibility: hidden;">
+					</form>
+				</div>
+			</div>
 
 			<div style="display: block;"><hr id="contacts-anchor" class="footer-divider"></div>
 			
