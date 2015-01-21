@@ -23,7 +23,7 @@
 			$data = array('mime' => $mime);
 
 			//Check file extention
-	    	if($target_file_extention != "pdf") {
+	    	if($target_file_extention != "pdf" || $mime != 'application/pdf') {
 	   			$error = true;
 	   			$data = array('error' => 'File is not a PDF.', 'error_code' => 0);
 			}

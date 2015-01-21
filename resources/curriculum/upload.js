@@ -16,6 +16,18 @@ function prepareFile(event)
 function fakeClick(event){
 	console.log("fakeClicking...")
 	$('#curriculum').click();
+    
+}
+
+/**
+ *
+ */
+function clearCurriculumInfo(event){
+	console.log('Clearing curriculum information...');
+	
+	files = null;
+	$('#filename').empty();
+    $('#linkedinId').val('');
 }
 
 function uploadFile(event){
@@ -65,9 +77,7 @@ function uploadFile(event){
 		        // Success so call function to process the form
 		        console.log('SUCCESS: '+data+"; mime="+data.mime);
 
-		        $('#filename').empty();
-		        $('#linkedinId').val('');
-		        files = null;
+		        clearCurriculumInfo();
 
 		        $('#success').css('display','inline-block');
 				$('#success').show().delay(5000).fadeOut();
@@ -83,16 +93,20 @@ function uploadFile(event){
 
 		        switch(data.error_code){
 		        	case 0: 
-		        		$('#error-msg').append(decodeURIComponent(escape("Por favor envia o teu currículo como um PDF.")));
+		        		//$('#error-msg').append(decodeURIComponent(escape("Por favor envia o teu currículo como um PDF.")));
+		        		$('#error-msg').append("Por favor envia o teu currículo como um PDF.");
 		        		break;
 		        	case 1:
-		        		$('#error-msg').append(decodeURIComponent(escape("O teu currículo é demasiado grande, envia um currículo até 12MB.")));
+		        		//$('#error-msg').append(decodeURIComponent(escape("O teu currículo é demasiado grande, envia um currículo até 12MB.")));
+		        		$('#error-msg').append("O teu currículo é demasiado grande, envia um currículo até 12MB.");
 		        		break;
 		        	case 2:
-		        		$('#error-msg').append(decodeURIComponent(escape("O teu currículo é demasiado pequeno, envia um currículo com pelo menos 64kB.")));
+		        		//$('#error-msg').append(decodeURIComponent(escape("O teu currículo é demasiado pequeno, envia um currículo com pelo menos 64kB.")));
+		        		$('#error-msg').append("O teu currículo é demasiado pequeno, envia um currículo com pelo menos 64kB.");
 		        		break;
 		        	case 3:
-		        		$('#error-msg').append(decodeURIComponent(escape("Este currículo já foi submetido, por favor introduz outro currículo."))));
+		        		//$('#error-msg').append(decodeURIComponent(escape("Este currículo já foi submetido, por favor introduz outro currículo.")));
+		        		$('#error-msg').append("Este currículo já foi submetido, por favor introduz outro currículo.");
 		        		break;
 		        }
 
@@ -161,6 +175,6 @@ $(document).ready(function(){
 	$('input[type=file]').on('change', prepareFile);
 	$('#file-input').on('click', fakeClick);
 	$('#submit').on('click', uploadFile);
-
+	$('#clear').on('click', clearCurriculumInfo);
 
 });

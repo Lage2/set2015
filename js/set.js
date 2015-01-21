@@ -15,6 +15,16 @@ var transportation = {
     
 }
 
+function clear_curriculum_info(event){
+
+    console.log("Cleaning curriculum information...");
+    
+    files = null;
+    $('#filename').empty();
+    $('#linkedinId').val('');    
+
+}
+
  function validation()
  {
         
@@ -254,6 +264,7 @@ $(document).ready(function(){
     $('input[type=file]').on('change', prepareFile);
     $('#file-input').on('click', fakeClick);
     $('#submit').on('click', uploadFile);
+    $('#clear').on('click', clear_curriculum_info);
 
     /* The following code is executed once the DOM is loaded */
     $('a[href*=#]').each(function() {
