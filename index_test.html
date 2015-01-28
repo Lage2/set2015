@@ -73,7 +73,7 @@
 				<ol class="carousel-indicators">
 					<li data-target="#jumbo-carousel" data-slide-to="0" ></li>
 					<li data-target="#jumbo-carousel" data-slide-to="1" class="active"></li>
-					<!--<li data-target="#jumbo-carousel" data-slide-to="2"></li>-->
+					<li data-target="#jumbo-carousel" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
 					<div id="item-sponsor" class="item">
@@ -106,6 +106,24 @@
 				            </div>
 	          			</div>
 					</div>
+					
+					<div id="item-cv-linkedin" class="item">
+						<div class="container">
+	            			<div class="carousel-caption">
+	            				<div class="caption-container">
+	            					<h1>À procura de <span class="emph">novos desafios?</span></h1>
+	            					<h2>Partilha já o teu <span class="emph">currículo</span> e não deixes passar esta <span class="emph">oportunidade</span></h2>
+									<p class="push-btn-middle">
+										<a class="btn btn-phantom-xneg" 
+											href="#curriculos" role="button">
+											<i class="fa fa-graduation-cap"></i>  Partilhar currículo
+										</a>
+	  								</p>
+								</div>	
+				            </div>
+	          			</div>
+					</div>
+
 					<!--
 					<div id="item-social-media" class="item todo">
 						<div class="container">
@@ -134,11 +152,25 @@
 			
 			
 			<div id="speakers-container" class="container-fluid fixed-height-container">
-
-                
-                
 				<div id="speakers-row">
 					<div class="row  inline-speakers">
+					<div class="oradorLarge">
+						    <div class="oradorFlip">
+						        <img src="./img/speakers/Miguel-Goncalves.jpg" alt="Miguel Gonçalves, Spark Agency">
+						    </div>
+
+						    <div class="oradorData">
+						        <div class="oradorDescription">
+						        	Fundador da Spark Agency, uma agência de criatividade especializada em cultura organizacional e criação de comportamentos em empresas.
+						        </div>
+						    </div>
+						    <div class="oradorName">
+						    	<p class="name">Miguel Gonçalves <i class="fa fa-external-link"></i></p>
+						    	<p>Comandante Executivo</p>
+						    	<p>Spark Agency</p>
+						    </div>
+						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/miguel-goncalves.html'"></div>
+						</div>
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
 						        <img src="./img/speakers/pedro-caramez.png" alt="Pedro Caramez, Codacy">
@@ -190,6 +222,9 @@
 						    </div>
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/susana-sargento.html'"></div>
 						</div>
+						
+					</div>
+					<div class="row  inline-speakers">
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
 						        <img src="./img/speakers/rogerio-carapuca.png" alt="Rogério Carapuça, NovaBase">
@@ -207,8 +242,6 @@
 						    </div>
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/rogerio-carapuca.html'"></div>
 						</div>
-					</div>
-					<div class="row  inline-speakers">
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
 						        <img src="./img/speakers/paulo-rosado_cropped.png" alt="Paulo Rosado, OutSystems">
@@ -310,7 +343,7 @@
 							</a>
 						</div>
 						<div class="sponsors_list">
-							<a href="http://www.nokia.com/" target="_blank">
+							<a href="http://networks.nokia.com/" target="_blank">
 								<img src="img/patrocinadores/ouro/nokia-logo.png" alt="Nokia">
 							</a>
 						</div>
@@ -388,14 +421,15 @@
 						<button id="file-input" class="btn btn-phantom" type="button">
 							Escolher Currículo <i class="fa fa-file-pdf-o"></i>
 						</button>
-						<button id="submit" type="submit" class="btn btn-phantom-neg">Enviar <i class="fa fa-paper-plane"></i></button>
 						<button id="clear"  type="button" class="btn btn-phantom-neg">Limpar <i class="fa fa fa-trash"></i></button>
+						<button id="submit" type="submit" class="btn btn-phantom-neg">Enviar <i class="fa fa-paper-plane"></i></button>
 					</div>
 					<div id="success" class="info"><i class="fa fa-check"></i> Obrigado pela tua participação</div>
 					<div id="error"   class="info"><i class="fa fa-times"></i> <span id="error-msg"></span></div>
 					<input type="file" id="curriculum" name="curriculum" accept="application/pdf">
 					</form>
 				</div>
+				<div class="footnote">Ao submeter o seu currículo e perfil LinkedIn está a aceitar a sua distribuição para fins profissionais.</div>
 			</div>
 
 			<div><hr id="contacts-anchor" class="footer-divider"></div>

@@ -45,7 +45,8 @@ function uploadFile(event){
 
 	if(linkedinId != ""){
 		console.log("LinkedIn ID is "+linkedinId);
-		data.append("linkedinId", linkedinId);
+		var tokens = linkedinId.split('&');
+		data.append("linkedinId", tokens[0]);
 	}else
 		console.log("No LinkedIn ID specified");
 

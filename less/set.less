@@ -83,6 +83,11 @@ h1, h2, h3{
 .row{
 	margin-left:auto;
 	margin-right:auto;
+
+	a { 
+		color: @set-dark-blue; text-decoration:none; 
+		&:hover{ color: @set-primary-blue; text-decoration:none;}
+	}
 }
 
 #jumbo-carousel{
@@ -198,6 +203,15 @@ h1, h2, h3{
 				} 
 			}
 		}
+
+		#item-cv-linkedin {
+			background:  black url(../img/jumbo/neg_bubbles.png) no-repeat;
+			.background-size(cover);			
+
+			h1, h2 { text-align: center; }
+		}
+
+
 
 		#curriculum-jumbo{
 			width: 900px;
@@ -759,6 +773,11 @@ footer{
 /******************************************************************************************
  *  03 - Empresas e Patrocínios
  ******************************************************************************************/
+.footnote{
+	font-size: 0.9em;
+	color: @gray-light;
+	text-align: center;
+}
 
  #sponsorship-container{
 
@@ -954,6 +973,10 @@ footer{
 	#pedro-caramez { 
 		background:  black url(../img/speakers/pedro-caramez.png) no-repeat;
 		.background-size(100%);		
+	}
+	#miguel-goncalves{
+		background:  black url(../img/speakers/Miguel-Goncalves.jpg) no-repeat;
+		.background-size(100%);
 	}
 }
 
