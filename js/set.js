@@ -268,7 +268,7 @@ $(document).ready(function(){
     $('input[type=file]').on('change', prepareFile);
     $('#file-input').on('click', fakeClick);
     $('#submit').on('click', uploadFile);
-    $('#clear').on('click', clear_curriculum_info);
+    $('#clear').on('click', clearCurriculumInfo);
 
     /* The following code is executed once the DOM is loaded */
     $('a[href*=#]').each(function() {
