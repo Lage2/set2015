@@ -933,12 +933,18 @@ footer{
 #social-media {
 
 	@media screen {
-		@media (min-width: @screen-phone){
-				
+		
+
+		@media (max-width: @screen-tablet){
+			
 		} 
 
-		@media (min-width: @screen-tablet){
-			top: 100px;
+		@media (max-width: @screen-phone){
+				
+		}
+
+		@media (max-height: 300px){
+			top:100px;
 		} 
 	}
 
