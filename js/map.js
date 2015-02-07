@@ -3,7 +3,7 @@
 	console.log("[map.js]: loading OpenStreetMap maps...");
 
 	// create a map in the "map" div, set the view to a given place and zoom
-	var map = L.map('map', {scrollWheelZoom:false}).setView([38.736946 , -9.301922], 13);
+	var map = L.map('map', {scrollWheelZoom:false, dragging:false}).setView([38.736946 , -9.301922], 13);
 
 	// add an OpenStreetMap tile layer
 	L.tileLayer(

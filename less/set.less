@@ -1,7 +1,8 @@
 @import "bootstrap.less";
 @import url(http://fonts.googleapis.com/css?family=Roboto:900,700,400);
 
-@screen-xlg-desktop: 1680px;
+@screen-xlg-desktop:   1680px;
+@screen-phone:			768px;
 
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
@@ -925,29 +926,26 @@ footer{
  *  D - Web Responsive
  ******************************************************************************************/
 
+
+
+
 .hide-small {
-	
+	@media screen {
+		@media (max-width: @screen-phone){
+			display: none;
+		}
+	}
 }
 
 
-#social-media {
-
-	@media screen {
-		
-
-		@media (max-width: @screen-tablet){
-			
-		} 
-
-		@media (max-width: @screen-phone){
-				
-		}
-
-		@media (max-height: 300px){
-			top:100px;
-		} 
+@media screen {
+	
+	@media (max-width: @screen-phone){
+		#jumbo-carousel .carousel-caption h1 { font-size: 2em; } 	
+		#jumbo-carousel .carousel-caption h2 { font-size: 1.8em; }
+		#jumbo-carousel .carousel-caption h3 { font-size: 1.6em; }
+		#jumbo-carousel .carousel-caption .btn { font-size: 1.8em; }
 	}
-
 }
 
 /******************************************************************************************
