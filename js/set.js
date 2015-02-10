@@ -275,7 +275,8 @@ $(document).ready(function(){
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
             && location.hostname == this.hostname
             && this.hash.replace(/#/,'')
-            && this.hash != "#jumbo-carousel" ) {
+            && this.hash != "#jumbo-carousel" 
+            && this.hash != "#job-board-carousel") {
                 var $targetId = $(this.hash),
                 $targetAnchor = $('[name=' + this.hash.slice(1) +']');
                 var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
