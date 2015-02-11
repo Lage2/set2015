@@ -1,0 +1,80 @@
+#calendar_container
+{
+	display: block;
+    margin-top: 100px;
+	.agenda { 
+		max-width: 100%;
+		table{
+			background-color: #ffffff;
+			color: #272C2A;
+			
+			thead{
+				font-size: 20px;
+			}
+			tbody{
+				/*border: 2px solid #009de1;*/
+				border: 2px solid #006f9e;
+				.selected
+				{
+					/*background-color: #006f9e;*/
+					background-color: #009de1;
+					color: #ffffff;
+					.text-muted
+					{
+						color: #ffffff;
+					}
+				}
+			}
+			th{
+				text-align: center;
+			}
+		}
+		
+		.table-bordered {
+			/*border: 2px solid #009de1;*/
+			border: 2px solid #006f9e;
+		}
+		
+		.table-responsive {
+			overflow-x: auto;
+			min-height: 0.01%;
+		}
+		
+		.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+			/*border: 2px solid #009de1;*/
+			border: 2px solid #006f9e;
+		}
+		
+		.text-muted {
+			color: #272C2A;
+		}
+
+	 }
+ }
+
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px; 
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+
+/* Times */
+.agenda .agenda-time { width: 140px; } 
+
+
+/* Events */
+.agenda .agenda-events {  } 
+.agenda .agenda-events .agenda-event {  } 
+
+@media (max-width: 767px) {
+    
+}
