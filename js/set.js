@@ -252,13 +252,29 @@ function submitForm(event, data)
     });
 }
 
+/*
+function lazyload(){
+   var wt = $(window).scrollTop();    //* top of the window
+   var wb = wt + $(window).height();  //* bottom of the window
 
+   $(".lazy").each(function(){
+      var ot = $(this).offset().top - 150;  //* top of object 
+      var ob = ot + $(this).height(); //* bottom of object
+
+      if(!$(this).attr("loaded") && wt<=ob && wb >= ot){
+         
+         $(this).attr("loaded",true);
+         $(this).fadeIn(50000).attr("loaded",true);
+
+         console.log("Lazy loading "+$(this).attr('id'));
+      }
+   });
+}
+*/
 
 /*********************************************************
  * Document (Main Function)
  *********************************************************/
-
-
 
 $(document).ready(function(){
 
@@ -419,7 +435,10 @@ $(document).ready(function(){
 
     });
 
-
+    /************************************************************************************
+     * 05 - Lazy Load
+     ************************************************************************************/
+    $("img.lazy").lazyload();
 });
 
 
