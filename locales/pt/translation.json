@@ -2,6 +2,18 @@
 	"app": { "name": "set2015" },
 
 	"nav": {
-		"test": "Teste"
+		"Translate" : "EN"
+		"speakers" : "Oradores"
+		"empresas" : "Empresas"
+		"contactos" : "Contactos"
+	}
+
+	"JaimeJorge": {
+		"description" : "Jaime Jorge é o CEO e co-fundador da Codacy, um serviço de revisão de código automatizado, que facilita e torna mais eficiente o desenvolvimento de programas."
+		"title" : "CEO e Co-Fundador"
+	}
+
+	"Susana Sargento": {
+		"description" : 
 	}
 }
