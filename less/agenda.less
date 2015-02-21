@@ -132,18 +132,32 @@ Css da primeira versão
 			overflow: auto;
 			.dia_linha
 			{
-				.dia_hora
+				margin-bottom: 12px;
+				text-align: center;
+				width: 100%;
+				.dia_evento
 				{
-					/*display: inline-block;*/
 					font-weight: bold;
 				}
-				.dia_eventos
+				.dia_hora
+				{
+				}
+				.dia_foto
+				{
+					width: 50px;
+					height: 50px;
+					display: inline-block;
+					img{
+						width: 50px;
+						height: 50px;
+						border-radius: 25px;
+					}
+				}
+				.evento_container
 				{
 					display: inline-block;
-					margin-bottom: 12px;
-					.dia_evento
-					{
-					}
+					margin: 0 10px;
+					vertical-align: middle;
 				}
 			}
 		}
