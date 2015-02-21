@@ -1,4 +1,6 @@
-/*#calendar_container
+/*
+Css da primeira versão
+#calendar_container
 {
 	display: block;
     margin-top: 100px;
@@ -79,17 +81,21 @@
     margin-top: 100px;
 	/* Dates */
 	.agenda{
+		height: 500px;
 		border: 2px solid #006f9e;
+		display: table;
 		.agenda-date {
 			width: 9%;
 			padding: 3px;
 			display: table-cell;
 			border: 2px solid #006f9e;
 			border-collapse: collapse;
-			height: 250px;
+			height: 496px;
 			vertical-align: middle;
 			cursor: pointer;
 			text-align: center;
+			background-color: #009de1;
+			color: #ffffff;
 			.dayofmonth {
 				font-size: 36px;
 				line-height: 36px;
@@ -97,20 +103,21 @@
 			.shortdate {
 				font-size: 0.75em; 
 			}
-		}
-		.agenda-date:hover
-		{
-			background-color: #009de1;
-			color: #ffffff;
 			.text-muted
 			{
 				color: #ffffff;
 			}
-			
+		}
+		.agenda-date:hover
+		{
+			background-color: #006f9e;
+			color: #ffffff;
+			height: 500px;
+			overflow: auto;
 		}
 		.dia_selected
 		{
-			background-color: #009de1;
+			background-color: #006f9e;
 			color: #ffffff;
 			.text-muted
 			{
@@ -121,6 +128,8 @@
 			display: none;
 			border: 2px solid #006f9e;
 			border-collapse: collapse;
+			height: 500px;
+			overflow: auto;
 			.dia_linha
 			{
 				.dia_hora
@@ -140,7 +149,7 @@
 		}
 		.dia_container_selected
 		{
-			display: table-cell;
+			display: block;
 		}
 	}
 }
