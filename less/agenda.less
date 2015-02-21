@@ -1,4 +1,6 @@
-/*#calendar_container
+/*
+Css da primeira versão
+#calendar_container
 {
 	display: block;
     margin-top: 100px;
@@ -79,17 +81,21 @@
     margin-top: 100px;
 	/* Dates */
 	.agenda{
+		height: 500px;
 		border: 2px solid #006f9e;
+		display: table;
 		.agenda-date {
 			width: 9%;
 			padding: 3px;
 			display: table-cell;
 			border: 2px solid #006f9e;
 			border-collapse: collapse;
-			height: 250px;
+			height: 496px;
 			vertical-align: middle;
 			cursor: pointer;
 			text-align: center;
+			background-color: #009de1;
+			color: #ffffff;
 			.dayofmonth {
 				font-size: 36px;
 				line-height: 36px;
@@ -97,20 +103,21 @@
 			.shortdate {
 				font-size: 0.75em; 
 			}
-		}
-		.agenda-date:hover
-		{
-			background-color: #009de1;
-			color: #ffffff;
 			.text-muted
 			{
 				color: #ffffff;
 			}
-			
+		}
+		.agenda-date:hover
+		{
+			background-color: #006f9e;
+			color: #ffffff;
+			height: 500px;
+			overflow: auto;
 		}
 		.dia_selected
 		{
-			background-color: #009de1;
+			background-color: #006f9e;
 			color: #ffffff;
 			.text-muted
 			{
@@ -121,26 +128,42 @@
 			display: none;
 			border: 2px solid #006f9e;
 			border-collapse: collapse;
+			height: 500px;
+			overflow: auto;
 			.dia_linha
 			{
-				.dia_hora
+				margin-bottom: 12px;
+				text-align: center;
+				width: 100%;
+				.dia_evento
 				{
-					/*display: inline-block;*/
 					font-weight: bold;
 				}
-				.dia_eventos
+				.dia_hora
+				{
+				}
+				.dia_foto
+				{
+					width: 50px;
+					height: 50px;
+					display: inline-block;
+					img{
+						width: 50px;
+						height: 50px;
+						border-radius: 25px;
+					}
+				}
+				.evento_container
 				{
 					display: inline-block;
-					margin-bottom: 12px;
-					.dia_evento
-					{
-					}
+					margin: 0 10px;
+					vertical-align: middle;
 				}
 			}
 		}
 		.dia_container_selected
 		{
-			display: table-cell;
+			display: block;
 		}
 	}
 }
