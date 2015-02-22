@@ -29,6 +29,15 @@
 
 		<!-- FontAwsome Icons -->
 		<link href="css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Calendar css -->
+		<link href="css/agenda.css" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+		<script src="js/fading.js"></script>
+		<script type="text/javascript" src="js/lazyload.min.js"></script>
+    	<script type="text/javascript" src="js/set.js"></script>
 	</head>
 	<body>
 		<div id="content">
@@ -59,9 +68,10 @@
 						<div class="collapse navbar-collapse" id="nav-collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="#speakers-container">Speakers</a></li>
-								<li><a href="#sponsorship-container">Corporations</a></li>
+								<li><a href="#calendar_container">Calendar</a></li>
+								<li><a href="#sponsorship-container">Sponsors</a></li>
 								<li><a href="#contacts-anchor">Contacts</a></li>
-								<li><a href="./organizacao.html">Team</a></li>
+								<li><a href="./organizacaoEN.html">Team</a></li>
 								<li><a href="./index.html">Portuguese</a></li>
 							</ul>
 						</div>
@@ -369,9 +379,309 @@
 				</div>
 			</div>
 
+			<!-- calendario -->
+			<div id="calendar_container" class="container-fluid">
+				<h1>Calendar</h1>
+				<div class="agenda">
+					<!-- DIA 2 -->
+					<div class="agenda-date dia_selected" id="dia_2" onclick="show_dia(2)">
+						<div class="dayofmonth">02</div>
+						<div class="shortdate text-muted">March</div>
+						<div class="dayofweek">Monday</div>
+					</div>
+					<div class="dia_container dia_container_selected" id="dia_container_2">
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company iCreate </div>
+							<div class="dia_hora"> 10:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Delloite </div>
+							<div class="dia_hora"> 10:00 - Room 0.32 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Outsystems </div>
+							<div class="dia_hora"> 11:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Teleperformance </div>
+							<div class="dia_hora"> 11:00 - Room 0.32 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company KPMG </div>
+							<div class="dia_hora"> 12:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Jerónimo Martins </div>
+							<div class="dia_hora"> 12:00 - Room 0.32 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container right">
+									<div class="dia_evento"> Lecture given by speaker Paulo Rosado </div>
+									<div class="dia_hora"> 13:30 - Room 0.65 </div>
+								</div>
+								<div class="dia_foto right"><img src="./img/calendario/paulo-rosado.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Workshop by the company Everis: “Da candidatura ao Emprego” </div>
+							<div class="dia_hora"> 14:30 - Room 0.16  </div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container left">
+									<div class="dia_evento"> Lecture given by speaker Jaime Jorge </div>
+									<div class="dia_hora"> 16:00 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto left"><img src="./img/calendario/jaime-jorge.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Workshop by the company Lunacloud: "Como alojar a tua aplicação na Cloud de forma simples e rápida!" </div>
+							<div class="dia_hora"> 17:00 - Room 0.16  </div>
+						</div>
+					</div>
+					
+					<!-- DIA 3 -->
+					<div class="agenda-date" id="dia_3" onclick="show_dia(3)">
+						<div class="dayofmonth">03</div>
+						<div class="shortdate text-muted">March</div>
+						<div class="dayofweek">Tuesday</div>
+					</div>
+					<div class="dia_container" id="dia_container_3">
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Glintt </div>
+							<div class="dia_hora"> 10:00 - Room 0.16  </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Ernst & Young </div>
+							<div class="dia_hora"> 10:00 - Room 0.32  </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Nokia </div>
+							<div class="dia_hora"> 11:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Altran </div>
+							<div class="dia_hora"> 11:00 - Room 0.32 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Maksen </div>
+							<div class="dia_hora"> 12:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Portugal </div>
+							<div class="dia_hora"> 12:00 - Room 0.32 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container right">
+									<div class="dia_evento"> Lecture given by speaker Vasco Pedro from Unbabel </div>
+									<div class="dia_hora"> 13:30 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto right"><img src="./img/calendario/vasco-pedro.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Dreamshaper: "Business Modelling e Design Thinking" </div>
+							<div class="dia_hora"> 14:30 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container left">
+									<div class="dia_evento"> Lecture given by speaker Rogério Carapuça from Novabase </div>
+									<div class="dia_hora"> 16:00 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto left"><img src="./img/calendario/rogerio-carapuca.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Linkedin Workshop by Pedro Caramez </div>
+							<div class="dia_hora"> 17:00 - Room 0.16 </div>
+						</div>
+					</div>
+					
+					<!-- DIA 4 -->
+					<div class="agenda-date" id="dia_4" onclick="show_dia(4)">
+						<div class="dayofmonth">04</div>
+						<div class="shortdate text-muted">March</div>
+						<div class="dayofweek">Wednsday</div>
+					</div>
+					<div class="dia_container" id="dia_container_4">
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Iten Solutions </div>
+							<div class="dia_hora"> 10:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Novabase </div>
+							<div class="dia_hora"> 11:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Vodafone </div>
+							<div class="dia_hora"> 11:00 - Room 0.32 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Synopsys </div>
+							<div class="dia_hora"> 12:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Presentation by the company Bold International </div>
+							<div class="dia_hora"> 12:00 - Room 0.32 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container right">
+									<div class="dia_evento"> Lecture given by speaker David Mota: "The challenges of Civic Applications and UAV's" </div>
+									<div class="dia_hora"> 13:30 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto right"><img src="./img/calendario/david-mota.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container left">
+									<div class="dia_evento"> Lecture given by speaker Susana Sargento from Veniam </div>
+									<div class="dia_hora"> 14:45 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto left"><img src="./img/calendario/susana-sargento.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container right">
+									<div class="dia_evento"> Lecture given by speaker Manuel Severiano from Identity </div>
+									<div class="dia_hora"> 16:00 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto right"><img src="./img/calendario/manuel-severiano.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Workshop given by the company Capgemini </div> 
+							<div class="dia_hora"> 17:00 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Workshop given by the Visabeira Group: "Wireless Networks - Installation & Commissioning - A challenge for new engineers: To begin a carreer on the field."</div>
+							<div class="dia_hora"> 17:00 - Room 0.16 </div>
+						</div>
+					</div>
+					
+					<!-- DIA 5 -->
+					<div class="agenda-date" id="dia_5" onclick="show_dia(5)">
+						<div class="dayofmonth">05</div>
+						<div class="shortdate text-muted">March</div>
+						<div class="dayofweek">Thursday</div>
+					</div>
+					<div class="dia_container" id="dia_container_5">
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Too Small to Fail" </div>
+							<div class="dia_hora"> 10:00 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Jobbox" </div>
+							<div class="dia_hora"> 10:15 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Talkdesk" </div>
+							<div class="dia_hora"> 10:30 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<!-- <div class="dia_evento"> Apresentação de Startup: "Vertty" </div> -->
+							<div class="dia_evento"> Startup Presentation: To be Determined </div>
+							<div class="dia_hora"> 10:45 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Wazza" </div>							
+							<div class="dia_hora"> 11:00 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Zaask" </div>
+							<div class="dia_hora"> 11:15 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Digisfera" </div>
+							<div class="dia_hora"> 11:30 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Uber" </div>
+							<div class="dia_hora"> 11:45 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Follow Prince" </div>
+							<div class="dia_hora"> 12:00 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Startup Presentation: "Uniplaces" </div>
+							<div class="dia_hora"> 12:15 - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Workshop given by the company Beta-i: "Tools and processes to launch a successful Startup." </div>
+							<div class="dia_hora"> 14:00  - Main Lobby </div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container right">
+									<div class="dia_evento"> Lecture given by speaker Miguel Gonçalves </div>
+									<div class="dia_hora"> 17:45 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto right"><img src="./img/calendario/miguel-goncalves.png"></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- DIA 6 -->
+					<div class="agenda-date" id="dia_6" onclick="show_dia(6)">
+						<div class="dayofmonth">06</div>
+						<div class="shortdate text-muted">March</div>
+						<div class="dayofweek">Friday</div>
+					</div>
+					<div class="dia_container" id="dia_container_6">
+						<div class="dia_linha">
+							<div class="dia_evento"> Workshop: To be Determined</div>
+							<div class="dia_hora"> 10:00 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Arduíno Workshop </div>
+							<div class="dia_hora"> 11:30 - Room 0.16 </div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container right">
+									<div class="dia_evento"> Lecture given by speaker Rui Costa from Veniam </div>
+									<div class="dia_hora"> 13:30 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto right"><img src="./img/calendario/rui-costa.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container left">
+									<div class="dia_evento"> Lecture given by speaker Diogo Mónica from Square </div>
+									<div class="dia_hora"> 14:45 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto left"><img src="./img/calendario/diogo-monica.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="centered_container">
+								<div class="evento_container right">
+									<div class="dia_evento"> Lecture given by speaker Hugo Silva: "BITalino: From a paper towel to the World" </div>
+									<div class="dia_hora"> 16:00 - Room 0.65  </div>
+								</div>
+								<div class="dia_foto right"><img src="./img/calendario/hugo-silva.png"></div>
+							</div>
+						</div>
+						<div class="dia_linha">
+							<div class="dia_evento"> Closing Ceremony </div>
+							<div class="dia_hora"> 17:15 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
 			<div id="sponsorship-container" class="container-fluid fixed-height-container">
 				<!-- <h1>Patrocínios</h1> -->
-				<h1>Corporations</h1>
+				<h1>Sponsors</h1>
 				<p class="push-btn-middle">
 					<a class="btn btn-phantom" 
 						href="./empresas.html" role="button"><i class="fa fa-info-circle"></i><span>Information for Companies</span>
@@ -694,7 +1004,7 @@
 					<h3>Come meet the <span class="emph">Team</span></h3>
 					<p class="push-btn-middle">
 						<a class="btn btn-phantom" 
-							href="./organizacao.html" role="button"><i class="fa fa-users"></i><span>  Team</span>
+							href="./organizacaoEN.html" role="button"><i class="fa fa-users"></i><span>  Team</span>
 						</a>
 	  				</p>
 	  				<hr class="footer-divider">
