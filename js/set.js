@@ -145,10 +145,10 @@ $(document).ready(function(){
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        
+        var href = $.attr(this, 'href');
         root.animate({
           scrollTop: target.offset().top - $('#navigation-bar').height()
-        }, 1000);
+        }, 1000, function(){window.location.hash = href;});
         
         return false;
       }
