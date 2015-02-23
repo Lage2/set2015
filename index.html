@@ -54,7 +54,7 @@
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 							</button>
-							<a id="set-logo" class="navbar-brand" href="#">
+							<a id="set-logo" class="navbar-brand" href="index.html">
 								<img class="hidden-xs" src="img/set_media/set_small.png" alt="SET Logo">
 								<img class="visible-xs-block" src="img/set_media/set_tiny.png" alt="SET Logo">
 							</a>
@@ -68,10 +68,10 @@
 
 						<div class="collapse navbar-collapse" id="nav-collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#speakers-container">Oradores</a></li>
-								<li><a href="#calendar_container">Calendário</a></li>
-								<li><a href="#sponsorship-container">Patrocinadores</a></li>
-								<li><a href="#contacts-anchor">Contactos</a></li>
+								<li><a href="#oradores">Oradores</a></li>
+								<li><a href="#calendario">Calendário</a></li>
+								<li><a href="#patrocinadores">Patrocinadores</a></li>
+								<li><a href="#map">Contactos</a></li>
 								<li><a href="./organizacao.html">Organização</a></li>
 								<li><a href="./indexEN.html">English</a></li>
 							</ul>
@@ -147,7 +147,7 @@
 	      		</a>
 			</div>
 			
-			
+			<hr id="oradores" class="footer-divider">
 			<div id="speakers-container" class="container-fluid fixed-height-container">
 				<h1>Oradores</h1>
 				<div id="speakers-row">
@@ -380,6 +380,7 @@
 			</div>
 			
 			<!-- calendario -->
+			<hr id="calendario" class="footer-divider">
 			<div id="calendar_container" class="container-fluid">
 				<h1>Calendário</h1>
 				<div class="agenda">
@@ -679,6 +680,7 @@
 			</div>
 			
 
+			<hr id="patrocinadores" class="footer-divider">
 			<div id="sponsorship-container" class="container-fluid fixed-height-container">
 				<h1>Patrocinadores</h1>
 				
@@ -755,7 +757,7 @@
 						</div>
 					</div>
 					
-					<div><hr id="" class="footer-divider"></div>
+					<div><hr class="footer-divider"></div>
 					
 					<div class="sponsorship-section">
 						<h1>Patrocinadores Bronze</h1>
@@ -769,7 +771,7 @@
 						</div>
 					</div>
 					
-					<div><hr id="" class="footer-divider"></div>
+					<div><hr class="footer-divider"></div>
 					
 					<div class="sponsorship-section">
 						<h1>Parceiros</h1>
@@ -782,6 +784,7 @@
 				</div>
 			</div>
 
+			<hr id="oportunidades" class="footer-divider">
 			<div id="job-board" class="container">
 				<h1 id="job-board-title">Banner Oportunidades</h1>
 				<hr class="footer-divider">
@@ -904,44 +907,12 @@
 					</p>
 				</div>
 			</div>
-			<!--
-			<div><hr id="curriculos" class="footer-divider"></div>
 
-			<div class="container" id="curriculum-container">
-				<h4>Deixa aqui o teu currículo, ou até mesmo o teu perfil do LinkedIn, para as empresas da SET.</h4>
-				<div id="curriculum-submit">
-					<form>
-					<div class="form-group">
-						<label for="exampleInputFile">Perfil LinkedIn</label>
-						<div class="input-group">
-							<div class="input-group-addon">https://www.linkedin.com/profile/view?id=</div>
-							<input type="text" class="form-control" id="linkedinId" placeholder="" name="linkedinId">
-						</div>
-					</div>
-					<div class="form-group" >
-						<label for="exampleInputFile">Currículo: </label><p id="filename"></p>
-						
-					</div>
-					<div>
-						<button id="file-input" class="btn btn-phantom" type="button">
-							Escolher Currículo <i class="fa fa-file-pdf-o"></i>
-						</button>
-						<button id="clear"  type="button" class="btn btn-phantom-neg">Limpar <i class="fa fa fa-trash"></i></button>
-						<button id="submit" type="submit" class="btn btn-phantom-neg">Enviar <i class="fa fa-paper-plane"></i></button>
-					</div>
-					<div id="success" class="info"><i class="fa fa-check"></i> Obrigado pela tua participação</div>
-					<div id="error"   class="info"><i class="fa fa-times"></i> <span id="error-msg"></span></div>
-					<input type="file" id="curriculum" name="curriculum" accept="application/pdf">
-					</form>
-				</div>
-				<div class="footnote">Ao submeter o seu currículo e perfil LinkedIn está a aceitar a sua distribuição para fins profissionais.</div>
-			</div>
-			-->
+				
 			
-			
+			<div><hr id="contactos" class="footer-divider"></div>
 			<div id="map" class="container fixed-height-container">
 				<iframe id="osm-frame" src="./map.html"></iframe>
-
 
 				<div id="contacts">  
 					
@@ -1030,8 +1001,9 @@
 					</div>
 				</div>
 			</div>
-			<div><hr id="contacts-anchor" class="footer-divider"></div>
 
+
+			<div><hr id="organizacao" class="footer-divider"></div>
 			<div id="team-container" class="container-fluid fixed-height-container">
 				
 				<div class="row">
