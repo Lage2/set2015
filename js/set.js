@@ -276,7 +276,8 @@ $(document).ready(function(){
      * 05 - Lazy Load
      ************************************************************************************/
     $("img.lazy").lazyload({
-        threshold : 250
+        threshold : 300,
+        effect: "fadeIn"
     });
     
 });
