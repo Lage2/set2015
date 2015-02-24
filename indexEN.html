@@ -377,58 +377,69 @@
 						<div class="dayofmonth">02</div>
 						<div class="shortdate text-muted">March</div>
 						<div class="dayofweek">Monday</div>
-					</div>
+					</div>				
 					<div class="dia_container dia_container_selected" id="dia_container_2">
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company iCreate </div>
-							<div class="dia_hora"> 10:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Delloite </div>
-							<div class="dia_hora"> 10:00 - Room 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Outsystems </div>
-							<div class="dia_hora"> 11:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Teleperformance </div>
-							<div class="dia_hora"> 11:00 - Room 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company KPMG </div>
-							<div class="dia_hora"> 12:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Jerónimo Martins </div>
-							<div class="dia_hora"> 12:00 - Room 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Lecture given by speaker Paulo Rosado </div>
-									<div class="dia_hora"> 13:30 - Room 0.65 </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/paulo-rosado.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop by the company Everis: “Da candidatura ao Emprego” </div>
-							<div class="dia_hora"> 14:30 - Room 0.16  </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Lecture given by speaker Jaime Jorge </div>
-									<div class="dia_hora"> 16:00 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/jaime-jorge.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop by the company Lunacloud: "Como alojar a tua aplicação na Cloud de forma simples e rápida!" </div>
-							<div class="dia_hora"> 17:00 - Room 0.16  </div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Room 0.16</th>
+									<th>Room 0.32</th>
+									<th>Room 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">09:30</td>
+									<td class="hora_sessao" colspan="3">Opening Ceremony</td>
+								</tr>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td><img src="img/patrocinadores/prata/LogoiCreate.png" alt="iCreate"></td>
+									<td><img src="img/patrocinadores/ouro/DEL_PRI_RGB.png" alt="Deloitte"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td><img src="img/patrocinadores/prata/outsystems.png" alt="Outsystems"></td>
+									<td><img src="img/patrocinadores/prata/teleperformance.png" alt="Teleperformance"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:00</td>
+									<td><img src="img/patrocinadores/prata/KPMG_NoCP_RGB.JPG" alt="KPMG"></td>
+									<td><img src="img/patrocinadores/prata/jeronimo_martins.jpg" alt="Jerónimo Martins"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_paulo-rosado', 'in')"  onmouseleave="show_info_calendar('info_paulo-rosado', 'out')"> <div id="info_paulo-rosado" class="hora_info">stuff goes here</div>
+										<span>Paulo Rosado</span><img src="./img/speakers/paulo-rosado_cropped.png" alt="Paulo Rosado"><!-- end To update -->
+									</td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:30</td>
+									<td class="hora_workshop"><img src="img/patrocinadores/ouro/everis.png" alt="Everis"><div>Workshop: “Da candidatura ao Emprego”</div></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">16:00</td>
+									<td></td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_jaime-jorge', 'in')"  onmouseleave="show_info_calendar('info_jaime-jorge', 'out')"> <div id="info_jaime-jorge" class="hora_info">stuff goes here</div>
+										<span>Jaime Jorge</span><img src="./img/speakers/jaime-jorge.png" alt="Jaime Jorge"></td><!-- end To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">17:00</td>
+									<td class="hora_workshop"><img src="./img/patrocinadores/bronze/lunacloud.png" alt="Lunacloud"><div>Workshop: “Como alojar a tua aplicação na Cloud de forma simples e rápida!”</div></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 3 -->
@@ -438,56 +449,62 @@
 						<div class="dayofweek">Tuesday</div>
 					</div>
 					<div class="dia_container" id="dia_container_3">
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Glintt </div>
-							<div class="dia_hora"> 10:00 - Room 0.16  </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Ernst & Young </div>
-							<div class="dia_hora"> 10:00 - Room 0.32  </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Nokia </div>
-							<div class="dia_hora"> 11:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Altran </div>
-							<div class="dia_hora"> 11:00 - Room 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Maksen </div>
-							<div class="dia_hora"> 12:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Portugal </div>
-							<div class="dia_hora"> 12:00 - Room 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Lecture given by speaker Vasco Pedro from Unbabel </div>
-									<div class="dia_hora"> 13:30 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/vasco-pedro.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Dreamshaper: "Business Modelling e Design Thinking" </div>
-							<div class="dia_hora"> 14:30 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Lecture given by speaker Rogério Carapuça from Novabase </div>
-									<div class="dia_hora"> 16:00 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/rogerio-carapuca.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Linkedin Workshop by Pedro Caramez </div>
-							<div class="dia_hora"> 17:00 - Room 0.16 </div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Room 0.16</th>
+									<th>Room 0.32</th>
+									<th>Room 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td><img src="img/patrocinadores/ouro/glint.png" alt="Glintt"></td>
+									<td><img src="img/patrocinadores/prata/EY_Logo5.jpg" alt="Ernst & Young"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td><img src="img/patrocinadores/ouro/nokia-logo.png" alt="Nokia"></td>
+									<td><img src="img/patrocinadores/prata/altran.png" alt="Altran"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:00</td>
+									<td><img src="img/patrocinadores/prata/maksen.png" alt="Maksen"></td>
+									<td><img src="img/patrocinadores/prata/gfi.png" alt="Gfi Portugal"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_vasco-pedro', 'in')"  onmouseleave="show_info_calendar('info_vasco-pedro', 'out')"> <div id="info_vasco-pedro" class="hora_info">stuff goes here</div>
+										<span>Vasco Pedro</span><img src="./img/speakers/vasco_cropped.PNG" alt="Vasco Pedro"></td><!-- To end update -->
+								</tr>
+								<tr>
+									<td class="hora_column">14:30</td>
+									<td class="hora_workshop"><div>“Dreamshaper: Business Modelling e Design Thinking”</div></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">16:00</td>
+									<td></td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_rogerio-carapuca', 'in')"  onmouseleave="show_info_calendar('info_rogerio-carapuca', 'out')"> <div id="info_rogerio-carapuca" class="hora_info">stuff goes here</div>
+										<span>Rogério Carapuça</span><img src="./img/speakers/rogerio-carapuca.png" alt="Rogério Carapuça"></td><!-- end To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">17:00</td>
+									<td class="hora_orador hora_workshop"><img src="./img/speakers/pedro-caramez.png" alt="Pedro Caramez"><div>Practical Linkedin Workshop </div></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 4 -->
@@ -497,61 +514,63 @@
 						<div class="dayofweek">Wednesday</div>
 					</div>
 					<div class="dia_container" id="dia_container_4">
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Iten Solutions </div>
-							<div class="dia_hora"> 10:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Novabase </div>
-							<div class="dia_hora"> 11:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Vodafone </div>
-							<div class="dia_hora"> 11:00 - Room 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Synopsys </div>
-							<div class="dia_hora"> 12:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Presentation by the company Bold International </div>
-							<div class="dia_hora"> 12:00 - Room 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Lecture given by speaker David Mota: "The challenges of Civic Applications and UAV's" </div>
-									<div class="dia_hora"> 13:30 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/david-mota.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Lecture given by speaker Susana Sargento from Veniam </div>
-									<div class="dia_hora"> 14:45 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/susana-sargento.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Lecture given by speaker Manuel Severiano from Identity </div>
-									<div class="dia_hora"> 16:00 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/manuel-severiano.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop given by the company Capgemini </div> 
-							<div class="dia_hora"> 17:00 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop given by the Visabeira Group: "Wireless Networks - Installation & Commissioning - A challenge for new engineers: To begin a carreer on the field."</div>
-							<div class="dia_hora"> 17:00 - Room 0.16 </div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Room 0.16</th>
+									<th>Room 0.32</th>
+									<th>Room 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td><img src="img/patrocinadores/prata/iten.png" alt="Iten Solutions"></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td><img src="img/patrocinadores/prata/novabase.png" alt="Iten Solutions"></td>
+									<td><img src="img/patrocinadores/prata/Vodafone.png" alt="Vodafone"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:00</td>
+									<td><img src="img/patrocinadores/prata/synopsys.png" alt="Synopsys"></td>
+									<td><img src="img/patrocinadores/prata/bold.jpg" alt="Bold International"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_david-mota', 'in')"  onmouseleave="show_info_calendar('info_david-mota', 'out')"> <div id="info_david-mota" class="hora_info">stuff goes here</div>
+										<span>David Mota</span><img src="./img/speakers/david-mota.jpg" alt="David Mota"><div>"The challenges of Civic Applications and UAV's""</div></td><!-- end To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">14:45</td>
+									<td></td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_susana-sargento', 'in')"  onmouseleave="show_info_calendar('info_susana-sargento', 'out')"> <div id="info_susana-sargento" class="hora_info">stuff goes here</div>
+										<span>Susana Sargento</span><img src="./img/speakers/susana.png" alt="Susana Sargento"></td><!-- end To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">16:00</td>
+									<td></td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_manuel-severiano', 'in')"  onmouseleave="show_info_calendar('info_manuel-severiano', 'out')"> <div id="info_manuel-severiano" class="hora_info">stuff goes here</div>
+										<span>Manuel Severiano</span><img src="./img/speakers/manuel-severiano.png" alt="Manuel Severiano"></td><!-- end To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">17:00</td>
+									<td class="hora_workshop"><img src="img/patrocinadores/prata/Capgemini_logo.gif" alt="Capgemini"><div>Workshop</div></td>
+									<td class="hora_workshop"><div>Workshop given by the Visabeira Group: "Wireless Networks - Installation & Commissioning - A challenge for new engineers: To begin a carreer on the field."</div></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 5 -->
@@ -561,60 +580,84 @@
 						<div class="dayofweek">Thursday</div>
 					</div>
 					<div class="dia_container" id="dia_container_5">
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Too Small to Fail" </div>
-							<div class="dia_hora"> 10:00 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Jobbox" </div>
-							<div class="dia_hora"> 10:15 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Talkdesk" </div>
-							<div class="dia_hora"> 10:30 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<!-- <div class="dia_evento"> Apresentação de Startup: "Vertty" </div> -->
-							<div class="dia_evento"> Startup Presentation: To be Determined </div>
-							<div class="dia_hora"> 10:45 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Wazza" </div>							
-							<div class="dia_hora"> 11:00 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Zaask" </div>
-							<div class="dia_hora"> 11:15 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Digisfera" </div>
-							<div class="dia_hora"> 11:30 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Uber" </div>
-							<div class="dia_hora"> 11:45 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Follow Prince" </div>
-							<div class="dia_hora"> 12:00 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Startup Presentation: "Uniplaces" </div>
-							<div class="dia_hora"> 12:15 - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop given by the company Beta-i: "Tools and processes to launch a successful Startup." </div>
-							<div class="dia_hora"> 14:00  - Main Lobby </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Lecture given by speaker Miguel Gonçalves </div>
-									<div class="dia_hora"> 17:45 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/miguel-goncalves.png"></div>
-							</div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Mani Lobby</th>
+									<th>Room 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td>Startup Presentation: "Too Small to Fail"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">10:15</td>
+									<td>Startup Presentation: "Jobbox"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">10:30</td>
+									<td>Startup Presentation: "Talkdesk"</td>
+									<td></td>
+								</tr>
+								<!-- <tr>
+									<td class="hora_column">10:45</td>
+									<td>Apresentação de Startup: "Vertty"</td>
+									<td></td>
+								</tr> -->
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td>Startup Presentation: "Wazza"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:15</td>
+									<td>Startup Presentation: "Zaask"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:30</td>
+									<td>Startup Presentation: "Digisfera"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:45</td>
+									<td>Startup Presentation: "Uber"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:00</td>
+									<td>Startup Presentation: "Follow Prince"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:15</td>
+									<td>Startup Presentation: "Uniplaces"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:00</td>
+									<td class="hora_workshop"><img src="img/calendario/beta-i.jpg" alt="Beta-i"><div>Workshop: "Tools and processes to launch a successful Startup."</div></td>
+									<td></td>
+								</tr>
+								<!-- <tr>
+									<td class="hora_column">16:30</td>
+									<td></td>
+									<td class="hora_orador" onmouseover="show_info_calendar('info_rui-bica', 'in')"  onmouseleave="show_info_calendar('info_rui-bica', 'out')"> <div id="info_rui-bica" class="hora_info">stuff goes here</div>
+										<span>Rui Bica</span><img src="./img/calendario/rui-bica.png" alt="Rui Bica"></td>
+								</tr> -->
+								<tr>
+									<td class="hora_column">17:45</td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_miguel-goncalves', 'in')"  onmouseleave="show_info_calendar('info_miguel-goncalves', 'out')"> <div id="info_miguel-goncalves" class="hora_info">stuff goes here</div>
+										<span>Miguel Gonçalves</span><img src="./img/speakers/miguel.jpg" alt="Miguel Gonçalves"></td><!-- end To update -->
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 6 -->
@@ -624,45 +667,49 @@
 						<div class="dayofweek">Friday</div>
 					</div>
 					<div class="dia_container" id="dia_container_6">
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop: To be Determined</div>
-							<div class="dia_hora"> 10:00 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Arduíno Workshop </div>
-							<div class="dia_hora"> 11:30 - Room 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Lecture given by speaker Rui Costa from Veniam </div>
-									<div class="dia_hora"> 13:30 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/rui-costa.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Lecture given by speaker Diogo Mónica from Square </div>
-									<div class="dia_hora"> 14:45 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/diogo-monica.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Lecture given by speaker Hugo Silva: "BITalino: From a paper towel to the World" </div>
-									<div class="dia_hora"> 16:00 - Room 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/hugo-silva.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Closing Ceremony </div>
-							<div class="dia_hora"> 17:15 </div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Room 0.16</th>
+									<th>Room 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td>Workshop to be Determined</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:30</td>
+									<td>Arduíno Workshop</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_rui-costa', 'in')"  onmouseleave="show_info_calendar('info_rui-costa', 'out')"> <div id="info_rui-costa" class="hora_info">stuff goes here</div>
+										<span>Rui Costa</span><img src="./img/speakers/rui-costa.jpg" alt="Rui Costa"></td><!-- end To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">14:45</td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_diogo-monica', 'in')"  onmouseleave="show_info_calendar('info_diogo-monica', 'out')"> <div id="info_diogo-monica" class="hora_info">stuff goes here</div>
+										<span>Diogo Mónica</span><img src="./img/speakers/diogo-monica.jpg" alt="Diogo Mónica"></td><!--end  To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">14:45</td>
+									<td></td>
+									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_hugo-silva', 'in')"  onmouseleave="show_info_calendar('info_hugo-silva', 'out')"> <div id="info_hugo-silva" class="hora_info">stuff goes here</div>
+										<span>Hugo Silva</span><img src="./img/speakers/hugo-silva.jpg" alt="Hugo Silva"><div>"BITalino: From a paper towel to the World"</div></td><!-- end To update -->
+								</tr>
+								<tr>
+									<td class="hora_column">17:15</td>
+									<td class="hora_sessao" colspan="2">Closing Ceremony</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
