@@ -69,3 +69,14 @@ function show_dia(n)
 	}
 }
 
+function show_info_calendar(id, action)
+{
+	//uncomment function when ready
+	/*var check = false;
+	
+	if(action == "in")
+		$('#'+id).fadeIn("slow");
+	if(action == "out")
+		$('#'+id).fadeOut("slow");*/
+}
+
