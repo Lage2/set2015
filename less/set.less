@@ -906,18 +906,65 @@ footer{
 		margin-left: auto;
 		margin-right: auto;
 
+		@media screen {
+			@media (max-width: @screen-phone){
+				height: 500px;
+			}
+		}
+
 		div { height: 100%;}
+
+		.col-xs-12 {
+			@media screen {
+				@media (max-width: @screen-phone){
+					height: 150px;
+				}
+			}
+		}
 		
 		.company-img-holder {
 			
 			width: 90%;
 			height: auto;
 			margin-top: 100px;
+
+			@media screen {
+				@media (max-width: @screen-phone){
+					width: 50%;
+					margin-top: 20px;
+				}
+			}
+
+			&-vertical{
+				@media screen {
+					@media (max-width: @screen-phone){
+						width: 30%;
+						margin-top: 20px;
+					}
+				}
+			}
 		}
 
 		#novabase-holder{ margin-top: 10px; }
 
-		.job-description { margin-top: 25px; }
+		.job-title {
+			@media screen {
+				@media (max-width: @screen-phone){
+					font-size: 1.2em;
+				}
+			}
+		}
+
+		.job-description { 
+			margin-top: 25px; 
+
+			@media screen {
+				@media (max-width: @screen-phone){
+					font-size: 1em;
+				}
+			}
+
+		}
 	}
 }
 
