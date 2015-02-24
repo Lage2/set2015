@@ -69,7 +69,7 @@
 						<div class="collapse navbar-collapse" id="nav-collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="#oradores">Oradores</a></li>
-								<li><a href="#calendario">Calendário</a></li>
+								<li><a href="#calendario">Programa</a></li>
 								<li><a href="#patrocinadores">Patrocinadores</a></li>
 								<li><a href="#contactos">Contactos</a></li>
 								<li><a href="./organizacao.html">Organização</a></li>
@@ -382,7 +382,7 @@
 			<!-- calendario -->
 			<hr id="calendario" class="footer-divider">
 			<div id="calendar_container" class="container-fluid">
-				<h1>Calendário</h1>
+				<h1>Programa</h1>
 				<div class="agenda">
 					<!-- DIA 2 -->
 					<div class="agenda-date dia_selected" id="dia_2" onclick="show_dia(2)">
@@ -391,56 +391,78 @@
 						<div class="dayofweek">Segunda-feira</div>
 					</div>
 					<div class="dia_container dia_container_selected" id="dia_container_2">
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa iCreate </div>
-							<div class="dia_hora"> 10:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Delloite </div>
-							<div class="dia_hora"> 10:00 - Sala 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Outsystems </div>
-							<div class="dia_hora"> 11:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Teleperformance </div>
-							<div class="dia_hora"> 11:00 - Sala 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa KPMG </div>
-							<div class="dia_hora"> 12:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Jerónimo Martins </div>
-							<div class="dia_hora"> 12:00 - Sala 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Palestra pelo Orador Paulo Rosado </div>
-									<div class="dia_hora"> 13:30 - Sala 0.65 </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/paulo-rosado.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop pela Empresa Everis: “Da candidatura ao Emprego” </div>
-							<div class="dia_hora"> 14:30 - Sala 0.16  </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Palestra pelo Orador Jaime Jorge </div>
-									<div class="dia_hora"> 16:00 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/jaime-jorge.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop pela empresa Lunacloud: "Como alojar a tua aplicação na Cloud de forma simples e rápida!" </div>
-							<div class="dia_hora"> 17:00 - Sala 0.16  </div>
-						</div>
+						<!--<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Sala de Congressos</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">09:30</td>
+									<td>Sessão de Abertura</td>
+								</tr>
+							</tbody>
+						</table> -->
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Sala 0.16</th>
+									<th>Sala 0.32</th>
+									<th>Sala 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">09:30</td>
+									<td class="hora_sessao" colspan="3">Sessão de abertura</td>
+								</tr>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td><img src="img/patrocinadores/prata/LogoiCreate.png" alt="iCreate"></td>
+									<td><img src="img/patrocinadores/ouro/DEL_PRI_RGB.png" alt="Deloitte"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td><img src="img/patrocinadores/prata/outsystems.png" alt="Outsystems"></td>
+									<td><img src="img/patrocinadores/prata/teleperformance.png" alt="Teleperformance"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:00</td>
+									<td><img src="img/patrocinadores/prata/KPMG_NoCP_RGB.JPG" alt="KPMG"></td>
+									<td><img src="img/patrocinadores/prata/jeronimo_martins.jpg" alt="Jerónimo Martins"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<td></td>
+									<td class="hora_orador"><span>Paulo Rosado</span><img src="./img/calendario/paulo-rosado.png" alt="Paulo Rosado"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:30</td>
+									<td class="hora_workshop"><img src="img/patrocinadores/ouro/everis.png" alt="Everis"><div>Workshop: “Da candidatura ao Emprego”</div></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">16:00</td>
+									<td></td>
+									<td></td>
+									<td class="hora_orador"><span>Jaime Jorge</span><img src="./img/calendario/jaime-jorge.png" alt="Jaime Jorge"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">17:00</td>
+									<td class="hora_workshop"><img src="./img/patrocinadores/bronze/lunacloud.png" alt="Lunacloud"><div>Workshop: “Como alojar a tua aplicação na Cloud de forma simples e rápida!”</div></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 3 -->
@@ -450,56 +472,60 @@
 						<div class="dayofweek">Terça-feira</div>
 					</div>
 					<div class="dia_container" id="dia_container_3">
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Glintt </div>
-							<div class="dia_hora"> 10:00 - Sala 0.16  </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Ernst & Young </div>
-							<div class="dia_hora"> 10:00 - Sala 0.32  </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Nokia </div>
-							<div class="dia_hora"> 11:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Altran </div>
-							<div class="dia_hora"> 11:00 - Sala 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Maksen </div>
-							<div class="dia_hora"> 12:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Gfi Portugal </div>
-							<div class="dia_hora"> 12:00 - Sala 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Palestra pelo Orador Vasco Pedro da empresa Unbabel </div>
-									<div class="dia_hora"> 13:30 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/vasco-pedro.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da empresa Dreamshaper: "Business Modelling e Design Thinking" </div>
-							<div class="dia_hora"> 14:30 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Palestra pelo Orador Rogério Carapuça da empresa Novabase </div>
-									<div class="dia_hora"> 16:00 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/rogerio-carapuca.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop prático de Linkedin por Pedro Caramez </div>
-							<div class="dia_hora"> 17:00 - Sala 0.16 </div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Sala 0.16</th>
+									<th>Sala 0.32</th>
+									<th>Sala 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td><img src="img/patrocinadores/ouro/glint.png" alt="Glintt"></td>
+									<td><img src="img/patrocinadores/prata/EY_Logo5.jpg" alt="Ernst & Young"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td><img src="img/patrocinadores/ouro/nokia-logo.png" alt="Nokia"></td>
+									<td><img src="img/patrocinadores/prata/altran.png" alt="Altran"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:00</td>
+									<td><img src="img/patrocinadores/prata/maksen.png" alt="Maksen"></td>
+									<td><img src="img/patrocinadores/prata/gfi.png" alt="Gfi Portugal"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<td></td>
+									<td class="hora_orador"><span>Vasco Pedro</span><img src="./img/calendario/vasco-pedro.png" alt="Vasco Pedro"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:30</td>
+									<td class="hora_workshop"><img src="" alt="Dreamshaper"><div>“Business Modelling e Design Thinking”</div></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">16:00</td>
+									<td></td>
+									<td></td>
+									<td class="hora_orador"><span>Rogério Carapuça</span><img src="./img/calendario/rogerio-carapuca.png" alt="Rogério Carapuça"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">17:00</td>
+									<td class="hora_orador hora_workshop"><img src="./img/calendario/pedro-caramez.png" alt="Pedro Caramez"><div>Workshop prático de Linkedin</div></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 4 -->
@@ -509,61 +535,60 @@
 						<div class="dayofweek">Quarta-feira</div>
 					</div>
 					<div class="dia_container" id="dia_container_4">
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Iten Solutions </div>
-							<div class="dia_hora"> 10:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Novabase </div>
-							<div class="dia_hora"> 11:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Vodafone </div>
-							<div class="dia_hora"> 11:00 - Sala 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Synopsys </div>
-							<div class="dia_hora"> 12:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação da Empresa Bold International </div>
-							<div class="dia_hora"> 12:00 - Sala 0.32 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Palestra pelo Orador David Mota: "Os desafios das Aplicações Civis e dos UAV's" </div>
-									<div class="dia_hora"> 13:30 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/david-mota.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Palestra pela Oradora Susana Sargento da empresa Veniam </div>
-									<div class="dia_hora"> 14:45 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/susana-sargento.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Palestra pelo Orador Manuel Severiano da empresa Identity </div>
-									<div class="dia_hora"> 16:00 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/manuel-severiano.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop pela Empresa Capgemini </div> 
-							<div class="dia_hora"> 17:00 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop pelo Grupo Visabeira: "Wireless Networks - Installation & Commissioning - Um desafio aos novos engenheiros: Iniciar a carreira no terreno"</div>
-							<div class="dia_hora"> 17:00 - Sala 0.16 </div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Sala 0.16</th>
+									<th>Sala 0.32</th>
+									<th>Sala 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td><img src="img/patrocinadores/prata/iten.png" alt="Iten Solutions"></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td><img src="img/patrocinadores/prata/novabase.png" alt="Iten Solutions"></td>
+									<td><img src="" alt="Vodafone"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td><img src="img/patrocinadores/prata/synopsys.png" alt="Synopsys"></td>
+									<td><img src="img/patrocinadores/prata/bold.jpg" alt="Bold International"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<td></td>
+									<td class="hora_orador"><span>David Mota</span><img src="./img/calendario/david-mota.png" alt="David Mota"><div>"Os desafios das Aplicações Civis e dos UAV's"</div></td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:45</td>
+									<td></td>
+									<td></td>
+									<td class="hora_orador"><span>Susana Sargento</span><img src="./img/calendario/susana-sargento.png" alt="Susana Sargento"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">16:00</td>
+									<td></td>
+									<td></td>
+									<td class="hora_orador"><span>Manuel Severiano</span><img src="./img/calendario/manuel-severiano.png" alt="Manuel Severiano"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">17:00</td>
+									<td class="hora_workshop"><img src="img/patrocinadores/prata/Capgemini_logo.gif" alt="Capgemini"><div>Workshop</div></td>
+									<td class="hora_workshop"><div>Workshop pelo Grupo Visabeira: "Wireless Networks - Installation & Commissioning - Um desafio aos novos engenheiros: Iniciar a carreira no terreno"</div></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 5 -->
@@ -573,60 +598,82 @@
 						<div class="dayofweek">Quinta-feira</div>
 					</div>
 					<div class="dia_container" id="dia_container_5">
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Too Small to Fail" </div>
-							<div class="dia_hora"> 10:00 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Jobbox" </div>
-							<div class="dia_hora"> 10:15 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Talkdesk" </div>
-							<div class="dia_hora"> 10:30 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<!-- <div class="dia_evento"> Apresentação de Startup: "Vertty" </div> -->
-							<div class="dia_evento"> Apresentação de Startup: A definir </div>
-							<div class="dia_hora"> 10:45 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Wazza" </div>							
-							<div class="dia_hora"> 11:00 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Zaask" </div>
-							<div class="dia_hora"> 11:15 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Digisfera" </div>
-							<div class="dia_hora"> 11:30 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Uber" </div>
-							<div class="dia_hora"> 11:45 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Follow Prince" </div>
-							<div class="dia_hora"> 12:00 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Apresentação de Startup: "Uniplaces" </div>
-							<div class="dia_hora"> 12:15 - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop pela Empresa Beta-i: "Ferramentas & processos para lançar Startups de sucesso" </div>
-							<div class="dia_hora"> 14:00  - Átrio </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Palestra pelo Orador Miguel Gonçalves </div>
-									<div class="dia_hora"> 17:45 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/miguel-goncalves.png"></div>
-							</div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Atrio</th>
+									<th>Sala 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td>Apresentação de Startup: "Too Small to Fail"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">10:15</td>
+									<td>Apresentação de Startup: "Jobbox"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">10:30</td>
+									<td>Apresentação de Startup: "Talkdesk"</td>
+									<td></td>
+								</tr>
+								<!-- <tr>
+									<td class="hora_column">10:45</td>
+									<td>Apresentação de Startup: "Vertty"</td>
+									<td></td>
+								</tr> -->
+								<tr>
+									<td class="hora_column">11:00</td>
+									<td>Apresentação de Startup: "Wazza"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:15</td>
+									<td>Apresentação de Startup: "Zaask"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:30</td>
+									<td>Apresentação de Startup: "Digisfera"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:45</td>
+									<td>Apresentação de Startup: "Uber"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:00</td>
+									<td>Apresentação de Startup: "Follow Prince"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">12:15</td>
+									<td>Apresentação de Startup: "Uniplaces"</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:00</td>
+									<td class="hora_workshop"><div>Workshop Beta-i: "Ferramentas & processos para lançar Startups de sucesso"</div></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">16:30</td>
+									<td></td>
+									<td class="hora_orador"><span>Rui Bica</span><img src="./img/calendario/rui-bica.png" alt="Rui Bica"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">17:45</td>
+									<td></td>
+									<td class="hora_orador"><span>Miguel Gonçalves</span><img src="./img/calendario/miguel-goncalves.png" alt="Miguel Gonçalves"></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					
 					<!-- DIA 6 -->
@@ -636,45 +683,57 @@
 						<div class="dayofweek">Sexta-feira</div>
 					</div>
 					<div class="dia_container" id="dia_container_6">
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop a definir </div>
-							<div class="dia_hora"> 10:00 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="dia_evento"> Workshop de Arduíno </div>
-							<div class="dia_hora"> 11:30 - Sala 0.16 </div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Palestra pelo Orador Rui Costa da empresa Veniam </div>
-									<div class="dia_hora"> 13:30 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/rui-costa.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container left">
-									<div class="dia_evento"> Palestra pelo Orador Diogo Mónica da empresa Square </div>
-									<div class="dia_hora"> 14:45 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto left"><img src="./img/calendario/diogo-monica.png"></div>
-							</div>
-						</div>
-						<div class="dia_linha">
-							<div class="centered_container">
-								<div class="evento_container right">
-									<div class="dia_evento"> Palestra pelo Orador Hugo Silva: "BITalino: From a paper towel to the World" </div>
-									<div class="dia_hora"> 16:00 - Sala 0.65  </div>
-								</div>
-								<div class="dia_foto right"><img src="./img/calendario/hugo-silva.png"></div>
-							</div>
-						</div>
+						<table class="dia_horario">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Sala 0.16</th>
+									<th>Sala 0.65</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="hora_column">10:00</td>
+									<td>Workshop a definir</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:30</td>
+									<td>Workshop de Arduíno</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">11:30</td>
+									<td>Workshop de Arduíno</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="hora_column">13:30</td>
+									<td></td>
+									<td class="hora_orador"><span>Rui Costa</span><img src="./img/calendario/rui-costa.png" alt="Rui Costa"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:45</td>
+									<td></td>
+									<td class="hora_orador"><span>Diogo Mónica</span><img src="./img/calendario/diogo-monica.png" alt="Diogo Mónica"></td>
+								</tr>
+								<tr>
+									<td class="hora_column">14:45</td>
+									<td></td>
+									<td class="hora_orador"><span>Hugo Silva</span><img src="./img/calendario/hugo-silva.png" alt="Hugo Silva"><div>"BITalino: From a paper towel to the World"</div></td>
+								</tr>
+								<tr>
+									<td class="hora_column">17:15</td>
+									<td class="hora_sessao" colspan="2">Sessão de encerramento</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<!-- 
 						<div class="dia_linha">
 							<div class="dia_evento"> Sessão de encerramento </div>
 							<div class="dia_hora"> 17:15 </div>
-						</div>
+						</div>-->
 					</div>
 				</div>
 			</div>
@@ -744,6 +803,12 @@
 							</a>
 							<a href="http://www.altran.pt/" target="_blank">
 								<img class="lazy" data-original="img/patrocinadores/prata/altran.png" alt="Altran">
+							</a>
+							<a href="http://www.ey.com/PT/en" target="_blank">
+								<img class="lazy minimize_logo2" data-original="img/patrocinadores/prata/EY_Logo5.jpg" alt="Ernst & Young">
+							</a>
+							<a href="http://www.boldint.com/" target="_blank">
+								<img class="lazy" data-original="img/patrocinadores/prata/bold.jpg" alt="Bold International">
 							</a>
 						</div>
 					</div>

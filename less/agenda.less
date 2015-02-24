@@ -50,7 +50,7 @@ Css da primeira versão
 	 }
  }*/
  
- @media (max-width: 700px) {
+ @media (max-width: 800px) {
 	.dayofmonth {
 		font-size: 20px !important;
 	}
@@ -71,7 +71,10 @@ Css da primeira versão
 	}
 	.dia_container_selected{
 		font-size: 14px;
-	}	
+	}
+	.dia_horario{
+		font-size: 14px !important;
+	}
  }
 
 
@@ -131,6 +134,60 @@ Css da primeira versão
 			border-collapse: collapse;
 			height: 500px;
 			overflow: auto;
+			.dia_horario
+			{
+				width: 100%;
+				th{
+					background-color: #333333;
+					color: #ffffff;
+					text-align: center;
+					border: 1px solid #006f9e;
+					height: 40px;
+				}
+				td{
+					width: 30%;
+					padding: 1% 5%;
+					border: 1px solid #006f9e;
+					img{
+						width: 100%;
+					}
+				}
+				.hora_column
+				{
+					padding: 0;
+					text-align: center;
+					width: 10%;
+					background-color: #333333;
+					color: #ffffff;
+				}
+				.hora_orador
+				{
+					text-align: center;
+					img{
+						width: 55%;
+					}
+					span{
+						display: block;
+					}
+				}
+				.hora_workshop
+				{
+					padding: 0;
+					img{
+						padding: 2% 16%;
+					}
+					div
+					{
+						padding: 0 3px;
+						text-align: center;
+					}
+				}
+				.hora_sessao
+				{
+					text-align: center;
+					font-weight: bold;
+				}
+			}
 			.dia_linha
 			{
 				min-height: 50px;
@@ -179,7 +236,7 @@ Css da primeira versão
 		}
 		.dia_container_selected
 		{
-			display: block;
+			display: table-cell;
 		}
 	}
 }
