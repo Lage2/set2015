@@ -31,7 +31,6 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		
 		<!-- Calendar css -->
-		<link href="css/agenda.css" rel="stylesheet">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
@@ -683,7 +682,15 @@
 								</tr>
 								<tr>
 									<td class="hora_column">17:00</td>
-									<td class="hora_orador hora_workshop"><img src="./img/speakers/oradores200_200/pedro-caramez.jpg" alt="Pedro Caramez"><div>Workshop prático de Linkedin</div></td>
+									<!-- To update -->
+									<td class="hora_orador"
+										onmouseover="show_info_calendar('info_pedro-caramez', 'in')"  
+										onmouseleave="show_info_calendar('info_pedro-caramez', 'out')">
+										<div id="info_pedro-caramez" class="hora_info">stuff goes here</div>
+										
+										<img id="pedro-caramez" src="./img/speakers/oradores200_200/pedro-caramez.jpg" alt="Pedro Caramez">
+										<span>Workshop prático de Linkedin</span>
+									</td><!-- end To update -->
 									<td></td>
 									<td></td>
 								</tr>
