@@ -34,11 +34,6 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
     <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
-    <script type='text/javascript' src='js/camera.min.js'></script> 
-    <script type='text/javascript' src='js/jquery.cloudinary.js'></script> 
-    <script type='text/javascript' src='js/gallery.js'></script> 
-    
- 
 </head>
 <body>
     <div id="navigation">
@@ -78,76 +73,33 @@
             </div>
         </nav>
     </div>
-	<div id="gallery-container" class="fluid_container">
-    	<p>Pagination circles with the height relative to the width</p>
-        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
-                </div>
+	
+    <div id="photo-gallery-container">
+        <iframe 
+            src='http://www.quickgallery.com/embed/34569/d8wev855jq8g80o48oskcw8kk.html'
+            width='1024' height='600' frameborder='0' scrolling='no'>
+        </iframe>
+        <iframe class="todo"
+            src='http://www.quickgallery.com/embed/34570/dzf8qjnw8xcsg40oc4o8os4k0.html' 
+            width='1024' height='600' frameborder='0' scrolling='no'>
+        </iframe>
+    </div>
+    <footer>
+        <hr class="footer-divider">
+        <div class="container">
+            <div id="ist-logo-footer" class="pull-left">
+                <a href="http://tecnico.ulisboa.pt/">
+                    <img class="lazy" class="collapsed" src="img/set_media/tecnico_big.png" alt="IST Logo">
+                </a>
             </div>
-            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    <em>It's completely free</em> (even if a donation is appreciated)
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    Camera slideshow provides many options <em>to customize your project</em> as more as possible
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    It supports captions, HTML elements and videos and <em>it's validated in HTML5</em> (<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank">have a look</a>)
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    Different color skins and layouts available, <em>fullscreen ready too</em>
-                </div>
-            </div>
-        </div><!-- #camera_wrap_1 -->
-
-    	<p>Thumbnails with fixed height</p>
-        <div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
-            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    <em>It's completely free</em> (even if a donation is appreciated)
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    Camera slideshow provides many options <em>to customize your project</em> as more as possible
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    It supports captions, HTML elements and videos and <em>it's validated in HTML5</em> (<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank">have a look</a>)
-                </div>
-            </div>
-            <div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg">
-                <div class="camera_caption fadeFromBottom">
-                    Different color skins and layouts available, <em>fullscreen ready too</em>
-                </div>
-            </div>
-        </div><!-- #camera_wrap_2 -->
-    </div><!-- .fluid_container -->
-    
-    <div style="clear:both; display:block; height:100px"></div>
+            <p class="pull-right">
+                <span class="glyphicon glyphicon-copyright-mark"></span><!--&copy--> <a href="http://lage2.ist.utl.pt/">LAGE2</a> Todos os direitos reservados.
+                <br>
+                Fotos <i>by</i> <a href="http://lage2.ist.utl.pt/gfist.php">GFIST</a>
+                <br>
+                <i>Built with</i> <a href="http://getbootstrap.com/">Bootstrap</a>
+            </p>
+        </div>
+    </footer>
 </body> 
 </html>
