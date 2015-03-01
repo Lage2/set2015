@@ -202,8 +202,60 @@ h1, h2, h3{
 	text-align: center;
 }
 
- 
+#news-container{
+	background-color: white;
+	h2 { color: @gray;}
+	h1, h2, h3 { text-align: center; color: @gray-dark; }
+}
 
+#team-container { 
+	background-color: @set-dark-blue;
+	h1, h2, h3 { text-align: center; color: whitesmoke; }
+}
+#team-container, #news-container {
+	min-height: 100px;
+	background-color: @set-dark-blue;
+	
+	.emph { color: @set-primary-orange; }
+
+	#wrapper {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+
+		td {
+			vertical-align: middle;
+			text-align: center;
+
+			img {
+				width: 80%;
+				height: auto;
+				max-height: 130px;
+
+			}
+		}
+	}
+
+	
+
+	.btn-phantom {
+		border: 2px solid white;
+		color: white;
+		background-color: transparent;
+		opacity: .9;
+		
+		&:hover{
+			color: @set-dark-blue; //whitesmoke;
+			background-color: white;
+		}
+		&:active{
+			color: @set-dark-blue; //whitesmoke;
+			background-color: white;
+		}
+	}
+}
 
 
 
@@ -312,3 +364,23 @@ h1, h2, h3{
  	webkit-box-sizing: content-box;
  		box-sizing: content-box;
  }
+
+
+/******************************************************************************************
+ *  G - Galleria (Media)
+ ******************************************************************************************/
+
+#back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.fluid_container {
+			margin: 0 auto;
+			max-width: 1000px;
+			width: 90%;
+		}
+
+

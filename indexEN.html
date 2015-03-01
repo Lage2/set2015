@@ -23,7 +23,8 @@
 
          <!-- Bootstrap -->
     	<link href="css/set.css" rel="stylesheet">
-
+    	<link href="css/speakers-container.css" rel="stylesheet">
+    	
 		<!-- WebFonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:900,700,400' rel='stylesheet' type='text/css'>
 
@@ -128,6 +129,41 @@
 	      			<span class="glyphicon glyphicon-chevron-right"></span>
 	      		</a>
 			</div>
+
+			<hr id="news" class="footer-divider">
+			<div id="news-container" class="container-fluid fixed-height-container" style="background-color:white;">
+				<h2>SET on the media</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<table id="wrapper">
+							<tr>
+								<td class="student-group"><br></td>
+								<td class="student-group">
+									<a href="http://www.maissuperior.com/2015/02/18/estudantes-e-empresas-juntos-na-semana-empresarial-e-tecnologica/" target="blank">
+										<img class="lazy" id="neiist-logo" class="student-group-logo" src="img/media/maissuperior.png" alt="MaisSuperior">
+									</a>
+								</td>
+								<td class="student-group">
+									<a href="http://www.portugalnews.pt/tecnologia/semana-empresarial-e-tecnologica-junta-estudantes-e-empresas-no-ist/" target="blank">
+										<img class="lazy" class="student-group-logo" src="img/media/portugal_news.png" alt="Portugal News">
+									</a>
+								</td>
+								<td class="student-group">
+									<a href="http://www.ordemengenheiros.pt/pt/agenda/set-semana-empresarial-e-tecnologica-do-ist/" target="blank">
+										<img class="lazy" id="neeti-logo" class="student-group-logo" src="img/patrocinadores/bronze/OE.png" alt="Ordem dos Engenheiros, Região Sul">
+									</a>
+								</td>
+								<td class="student-group">
+									<a href="http://tek.sapo.pt/tek_expert/semana_empresarial_e_tecnologica_junta_estuda_1431543.html" target="blank">
+										<img class="lazy" class="student-group-logo" src="img/media/sapotek.png" alt="SapoTEK">
+									</a>
+								</td>
+								<td class="student-group"><br></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
 			
 			<hr id="speakers" class="footer-divider">			
 			<div id="speakers-container" class="container-fluid fixed-height-container">
@@ -138,7 +174,8 @@
 					<div class="row  inline-speakers"><!-- ROW 1 - max 4 speakers -->
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/startups/cristina-fonseca.jpg" alt="Cristina Fonseca, Talkdesk">
+						        <!-- <img class="lazy" data-original="./img/speakers/startups/cristina-fonseca.jpg" alt="Cristina Fonseca, Talkdesk"> -->
+						        <div class="cristina-fonseca"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -157,7 +194,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/david-mota.jpg" alt="David Mota, Skyeye">
+						        <!--<img src="./img/speakers/david-mota.jpg" alt="David Mota, Skyeye">-->
+						        <div class="david-mota"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -174,7 +212,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/diogo-monica.jpg" alt="Diogo Monica, Square">
+						        <!--<img src="./img/speakers/diogo-monica.jpg" alt="Diogo Monica, Square">-->
+						    	<div class="diogo-monica"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -229,7 +268,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/hugo-silva.jpg" alt="Hugo Silva, PLUX">
+						        <!--<img src="./img/speakers/hugo-silva.jpg" alt="Hugo Silva, PLUX">-->
+						        <div class="hugo-silva"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -246,7 +286,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/jaime-jorge.png" alt="Jaime Jorge, Codacy">
+						        <!--<img src="./img/speakers/jaime-jorge.png" alt="Jaime Jorge, Codacy">-->
+						    	<div class="jaime-jorge"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -263,7 +304,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img class="" src="./img/speakers/joao-graca.jpg" alt="João Graça, Unbabel">
+						        <!--<img class="" src="./img/speakers/joao-graca.jpg" alt="João Graça, Unbabel">-->
+						        <div class="joao-graca"> </div>
 						    </div>
 
 						    <div class="oradorData">
@@ -273,7 +315,7 @@
 						    </div>
 						    <div class="oradorName">
 						    	<p class="name">João Graça <i class="fa fa-external-link"></i></p>
-						    	<p>Fundador &amp; CTO</p>
+						    	<p>Co-Founder &amp; CTO</p>
 						    	<p>Unbabel, Inc  </p>
 						    </div>
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/joao-gracaEN.html'"></div>
@@ -281,7 +323,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/startups/joao-vasques.jpg" alt="João Vasques, Wazza">
+						        <!--<img src="./img/speakers/startups/joao-vasques.jpg" alt="João Vasques, Wazza">-->
+						        <div class="joao-vasques"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -290,7 +333,7 @@
 						    </div>
 						    <div class="oradorName">
 						    	<p class="name">João Vasques <i class="fa fa-external-link"></i></p>
-						    	<p><i>Co-Fundador</i></p>
+						    	<p><i>Co-Founder</i></p>
 						    	<p>Wazza</p>
 						    </div>
 						    <div class="oradorTrigger" OnClick="window.location.href = 'http://www.wazza.io/'"></div>
@@ -305,11 +348,12 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/startups/kiruba-shankar-eswaran.jpg" alt="Kiruba Eswaran, Zaask">
+						        <!--<img src="./img/speakers/startups/kiruba-shankar-eswaran.jpg" alt="Kiruba Eswaran, Zaask">-->
+						        <div class="kiruba-shankar-eswaran"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
-						        	A natural entrepreneur, Kiruba Eswaran is one of the founders of Zaask, a company that aims to help people with project ideas find the right professionals. 
+						        	A natural entrepreneur, Kiruba Eswaran is one of the founders of Zaask, a company that aims to help people with project ideas to find the right professionals. 
 						        </div>
 						    </div>
 						    <div class="oradorName">
@@ -322,7 +366,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/startups/manuel-cabral.jpg" alt="Manuel Cabral, Digisfera">
+						        <!--<img src="./img/speakers/startups/manuel-cabral.jpg" alt="Manuel Cabral, Digisfera">-->
+						        <div class="manuel-cabral"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -340,7 +385,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/manuel-severiano.png" alt="Manuel Severiano, Identity">
+						        <!--<img src="./img/speakers/manuel-severiano.png" alt="Manuel Severiano, Identity">-->
+						        <div class="manuel-severiano"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -357,11 +403,12 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/startups/maria-ferreira.jpg" alt="Maria Ferreira, Too Small to Fail">
+						        <!--<img src="./img/speakers/startups/maria-ferreira.jpg" alt="Maria Ferreira, Too Small to Fail">-->
+						        <div class="maria-ferreira"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
-						        	Maria Miguel Ferreira, founder of Too Small to Fail, a communication consulting firm specialized in helping national and non-national startups to enter the Portuguese market.
+						        	Maria Miguel Ferreira is the founder of Too Small to Fail, a communication consulting firm specialized in helping national and non-national startups to enter the Portuguese market.
 						        </div>
 						    </div>
 						    <div class="oradorName">
@@ -382,7 +429,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/Miguel-Goncalves.jpg" alt="Miguel Gonçalves, Spark Agency">
+						        <!--<img src="./img/speakers/Miguel-Goncalves.jpg" alt="Miguel Gonçalves, Spark Agency">-->
+						        <div class="Miguel-Goncalves"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -399,16 +447,17 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/startups/miguel-santo-amaro.jpg" alt="Miguel Santo Amaro, Uniplaces">
+						        <!--<img src="./img/speakers/startups/miguel-santo-amaro.jpg" alt="Miguel Santo Amaro, Uniplaces">-->
+						        <div class="miguel-santo-amaro"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
-						        	Miguel Amaro is the co-founder of Uniplaces, an international market for student accomodations, that allows for the easy and secure search for the ideal house for any student.
+						        	Miguel Amaro is the co-founder of Uniplaces, an international market for student accomodations, that allows students, to easily and securely, search for the ideal house.
 						        </div>
 						    </div>
 						    <div class="oradorName">
 						    	<p class="name">Miguel Santo Amaro <i class="fa fa-external-link"></i></p>
-						    	<p><i>Co-Fundador</i></p>
+						    	<p><i>Co-Founder</i></p>
 						    	<p>Uniplaces</p>
 						    </div>
 						    <div class="oradorTrigger" OnClick="window.location.href = 'https://www.uniplaces.com/'"></div>
@@ -416,7 +465,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/paulo-rosado_cropped.png" alt="Paulo Rosado, OutSystems">
+						        <!--<img src="./img/speakers/paulo-rosado_cropped.png" alt="Paulo Rosado, OutSystems">-->
+						        <div class="paulo-rosado"> </div>
 						    </div>
 
 						    <div class="oradorData">
@@ -434,7 +484,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/pedro-caramez.png" alt="Pedro Caramez, Codacy">
+						        <!--<img src="./img/speakers/pedro-caramez.png" alt="Pedro Caramez, Codacy">-->
+						        <div class="pedro-caramez"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -460,7 +511,7 @@
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
-						        	Pedro Oliveira is a technological entrepreneur that is on a mission to remove the middlemen from the recruitment process, linking the best jobs to the greatest talents. 
+						        	Pedro Oliveira is a technological entrepreneur that is on a mission: to remove the middlemen from the recruitment process by coupling the best jobs with the greatest talents. 
 						        </div>
 						    </div>
 						    <div class="oradorName">
@@ -473,7 +524,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/rogerio-carapuca.png" alt="Rogério Carapuça, Novabase">
+						        <!--<img src="./img/speakers/rogerio-carapuca.png" alt="Rogério Carapuça, Novabase">-->
+						        <div class="rogerio-carapuca"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -490,7 +542,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img class="" src="./img/speakers/rui-bica.jpg" alt="Rui Bica, BMW-i">
+						        <!--<img class="" src="./img/speakers/rui-bica.jpg" alt="Rui Bica, BMW-i">-->
+						        <div class="rui-bica"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -508,7 +561,8 @@
 
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
-						        <img src="./img/speakers/rui-costa.jpg" alt="Rui Costa, Square">
+						        <!--<img src="./img/speakers/rui-costa.jpg" alt="Rui Costa, Square">-->
+						        <div class="rui-costa"> </div>
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -528,7 +582,12 @@
 					<div class="row  inline-speakers"><!-- ROW 6 - max 4 speakers -->
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
+<<<<<<< HEAD
 						        <img class="lazy" data-original="./img/speakers/susana.png" alt="Susana Sargento, Veniam">
+=======
+						        <!--<img src="./img/speakers/susana.png" alt="Susana Sargento, Veniam">-->
+						        <div class="susana"> </div>
+>>>>>>> a98cd8f9a01e8e4265b230dc4531d4ce16a1a015
 						    </div>
 						    <div class="oradorData">
 						        <div class="oradorDescription">
@@ -677,7 +736,7 @@
 										<div id="info_vasco-pedro" class="hora_info">stuff goes here</div>
 										<span>João Graça</span>
 										<img src="./img/speakers/joao-graca.jpg" alt="João Graça">
-										<span>Fundador &amp; CTO<br>Unbabel</span>
+										<span><i>How is it like being Unbabel's Co-founder?</i></span>
 									</td>
 								</tr>
 								<tr>
@@ -702,7 +761,14 @@
 								</tr>
 								<tr>
 									<td class="hora_column">17:00</td>
-									<td class="hora_orador hora_workshop"><img src="./img/speakers/oradores200_200/pedro-caramez.jpg" alt="Pedro Caramez"><div>Practical Linkedin Workshop </div></td>
+									<td class="hora_orador"
+										onmouseover="show_info_calendar('info_pedro-caramez', 'in')"  
+										onmouseleave="show_info_calendar('info_pedro-caramez', 'out')">
+										<div id="info_pedro-caramez" class="hora_info">stuff goes here</div>
+										
+										<img id="pedro-caramez" src="./img/speakers/oradores200_200/pedro-caramez.jpg" alt="Pedro Caramez">
+										<span>Practical LinkedIn Workshop</span>
+									</td><!-- end To update -->
 									<td></td>
 									<td></td>
 								</tr>
@@ -757,19 +823,30 @@
 									<td></td>
 									<td></td>
 									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_susana-sargento', 'in')"  onmouseleave="show_info_calendar('info_susana-sargento', 'out')"> <div id="info_susana-sargento" class="hora_info">stuff goes here</div>
-										<span>Susana Sargento</span><img src="./img/speakers/susana.png" alt="Susana Sargento"></td><!-- end To update -->
+										<span>Susana Sargento</span>
+										<img src="./img/speakers/susana.png" alt="Susana Sargento">
+										<span>Co-Founder<br>Veniam</span>
+									</td><!-- end To update -->
 								</tr>
 								<tr>
 									<td class="hora_column">16:00</td>
 									<td></td>
 									<td></td>
 									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_manuel-severiano', 'in')"  onmouseleave="show_info_calendar('info_manuel-severiano', 'out')"> <div id="info_manuel-severiano" class="hora_info">stuff goes here</div>
-										<span>Manuel Severiano</span><img src="./img/speakers/manuel-severiano.png" alt="Manuel Severiano"></td><!-- end To update -->
+										<span>Manuel Severiano</span>
+										<img src="./img/speakers/manuel-severiano.png" alt="Manuel Severiano">
+										<span><i>Supercomputation: How to do science and business super?</i></span>
+									</td><!-- end To update -->
 								</tr>
 								<tr>
 									<td class="hora_column">17:00</td>
 									<td class="hora_workshop"><img src="img/patrocinadores/prata/Capgemini_logo.gif" alt="Capgemini"><div>Workshop<br><i>Wearable devices oriented Development</i></div></td>
-									<td class="hora_workshop"><div>Workshop given by the Visabeira Group: "Wireless Networks - Installation & Commissioning - A challenge for new engineers: To begin a carreer on the field."</div></td>
+									<td class="hora_workshop">
+										<img src="img/patrocinadores/bronze/GV_logo_CMYK.jpg" alt="Grupo Visabeira">
+										<div>
+											Workshop<br><i>Wireless Networks - Installation & Commissioning - A challenge for the new engineers: Starting a carrer on the field!</i>
+										</div>
+									</td>
 									<td></td>
 								</tr>
 								<tr>
@@ -912,14 +989,17 @@
 										<div id="info_rui-bica" class="hora_info">stuff goes here</div>
 										<span>Rui Bica</span>
 										<img src="./img/speakers/rui-bica.jpg" alt="Rui Bica">
-										<span>BMW i Coordinator, Portugal</span>
+										<span><i>BMW i: Reinventing Mobility</i></span>
 									</td>
 								</tr>
 								<tr>
 									<td class="hora_column">17:45</td>
 									<td></td>
 									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_miguel-goncalves', 'in')"  onmouseleave="show_info_calendar('info_miguel-goncalves', 'out')"> <div id="info_miguel-goncalves" class="hora_info">stuff goes here</div>
-										<span>Miguel Gonçalves</span><img src="./img/speakers/miguel.jpg" alt="Miguel Gonçalves"></td><!-- end To update -->
+										<span>Miguel Gonçalves</span>
+										<img src="./img/speakers/miguel.jpg" alt="Miguel Gonçalves">
+										<span><i>The Job Market</i></span>
+									</td><!-- end To update -->
 								</tr>
 							</tbody>
 						</table>
@@ -943,27 +1023,33 @@
 							<tbody>
 								<tr>
 									<td class="hora_column">10:00</td>
-									<td>
-										Workshop: Myo, Gesture Control Armband
+									<td class="hora_workshop">
+										<div>Workshop<br><i>Myo, Gesture Control Armband</i></div>
 									</td>
 									<td></td>
 								</tr>
 								<tr>
 									<td class="hora_column">11:30</td>
-									<td>Workshop: Arduíno with Farruscos</td>
+									<td class="hora_workshop">
+										<div>Workshop<br><i>Arduíno with Farruscos</i></div>
+									</td>
 									<td></td>
 								</tr>
 								<tr>
 									<td class="hora_column">13:30</td>
 									<td></td>
 									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_rui-costa', 'in')"  onmouseleave="show_info_calendar('info_rui-costa', 'out')"> <div id="info_rui-costa" class="hora_info">stuff goes here</div>
-										<span>Rui Costa</span><img src="./img/speakers/rui-costa.jpg" alt="Rui Costa"></td><!-- end To update -->
+										<span>Rui Costa</span><img src="./img/speakers/rui-costa.jpg" alt="Rui Costa">
+										<span><i>Senior Systems Engineer<br></i>Veniam</span>
+									</td><!-- end To update -->
 								</tr>
 								<tr>
 									<td class="hora_column">14:45</td>
 									<td></td>
 									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_diogo-monica', 'in')"  onmouseleave="show_info_calendar('info_diogo-monica', 'out')"> <div id="info_diogo-monica" class="hora_info">stuff goes here</div>
-										<span>Diogo Mónica</span><img src="./img/speakers/diogo-monica.jpg" alt="Diogo Mónica"></td><!--end  To update -->
+										<span>Diogo Mónica</span><img src="./img/speakers/diogo-monica.jpg" alt="Diogo Mónica">
+										<span><i>Leader of Platform Security<br></i>Square</span>
+									</td><!--end  To update -->
 								</tr>
 								<tr>
 									<td class="hora_column">14:45</td>
