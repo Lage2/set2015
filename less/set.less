@@ -204,10 +204,14 @@ h1, h2, h3{
 
 #news-container{
 	background-color: white;
-	margin-top: 80px;
+	h2 { color: @gray;}
+	h1, h2, h3 { text-align: center; color: @gray-dark; }
 }
 
-#team-container { background-color: @set-dark-blue;}
+#team-container { 
+	background-color: @set-dark-blue;
+	h1, h2, h3 { text-align: center; color: whitesmoke; }
+}
 #team-container, #news-container {
 	min-height: 100px;
 	background-color: @set-dark-blue;
@@ -234,7 +238,7 @@ h1, h2, h3{
 		}
 	}
 
-	h1, h2, h3 { text-align: center; color: whitesmoke; }
+	
 
 	.btn-phantom {
 		border: 2px solid white;
