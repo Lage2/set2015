@@ -2,7 +2,7 @@
 
 //GLOBAL Variable
 active_option = null;
-dia_ativo = 2;
+dia_ativo = 4;
 
 function sinple_fade_inout(fadein)
 {
