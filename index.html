@@ -68,7 +68,7 @@
 						<div class="collapse navbar-collapse" id="nav-collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="#oradores">Oradores</a></li>
-								<li><a href="#programa">Programa</a></li>
+								<!-- <li><a href="#programa">Programa</a></li> -->
 								<li><a href="#patrocinadores">Patrocinadores</a></li>
 								<li><a href="#contactos">Contactos</a></li>
 								<li><a href="./organizacao.html">Organização</a></li>
@@ -483,8 +483,37 @@
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/paulo-rosado.html'"></div>
 						</div>
 
+						<div class="oradorLarge">
+						    <div class="oradorFlip">
+						        <img src="./img/speakers/startups/PauloMelo.JPG" alt="Paulo Melo, doDOC">
+						    </div>
+
+						    <div class="oradorData">
+						        <div class="oradorDescription">
+						        	Paulo L. de Melo, Co-Fundador e Managing Partner da doDOC, empresa que venceu um IPN Incubator Award.
+						        </div>
+						    </div>
+						    <div class="oradorName">
+						    	<p class="name">Paulo L. de Melo <i class="fa fa-external-link"></i></p>
+						    	<p>Co-founder and Managing Partner</p>
+						    	<p>doDOC</p>
+						    </div>
+						    <div class="oradorTrigger" OnClick="window.location.href = 'http://dodoc.com/'"></div>
+						</div>
+
 						
 
+
+
+						
+
+
+						
+					</div>
+
+												
+					<div class="row  inline-speakers"><!-- ROW 5 - max 4 speakers -->
+						
 						<div class="oradorLarge"> <!-- TRANSLATE & ADD -->
 						    <div class="oradorFlip">
 						        <!--<img class="lazy" data-original="./img/speakers/pedro-caramez.png" alt="Pedro Caramez, Codacy">-->
@@ -503,12 +532,6 @@
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/pedro-caramez.html'"></div>
 						</div>
 
-
-						
-					</div>
-
-												
-					<div class="row  inline-speakers"><!-- ROW 5 - max 4 speakers -->
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
 						        <!--<img class="lazy" data-original="./img/speakers/startups/pedro-carmo-oliveira.jpg" alt="Pedro Carmo Oliveira, Jobbox">-->
@@ -565,6 +588,12 @@
 						</div>
 
 
+						
+
+
+						
+					</div>
+					<div class="row  inline-speakers"><!-- ROW 6 - max 4 speakers -->
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
 						        <!--<img class="lazy" data-original="./img/speakers/rui-costa.jpg" alt="Rui Costa, Square">-->
@@ -583,10 +612,6 @@
 						    <div class="oradorTrigger" OnClick="window.location.href = './oradores/rui-costa.html'"></div>
 						</div>
 
-
-						
-					</div>
-					<div class="row  inline-speakers"><!-- ROW 6 - max 4 speakers -->
 						<div class="oradorLarge">
 						    <div class="oradorFlip">
 						        <!--<img class="lazy" data-original="./img/speakers/susana.png" alt="Susana Sargento, Veniam">-->
@@ -608,570 +633,8 @@
 				</div>
 			</div>
 			
-			<!-- calendario -->
-			<hr id="programa" class="footer-divider">
-			<div id="calendar_container" class="container-fluid">
-				<h1>Programa</h1>
-				<div class="agenda">
-					<!-- DIA 2 -->
-					<div class="agenda-date" id="dia_2" onclick="show_dia(2)">
-						<div class="dayofmonth">02</div>
-						<div class="shortdate text-muted">Março</div>
-						<div class="dayofweek">Segunda-feira</div>
-					</div>
-					<div class="dia_container" id="dia_container_2">
-						<table class="dia_horario">
-							<thead>
-								<tr>
-									<th></th>
-									<th>Sala 0.16</th>
-									<th>Sala 0.32</th>
-									<th>Sala 0.65</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="hora_column">09:30</td>
-									<td class="hora_sessao" colspan="3">Sessão de abertura - <span>Sala 0.65</span></td>
-								</tr>
-								<tr>
-									<td class="hora_column">10:00</td>
-									<td><img src="img/patrocinadores/prata/LogoiCreate.png" alt="iCreate"></td>
-									<td><img src="img/patrocinadores/ouro/DEL_PRI_RGB.png" alt="Deloitte"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">11:00</td>
-									<td><img src="img/patrocinadores/prata/outsystems.png" alt="Outsystems"></td>
-									<td><img src="img/patrocinadores/prata/teleperformance.png" alt="Teleperformance"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">12:00</td>
-									<td><img src="img/patrocinadores/prata/KPMG_NoCP_RGB.JPG" alt="KPMG"></td>
-									<td><img src="img/patrocinadores/prata/jeronimo_martins.jpg" alt="Jerónimo Martins"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">13:30</td>
-									<td></td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_paulo-rosado', 'in')"  onmouseleave="show_info_calendar('info_paulo-rosado', 'out')"> <div id="info_paulo-rosado" class="hora_info">stuff goes here</div>
-										<span>Paulo Rosado</span>
-										<img src="./img/speakers/paulo-rosado_cropped.png" alt="Paulo Rosado">
-										<span>"10 learning moments from the OutSystems story"</span>
-									</td>
-									<!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">14:30</td>
-									<td class="hora_workshop"><img src="img/patrocinadores/ouro/everis.png" alt="Everis">
-										<div>Workshop<br>"Da candidatura ao Emprego"</div>
-									</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">16:00</td>
-									<td></td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_jaime-jorge', 'in')"  onmouseleave="show_info_calendar('info_jaime-jorge', 'out')"> <div id="info_jaime-jorge" class="hora_info">stuff goes here</div>
-										<span>Jaime Jorge</span>
-										<img src="./img/speakers/jaime-jorge.png" alt="Jaime Jorge">
-										<span>CEO &amp; Co-fundador<br>Codacy</span>
-									</td>
-									<!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">17:00</td>
-									<td class="hora_workshop"><img src="./img/patrocinadores/bronze/lunacloud.png" alt="Lunacloud">
-										<div>Workshop<br>"Como alojar a tua aplicação na Cloud de forma simples e rápida!"</div>
-									</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="hora_column"></td>
-									<td class="hora_column">Stands (Átrio)</td>
-									<td class="hora_column"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="hora_column"></td>
-									<td class="hora_column">10:00 - 18:00</td>
-									<td class="hora_column"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/KPMG_NoCP_RGB.JPG" alt="KPMG"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/LogoiCreate.png" alt="iCreate"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/outsystems.png" alt="Outsystems"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"><img src="img/patrocinadores/ouro/nokia-logo.png" alt="Nokia"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/jeronimo_martins.jpg" alt="Jerónimo Martins"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/teleperformance.png" alt="Teleperformance"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"></td>
-									<td class="stand"><img src="img/patrocinadores/ouro/DEL_PRI_RGB.png" alt="Deloitte"></td>
-									<td class="stand"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					
-					<!-- DIA 3 -->
-					<div class="agenda-date" id="dia_3" onclick="show_dia(3)">
-						<div class="dayofmonth">03</div>
-						<div class="shortdate text-muted">Março</div>
-						<div class="dayofweek">Terça-feira</div>
-					</div>
-					<div class="dia_container" id="dia_container_3">
-						<table class="dia_horario">
-							<thead>
-								<tr>
-									<th></th>
-									<th>Sala 0.16</th>
-									<th>Sala 0.32</th>
-									<th>Sala 0.65</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="hora_column">10:00</td>
-									<td><img src="img/patrocinadores/ouro/glint.png" alt="Glintt"></td>
-									<td><img src="img/patrocinadores/prata/EY_Logo5.jpg" alt="Ernst & Young"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">11:00</td>
-									<td><img src="img/patrocinadores/ouro/nokia-logo.png" alt="Nokia"></td>
-									<td><img src="img/patrocinadores/prata/altran.png" alt="Altran"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">12:00</td>
-									<td><img src="img/patrocinadores/prata/maksen.png" alt="Maksen"></td>
-									<td><img src="img/patrocinadores/prata/gfi.png" alt="Gfi Portugal"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">13:30</td>
-									<td></td>
-									<td></td>
-									<!-- To update -->
-									<!-- DEPRECATED 
-									<td class="hora_orador" onmouseover="show_info_calendar('info_vasco-pedro', 'in')"  onmouseleave="show_info_calendar('info_vasco-pedro', 'out')"> <div id="info_vasco-pedro" class="hora_info">stuff goes here</div>
-										<span>Vasco Pedro</span><img src="./img/speakers/vasco_cropped.PNG" alt="Vasco Pedro"></td>
-									-->
-									<td class="hora_orador" 
-										onmouseover="show_info_calendar('info_vasco-pedro', 'in')"
-										onmouseleave="show_info_calendar('info_vasco-pedro', 'out')"> 
-										<div id="info_vasco-pedro" class="hora_info">stuff goes here</div>
-										<span>João Graça</span>
-										<img src="./img/speakers/joao-graca.jpg" alt="João Graça">
-										<span>"Como é ser Co-fundador da Unbabel?"</span>
-									</td>
-									<!-- To end update -->
-								</tr>
-								<tr>
-									<td class="hora_column">14:30</td>
-									<td class="hora_workshop">
-										<div>Dreamshaper<br>"Business Modelling e Design Thinking"</div>
-									</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">16:00</td>
-									<td></td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_rogerio-carapuca', 'in')"  onmouseleave="show_info_calendar('info_rogerio-carapuca', 'out')"> <div id="info_rogerio-carapuca" class="hora_info">stuff goes here</div>
-										<span>Rogério Carapuça</span><img src="./img/speakers/rogerio-carapuca.png" alt="Rogério Carapuça">
-										<span><i>Chairman</i><br>Novabase</span>
-									</td><!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">17:00</td>
-									<!-- To update -->
-									<td class="hora_orador"
-										onmouseover="show_info_calendar('info_pedro-caramez', 'in')"  
-										onmouseleave="show_info_calendar('info_pedro-caramez', 'out')">
-										<div id="info_pedro-caramez" class="hora_info">stuff goes here</div>
-										
-										<img id="pedro-caramez" src="./img/speakers/oradores200_200/pedro-caramez.jpg" alt="Pedro Caramez">
-										<span>Workshop prático de Linkedin</span>
-									</td><!-- end To update -->
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="hora_column"></td>
-									<td class="hora_column">Stands (Átrio)</td>
-									<td class="hora_column"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="hora_column"></td>
-									<td class="hora_column">10:00 - 18:00</td>
-									<td class="hora_column"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/KPMG_NoCP_RGB.JPG" alt="KPMG"></td>
-									<td class="stand"><img src="img/patrocinadores/ouro/glint.png" alt="Glintt"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/maksen.png" alt="Maksen"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"><img src="img/patrocinadores/ouro/nokia-logo.png" alt="Nokia"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/gfi.png" alt="GFI"></td>
-									<td class="stand"><img src="img/patrocinadores/bronze/OE.png" alt="Ordem dos Engenheiros, Região Sul"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/altran.png" alt="Altram"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/EY_Logo5.jpg" alt="EY"></td>
-									<td class="stand"><img src="img/patrocinadores/ouro/DEL_PRI_RGB.png" alt="Deloitte"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					
-					<!-- DIA 4 -->
-					<div class="agenda-date dia_selected" id="dia_4" onclick="show_dia(4)">
-						<div class="dayofmonth">04</div>
-						<div class="shortdate text-muted">Março</div>
-						<div class="dayofweek">Quarta-feira</div>
-					</div>
-					<div class="dia_container dia_container_selected" id="dia_container_4">
-						<table class="dia_horario">
-							<thead>
-								<tr>
-									<th></th>
-									<th>Sala 0.16</th>
-									<th>Sala 0.32</th>
-									<th>Sala 0.65</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="hora_column">10:00</td>
-									<td><img src="img/patrocinadores/prata/iten.png" alt="Iten Solutions"></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">11:00</td>
-									<td><img src="img/patrocinadores/prata/novabase.png" alt="Iten Solutions"></td>
-									<td><img src="img/patrocinadores/prata/Vodafone.png" alt="Vodafone"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">12:00</td>
-									<td><img src="img/patrocinadores/prata/synopsys.png" alt="Synopsys"></td>
-									<td><img src="img/patrocinadores/prata/bold.jpg" alt="Bold International"></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">13:30</td>
-									<td></td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_david-mota', 'in')"  onmouseleave="show_info_calendar('info_david-mota', 'out')"> <div id="info_david-mota" class="hora_info">stuff goes here</div>
-										<span>David Mota</span>
-										<img src="./img/speakers/david-mota.jpg" alt="David Mota">
-										<div>"Os desafios das Aplicações Civis e dos UAV's"</div></td><!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">14:45</td>
-									<td></td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_susana-sargento', 'in')"  onmouseleave="show_info_calendar('info_susana-sargento', 'out')"> <div id="info_susana-sargento" class="hora_info">stuff goes here</div>
-										<span>Susana Sargento</span>
-										<img src="./img/speakers/susana.png" alt="Susana Sargento">
-										<span>Co-Fundadora<br>Veniam</span>
-									</td><!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">16:00</td>
-									<td></td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_manuel-severiano', 'in')"  onmouseleave="show_info_calendar('info_manuel-severiano', 'out')"> <div id="info_manuel-severiano" class="hora_info">stuff goes here</div>
-										<span>Manuel Severiano</span>
-										<img src="./img/speakers/manuel-severiano.png" alt="Manuel Severiano">
-										<span>"Supercomputação:  Como fazer Super Ciência e Negócio?"</span>
-									</td>
-									<!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">17:00</td>
-									<td class="hora_workshop">
-										<img src="img/patrocinadores/prata/Capgemini_logo.gif" alt="Capgemini">
-										<div>Workshop<br>"Desenvolvimento orientado a dispositivos <i>Wearable"</i></div>
-									</td>
+			
 
-									<td class="hora_workshop">
-										<img src="img/patrocinadores/bronze/GV_logo_CMYK.jpg" alt="Grupo Visabeira">
-										<div>
-											Workshop<br>"Wireless Networks - Installation & Commissioning - Um desafio aos novos engenheiros: Iniciar a carreira no terreno"
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="hora_column"></td>
-									<td class="hora_column">Stands (Átrio)</td>
-									<td class="hora_column"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="hora_column"></td>
-									<td class="hora_column">10:00 - 18:00</td>
-									<td class="hora_column"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/Vodafone.png" alt="Vodafone"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/iten.png" alt="Iten"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/Capgemini_logo.gif" alt="Capgemini"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"><img src="img/patrocinadores/ouro/nokia-logo.png" alt="Nokia"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/synopsys.png" alt="Synopsis"></td>
-									<td class="stand"><img src="img/patrocinadores/bronze/OE.png" alt="Ordem dos Engenheiros, Região Sul"></td>
-								</tr>
-								<tr>
-									<td class="hora_column"></td>
-									<td class="stand"></td>
-									<td class="stand"><img src="img/patrocinadores/prata/bold.jpg" alt="Bold International"></td>
-									<td class="stand"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					
-					<!-- DIA 5 -->
-					<div class="agenda-date" id="dia_5" onclick="show_dia(5)">
-						<div class="dayofmonth">05</div>
-						<div class="shortdate text-muted">Março</div>
-						<div class="dayofweek">Quinta-feira</div>
-					</div>
-					<div class="dia_container" id="dia_container_5">
-						<table class="dia_horario">
-							<thead>
-								<tr>
-									<th></th>
-									<th>Átrio</th>
-									<th>Sala 0.65</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="hora_column">10:00</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img id="toosmalltofail" src="img/speakers/startups/toosmalltofail.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">10:15</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img src="img/speakers/startups/jobbox.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">10:30</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img src="img/speakers/startups/talkdesk.jpg">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<!-- <tr>
-									<td class="hora_column">10:45</td>
-									<td>Apresentação de Startup: "Vertty"</td>
-									<td></td>
-								</tr> -->
-								<tr>
-									<td class="hora_column">11:00</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img id="wazza" src="img/speakers/startups/wazza.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">11:15</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img src="img/speakers/startups/zaask.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">11:30</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img src="img/speakers/startups/digisfera.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">11:45</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img id="uber" img src="img/speakers/startups/uber.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">12:00</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img id="follow-price" src="img/speakers/startups/followprice.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">12:15</td>
-									<td class="hora_workshop">
-										<div>
-											<span>Apresentação de <i>Startup</i></span>
-											<img src="img/speakers/startups/uniplaces.png">
-										</div>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">14:00</td>
-									<td class="hora_workshop">
-										<div><img src="img/calendario/beta-i.jpg" alt="Beta-i"></div>
-										<div>
-											<span>Workshop<br>"Ferramentas &amp; processos para lançar Startups de sucesso"</span>
-										</div>
-									</td>
-									<td></td>
-								</tr>
-									<td class="hora_column">16:30</td>
-									<td></td>
-									<!-- To Update -->
-									<td class="hora_orador" 
-										onmouseover="show_info_calendar('info_rui-bica', 'in')" 
-										onmouseleave="show_info_calendar('info_rui-bica', 'out')">
-										<div id="info_rui-bica" class="hora_info">stuff goes here</div>
-										<span>Rui Bica</span>
-										<img src="./img/speakers/rui-bica.jpg" alt="Rui Bica">
-										<span>"BMW i - Reinvenção da mobilidade"</span>
-									</td>
-									<!-- end update -->
-								</tr> 
-								<tr>
-									<td class="hora_column">17:45</td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_miguel-goncalves', 'in')"  onmouseleave="show_info_calendar('info_miguel-goncalves', 'out')"> <div id="info_miguel-goncalves" class="hora_info">stuff goes here</div>
-										<span>Miguel Gonçalves</span>
-										<img src="./img/speakers/miguel.jpg" alt="Miguel Gonçalves">
-										<span>"O mercado de trabalho"</span>
-									</td>
-									<!-- end To update -->
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					
-					<!-- DIA 6 -->
-					<div class="agenda-date" id="dia_6" onclick="show_dia(6)">
-						<div class="dayofmonth">06</div>
-						<div class="shortdate text-muted">Março</div>
-						<div class="dayofweek">Sexta-feira</div>
-					</div>
-					<div class="dia_container" id="dia_container_6">
-						<table class="dia_horario">
-							<thead>
-								<tr>
-									<th></th>
-									<th>Sala 0.16</th>
-									<th>Sala 0.65</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="hora_column">10:00</td>
-									<td>
-										<span>Workshop<br>"Myo, Gesture Control Armband"</span>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">11:30</td>
-									<td>
-										<span>Workshop<br>"Arduíno com Farruscos"</span>
-									</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td class="hora_column">13:30</td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_rui-costa', 'in')"  onmouseleave="show_info_calendar('info_rui-costa', 'out')"> <div id="info_rui-costa" class="hora_info">stuff goes here</div>
-										<span>Rui Costa</span>
-										<img src="./img/speakers/rui-costa.jpg" alt="Rui Costa">
-										<span><i>Senior Systems Engineer<br></i>Veniam</span>
-									</td><!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">14:45</td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_diogo-monica', 'in')"  onmouseleave="show_info_calendar('info_diogo-monica', 'out')"> <div id="info_diogo-monica" class="hora_info">stuff goes here</div>
-										<span>Diogo Mónica</span>
-										<img src="./img/speakers/diogo-monica.jpg" alt="Diogo Mónica">
-										<span><i>Leader of Platform Security<br></i>Square</span>
-									</td>
-									<!--end  To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">16:00</td>
-									<td></td>
-									<!-- To update --><td class="hora_orador" onmouseover="show_info_calendar('info_hugo-silva', 'in')"  onmouseleave="show_info_calendar('info_hugo-silva', 'out')"> <div id="info_hugo-silva" class="hora_info">stuff goes here</div>
-										<span>Hugo Silva</span>
-										<img src="./img/speakers/hugo-silva.jpg" alt="Hugo Silva"><div>"BITalino: From a paper towel to the World"</div></td><!-- end To update -->
-								</tr>
-								<tr>
-									<td class="hora_column">17:15</td>
-									<td class="hora_sessao" colspan="2">Sessão de encerramento</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-
-		
 			
 
 			<hr id="patrocinadores" class="footer-divider">
@@ -1269,6 +732,17 @@
 					</div>
 					
 					<div><hr class="footer-divider"></div>
+
+					<div id="gold" class="sponsorship-section">
+						<h1>Patrocinador dos Prémios</h1>
+						<div class = "sponsors_list sponsor_2">
+							<a href="http://www.tecmic.pt/" target="_blank">
+								<img class="lazy" data-original="img/patrocinadores/premios/tecmic.png" alt="Everis">
+							</a>
+						</div>
+					</div>
+
+					<div><hr class="footer-divider"></div>
 					
 					<div class="sponsorship-section">
 						<h1>Parceiros</h1>
@@ -1297,6 +771,12 @@
 						<li data-target="#job-board-carousel" data-slide-to="5"></li>
 						<li data-target="#job-board-carousel" data-slide-to="6"></li>
 						<li data-target="#job-board-carousel" data-slide-to="7"></li>
+						<li data-target="#job-board-carousel" data-slide-to="8"></li>
+						<li data-target="#job-board-carousel" data-slide-to="9"></li>
+						<li data-target="#job-board-carousel" data-slide-to="10"></li>
+						<li data-target="#job-board-carousel" data-slide-to="11"></li>
+						<li data-target="#job-board-carousel" data-slide-to="12"></li>
+						<li data-target="#job-board-carousel" data-slide-to="13"></li>
 					</ol>
 
 					<div class="carousel-inner job-banner" role="listbox">
@@ -1334,9 +814,9 @@
 									 src="img/patrocinadores/prata/novabase.png">
 							</div>
 							<div class="col-md-8 col-xs-12">
-								<h2 class="job-title">Academia Nova Base</h2>
+								<h2 class="job-title">Academia Novabase</h2>
 								<p class="job-description">
-									Na Nova Base Academia oferecemos-te desafios para cresceres, formação para te desenvolveres e uma oportunidade para construires. Se tens Formação académica Superior nas Áreas de Engenharia Informática, Electrotécnica e de Computadores, Telecomunicações, Tecnologias de Informação, Biomédica, Matemática Aplicada, Gestão e Economia. Quer tenhas disponibilidade imediata ou pretendas começar a trabalhar no final do ano lectivo de 2014/2015 envia-nos o teu CV!
+									Na Novabase Academy oferecemos-te desafios para cresceres, formação para te desenvolveres e uma oportunidade para construires. Se tens Formação académica Superior nas Áreas de Engenharia Informática, Electrotécnica e de Computadores, Telecomunicações, Tecnologias de Informação, Biomédica, Matemática Aplicada, Gestão e Economia. Quer tenhas disponibilidade imediata ou pretendas começar a trabalhar no final do ano lectivo de 2014/2015 envia-nos o teu CV!
 								</p>
 							</div>
 						</div>
@@ -1399,6 +879,18 @@
 						
 						<div class="item job-banner-item row">
 							<div class="col-md-4 col-xs-12">
+								<a href="http://www.boldint.com/"><img class="company-img-holder" src="img/patrocinadores/prata/bold.jpg"></a>
+							</div>
+							<div class="col-md-8 col-xs-12">
+								<h2 class="job-title">Oportunidades na Bold International</h2>
+								<p class="job-description">
+									Estamos a recrutar pessoas com conhecimentos em PHP e Java. Os interessados devem enviar o respectivo CV para <a href="mailto:bold@boldint.com">bold@boldint.com</a>.
+								</p>
+							</div>
+						</div>
+						
+						<div class="item job-banner-item row">
+							<div class="col-md-4 col-xs-12">
 								<a href="http://www.linkedin.com/company/jeronimo-martins"><img class="company-img-holder" src="img/patrocinadores/prata/jeronimo_martins.jpg"></a>
 							</div>
 							<div class="col-md-8 col-xs-12">
@@ -1442,11 +934,63 @@
 							<div class="col-md-8 col-xs-12">
 								<h2 class="job-title">Oportunidades na Nokia</h2>
 								<p class="job-description">
-									A Nokia tem posições abertas em Lisboa para um Junior Engineer, nos departamentos de RF Planning & Optimização. Para mais informações visita o site <a href="https://networks.nokia.com/careers">https://networks.nokia.com/careers</a>
+									Radio Network Planning Engineer
+									No departamento de Service Delivery, os nossos engenheiros vão desenvolver e garantir actividades de planeamento e optimização (para tecnologias NSN e MV) de forma remota (ou quando necessário, <i>on site</i>) a partir dos nossos escritórios em Lisboa para projectos por todo o mundo.
+									Estamos à procura de candidatos com as seguintes habilitações:
+									- Formação em Engenharia de Telecomunicações ou semelhante
+									- Facilidade de comunicação e fluência em Inglês
+									- Disponibilidade para viajar
+									Para mais informações visita o site <a href="https://networks.nokia.com/careers">https://networks.nokia.com/careers</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="item job-banner-item row">
+							<div class="col-md-4 col-xs-12">
+								<a href="http://www.glintt.com/"><img class="company-img-holder" src="img/patrocinadores/ouro/glint.png" alt="Glintt 1"></a>
+							</div>
+							<div class="col-md-8 col-xs-12">
+								<h2 class="job-title">Oportunidades na Glintt</h2>
+								<p class="job-description">
+									Queres iniciar a tua carreira profissional numa empresa portuguesa multinacional de renome? O teu sonho é estar integrado em equipas dinâmicas e trabalhar com novas tecnologias? Então, esta oportunidade é para ti! Procuramos Recém-Licenciados/Recém-Mestres Bolonha em Engenharia Informática ou áreas similares que tenham realizado projectos académicos em .Net e/ou Java, que tenham conhecimentos de Base de Dados SQL Server e/ou Oracle, forte capacidade analítica e orientação para o negócio, proatividade, dinamismo e sentido de responsabilidade.
+								</p>
+									Se te enquadras neste perfil, envia o teu CV para: <a href="mailto:recrutamento_glintt@glintt.com">recrutamento_glintt@glintt.com</a>, indicando a referência DRH_062 no assunto.
+								</p>
+							</div>
+						</div>
+
+						<div class="item job-banner-item row">
+							<div class="col-md-4 col-xs-12">
+								<a href="http://www.glintt.com/"><img class="company-img-holder" src="img/patrocinadores/ouro/glint.png" alt="Glintt 2"></a>
+							</div>
+							<div class="col-md-8 col-xs-12">
+								<h2 class="job-title">Oportunidades na Glintt</h2>
+								<p class="job-description">
+									Gostavas de desenvolver competências na área de Smart Processes  e contactar com produtos da IBM em projectos nacionais e internacionais?
+									Procuramos Recém-Licenciados ou Mestres com espírito de iniciativa, determinação, disciplina, capacidade de auto-motivação e vontade de exceder os próprios limites, para integração na nossa ACADEMIA BPM 2015.
+									São necessários conhecimentos em Java, Javascript, HTML, XML, CSS, SQL ou C#, .Net. Em BDs SQL Server/Oracle/DB2, em SOs Windows/Linux/AIX, Business Process Management Notation, Modelação de Processos e Metodologia Agile.
+								</p>
+								<p class="job-description">	
+									Se te enquadras neste perfil, envia o teu CV para: <a href="mailto:recrutamento_glintt@glintt.com">recrutamento_glintt@glintt.com</a>, indicando a referência DRH15_05 no assunto.
 								</p>
 							</div>
 						</div>
 						
+						<div class="item job-banner-item row">
+							<div class="col-md-4 col-xs-12">
+								<a href="http://www.glintt.com/"><img class="company-img-holder" src="img/patrocinadores/ouro/glint.png" alt="Glintt 1"></a>
+							</div>
+							<div class="col-md-8 col-xs-12">
+								<h2 class="job-title">Oportunidades na Glintt</h2>
+								<p class="job-description">
+									Neste momento procuramos integrar um Técnico de Suporte (m/f). As suas principais responsabilidades passarão por efetuar o suporte na área hospitalar das soluções Glintt.
+									Procuramos Recém-Licenciados ou Recém-Mestres na área das Tecnologias da Informação, com ou sem experiência em funções similares, com interesse em Consultoria na área da Saúde, boas capacidades de relacionamento interpessoal e gosto pelo trabalho em equipa, determinação e capacidade de resolução de problemas, motivação e orientação para o cliente.
+								</p>
+								<p class="job-description">	
+									Se te enquadras neste perfil, envia o teu CV para: <a href="mailto:recrutamento_glintt@glintt.com">recrutamento_glintt@glintt.com</a>, indicando a referência DRH15_01 no assunto.
+								</p>
+							</div>
+						</div>
 					</div>
 
 					<a class="left carousel-control" href="#job-board-carousel" role="button" data-slide="prev">
@@ -1458,14 +1002,7 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-				<div class="container">
-					<p class="push-btn-middle">
-						<a class="btn btn-phantom" 
-							href="javascript:void( window.open('http://form.jotformeu.com/form/50496878771372', 'blank','scrollbars=yes,toolbar=no,width=700,height=500'))" role="button">
-							<i class="fa fa-graduation-cap"></i>  Partilhar currículo
-						</a>
-					</p>
-				</div>
+				
 			</div>
 
 				
@@ -1667,20 +1204,6 @@
 			ga('send', 'pageview');
 		</script>
 		
-		<script src="http://d2g9qbzl5h49rh.cloudfront.net/static/feedback2.js?3.2.5669" type="text/javascript">
-  new JotformFeedback({
-     formId		: "50496878771372",
-     buttonText	: "Partilhar currículo",
-     base		: "http://jotformeu.com/",
-     background	: "#F59202",
-     fontColor	: "#FFFFFF",
-     buttonSide	: "bottom",
-     buttonAlign	: "right",
-     type		: false,
-     width		: 700,
-     height		: 500
-  });
-</script>
 	
 	</body>
 </html>
